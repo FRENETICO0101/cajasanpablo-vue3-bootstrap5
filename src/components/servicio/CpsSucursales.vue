@@ -31,135 +31,135 @@ const places = [
     url: matriz,
     href: "https://goo.gl/maps/FAowX7hVz3wxy7CVA",
     caption: "MATRIZ",
-    address: "Joseia Urtiz de Dominquez N. 3008 Col. Liberiad, Guadalajara, Jal.",
-    phone: "Conmutador: 3338831830 o 3336441728 Ext. Captación: 1103 / 1121 / 1178 / 1235 / 1124 Crédito: 1104 / 1132 / 1154 / 1155 Cobranza: 1131 / 1125 / 1105",
-    schedule: "Lunes a Viernes de 9:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    address: "Josefa Ortiz de Domínguez N°. 3008 <br>Col. Libertad, Guadalajara, Jal.",
+    phone: "3336441728 / 3338831830",
+    schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: chapala,
     href: "https://goo.gl/maps/Dw13Emd7G35Wr18a6",
     caption: "CHAPALA",
-    address: "Juárez #751 Col. Chapala Centro Chapala, Jal.",
-    phone: "3767653669 Conmutador: 3338831830 o 3336441728 Ext. 1214",
-    schedule: "Lunes a Viernes de 10:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    address: "Juárez N° 571 <br>Col. Chapala Centro Chapala, Jal.",
+    phone: " (376) 765-3669",
+    schedule: "Lunes a Viernes de 10:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: ocotlan,
     href: "https://maps.app.goo.gl/QVexWKgZ1i89Jctw7",
     caption: "OCOTLÁN",
-    address: "Dr. Delgadillo Araujo #214. Co. Forida. Ocotlan Jaisco.",
-    phone: "3310010760 Conmutador: 3338831830 o 3336441728 Ext. Captación: 1253 Crédito: 1252",
-    schedule: "Lunes a Viernes de 10:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    address: "Dr. Delgadillo Araujo N° 214, <br>Col. Florida, Ocotlán Jalisco.",
+    phone: "(392) 688-0259",
+    schedule: "Lunes a Viernes de 10:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: zalatitan,
     href: "https://goo.gl/maps/oYUFnFtS8SDJvh4x8",
     caption: "ZALATITÁN",
-    address: "Avenida Zalatitán #370. Col Alamedas de Zalatitán. Tonalá, Jal.",
-    phone: "3336073717 Conmutador: 3338831830 o 3336441728 Ext. Captación: 1191 Crédito: 1166 Crédito: 1167",
-    schedule: "Lunes a Viernes de 9:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    address: "Av. Zalatitán N° 370 <br>Col. Alamedas de Zalatitán, Tonalá, Jal.",
+    phone: "333607-3717",
+    schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: centro,
     href: "https://goo.gl/maps/3YVDQcCKRUmfnsMr6",
     caption: "CENTRO",
-    address: "",
-    phone: "3336139592 Conmutador: 3338831830 o 3336441728 Ext. Crédito: 1171 / 1246",
-    schedule: "Lunes a Viernes de 9:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    address: "Av. Federalismo Norte N° 79 entre Juárez y Pedro Moreno Zona Centro, Guadalajara, Jal.",
+    phone: " 333613-9592",
+    schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: aleira,
     href: "https://maps.app.goo.gl/TC17YZmFXWX4m9zXA",
     caption: "PLAZA ALEIRA",
-    address: "",
-    phone: "Conmutador: 3338831830 o 3336441728 Ext. Captación: 1103 / 1121 / 1178 / 1235 / 1124 Crédito: 1104 / 1132 / 1154 / 1155 Cobranza: 1131 / 1125 / 1105",
-    schedule: "Lunes a Viernes de 9:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    address: "Av. Juan Gil Preciado 2001, local 19. Parques Zapopan, Zapopan, Jal.",
+    phone: "33 3883-1830",
+    schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: iglesias,
     href: "https://goo.gl/maps/nS6fTmuqS89ZAGFr6",
     caption: "JOSÉ MA. IGLESIAS",
-    address: "",
-    phone: "3336084503 Conmutador: 3338831830 o 3336441728 Ext. Crédito: 1143 Captación: 1146 Cobranza: 1194",
-    schedule: "Lunes a Viernes de 9:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    address: "osé Ma. Iglesias N° 4026 Fracc. San Francisco S.L. Guadalajara, Jal.",
+    phone: "333608-4503",
+    schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: obrero,
     href: "https://goo.gl/maps/Naxp6vFJX5WyWMm19",
     caption: "OBRERO",
-    address: "",
-    phone: "3316529944 Conmutador: 3338831830 o 3336441728 Ext. Crédito: 1226",
-    schedule: "Lunes a Viernes de 9:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    address: "Av. Artesanos N° 1393 <br>Col. Oblatos, Guadalajara, Jal.",
+    phone: " 331652-9944",
+    schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: belisario,
     href: "https://maps.app.goo.gl/F9ssQ3kHrNWxjH9D7",
     caption: "BELISARIO DOMINGUEZ",
-    address: "",
-    phone: "Conmutador: 3338831830 o 3336441728 Ext. Captación: 1103 / 1121 / 1178 / 1235 / 1124 Crédito: 1104 / 1132 / 1154 / 1155 Cobranza: 1131 / 1125 / 1105",
-    schedule: "Lunes a Viernes de 9:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    address: "Av. Belisario Domínguez 2323, interior 3, Colonia Belisario Domínguez, 44330 Guadalajara, Jalisco.",
+    phone: " 33379-49007",
+    schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: zapopan,
     href: "https://goo.gl/maps/YjSSc7teQBNRANWTA",
     caption: "ZAPOPAN",
-    address: "",
-    phone: "3338338253 Conmutador: 3338831830 o 3336441728 Ext. Crédito: 1145 Captación: 1147 Cobranza: 1198",
-    schedule: "Lunes a Viernes de 9:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    address: "Ramón Corona N° 340 <br>Col. La Villa, Zapopan, Jal.",
+    phone: " 333833-8253",
+    schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: tonala,
     href: "https://goo.gl/maps/vJi1iPVUPGQKxTCH7",
     caption: "TONALÁ",
-    address: "",
-    phone: "3337926340 Conmutador: 3338831830 o 3336441728 Ext. 1213",
+    address: "Av. Tonalá N° 50, Local 7 <br>Col. Tonalá Centro, Tonalá, Jal.",
+    phone: "333792-6340",
     schedule: "Lunes a Viernes de 10:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
   },
   {
     url: centroSur,
     href: "https://maps.app.goo.gl/hctrRYvLY1fLU3e88",
     caption: "CENTRO SUR",
-    address: "",
-    phone: "Conmutador: 3338831830 o 3336441728 Ext. Captación: 1103 / 1121 / 1178 / 1235 / 1124 Crédito: 1104 / 1132 / 1154 / 1155 Cobranza: 1131 / 1125 / 1105",
-    schedule: "Lunes a Viernes de 9:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    address: "Anillo Perif. Sur Manuel Gómez Morín 7835-local 7, Santa María Tequepexpan",
+    phone: "33 3271-9285",
+    schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: pedrito,
     href: "https://goo.gl/maps/UJ1xAEsHWpkNpxH97",
     caption: "SAN PEDRITO",
-    address: "",
-    phone: "3336003162 Conmutador: 3338831830 o 3336441728 Ext. Crédito: 1151 Captación: 1152 Cobranza: 1197",
-    schedule: "Lunes a Viernes de 9:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    address: "Poza Rica N° 4932 <br>Col. San Pedrito, Tlaquepaque, Jal.",
+    phone: "333600-3162",
+    schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: chapalita,
     href: "https://maps.app.goo.gl/jCUL8Zqm2vGiCJgq8",
     caption: "CHAPALITA",
-    address: "",
+    address: "Avenida Guadalupe 1162 int. 10 Colonia Chapalita",
     phone: "Conmutador: 3338831830 o 3336441728 Ext. Captación: 1103 / 1121 / 1178 / 1235 / 1124 Crédito: 1104 / 1132 / 1154 / 1155 Cobranza: 1131 / 1125 / 1105",
-    schedule: "Lunes a Viernes de 9:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: santaFe,
     href: "https://goo.gl/maps/bMoML5MdvhfeFoxx6",
     caption: "SANTA FÉ",
-    address: "",
-    phone: "3311890728 Conmutador: 3338831830 o 3336441728 Ext. Captación: 1163 Crédito: 1193 / 1176",
-    schedule: "Lunes a Viernes de 9:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    address: "Boulevard Colón N° 215 <br>Fracc. Santa Fé, Tlajomulco de Zúñiga, Jal.",
+    phone: "331189-0728",
+    schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: tlaquepaque,
     href: "https://goo.gl/maps/3QqWppdVYUKB742k9",
     caption: "TLAQUEPAQUE",
-    address: "",
-    phone: "3310010760 Conmutador: 3338831830 o 3336441728 Ext. Captación: 1253 Crédito: 1252",
+    address: "Calle 16 de Septiembre N° 9, <br>Col. Tlaquepaque Centro, San Pedro Tlaquepaque Jalisco.",
+    phone: "331001-0760",
     schedule: "Lunes a Viernes de 10:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
   },
   {
     url: salto,
     href: "https://maps.app.goo.gl/YfNnJvRj6xkKMPBn7",
     caption: "EL SALTO",
-    address: "",
+    address: "Emilio Carranza No. 79",
     phone: "3337324904",
     schedule: "Lunes a Viernes de 10:00 a 17:45 horas Sábado de 9:00 a 13:00 horas"
   },
@@ -167,8 +167,8 @@ const places = [
     url: medico,
     href: "https://goo.gl/maps/g9wEcXDEuCqh9kCa7",
     caption: "SERVICIO MÉDICO",
-    address: "",
-    phone: "3338018780",
+    address: "Segunda de Carlos González Peña #360 Col. Libertad, a unas puertas del estacionamiento de Oficina Matriz",
+    phone: "33 3801 8780",
     schedule: "Lunes a Viernes de 10:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
   }
 ]
@@ -302,11 +302,17 @@ onUnmounted(() => {
             </div>
             <div class="modal-body">
               <slot name="body">
-                {{ selectedPlace ? selectedPlace.address : '' }}
-                <hr />
-                {{ selectedPlace ? selectedPlace.phone : '' }}
-                <hr />
-                {{ selectedPlace ? selectedPlace.schedule : '' }}
+                <ul>
+                  <li>
+                    <div v-html="selectedPlace ? selectedPlace.address : ''"></div>
+                  </li>
+                  <li>
+                    <div v-html="selectedPlace ? selectedPlace.phone : ''"></div>
+                  </li>
+                  <li>
+                    <div v-html="selectedPlace ? selectedPlace.schedule : ''"></div>
+                  </li>
+                </ul>
               </slot>
             </div>
             <div class="modal-footer">
@@ -337,7 +343,6 @@ onUnmounted(() => {
   border-radius: 5px;
   min-width: 240px;
   max-width: 280px;
-  cursor: pointer;
   transition: box-shadow .5s ease
 }
 
