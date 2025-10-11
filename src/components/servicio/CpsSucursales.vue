@@ -136,7 +136,7 @@ const places = [
     href: "https://maps.app.goo.gl/jCUL8Zqm2vGiCJgq8",
     caption: "CHAPALITA",
     address: "Avenida Guadalupe 1162 int. 10 Colonia Chapalita",
-    phone: "Conmutador: 3338831830 o 3336441728 Ext. Captación: 1103 / 1121 / 1178 / 1235 / 1124 Crédito: 1104 / 1132 / 1154 / 1155 Cobranza: 1131 / 1125 / 1105",
+    phone: "3337324904",
     schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
