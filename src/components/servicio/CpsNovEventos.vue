@@ -1,620 +1,620 @@
 <script setup lang="ts">
 const events = [
   {
-    src: "/src/assets/img-inauguracion-el-salto/salto_1.jpeg",
+    src: "/assets/img-inauguracion-el-salto/salto_1.jpeg",
     alt: 'Inauguración de la sucursal “El Salto"',
     title: 'Inauguración de la sucursal “El Salto"',
     description: 'Imagenes de la Inauguración de la sucursal “El Salto"',
     images: [
       {
-        src: "/src/assets/img-inauguracion-el-salto/salto_1.jpeg",
+        src: "/assets/img-inauguracion-el-salto/salto_1.jpeg",
       },
       {
-        src: "/src/assets/img-inauguracion-el-salto/salto_2.jpeg",
+        src: "/assets/img-inauguracion-el-salto/salto_2.jpeg",
       }
     ]
   },
   {
-    src: "/src/assets/img-madres-2025-event/madre_1.webp",
+    src: "/assets/img-madres-2025-event/madre_1.webp",
     alt: "Día de las Madres 2025",
     title: "Día de las Madres 2025",
     description: 'Imagenes Día de las Madres 2025',
     images: [
       {
-        src: "/src/assets/img-madres-2025-event/madre_1.webp",
+        src: "/assets/img-madres-2025-event/madre_1.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_2.webp",
+        src: "/assets/img-madres-2025-event/madre_2.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_3.webp",
+        src: "/assets/img-madres-2025-event/madre_3.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_4.webp",
+        src: "/assets/img-madres-2025-event/madre_4.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_5.webp",
+        src: "/assets/img-madres-2025-event/madre_5.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_6.webp",
+        src: "/assets/img-madres-2025-event/madre_6.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_7.webp",
+        src: "/assets/img-madres-2025-event/madre_7.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_8.webp",
+        src: "/assets/img-madres-2025-event/madre_8.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_9.webp",
+        src: "/assets/img-madres-2025-event/madre_9.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_10.webp",
+        src: "/assets/img-madres-2025-event/madre_10.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_11.webp",
+        src: "/assets/img-madres-2025-event/madre_11.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_12.webp",
+        src: "/assets/img-madres-2025-event/madre_12.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_13.webp",
+        src: "/assets/img-madres-2025-event/madre_13.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_14.webp",
+        src: "/assets/img-madres-2025-event/madre_14.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_15.webp",
+        src: "/assets/img-madres-2025-event/madre_15.webp",
       },
       {
-        src: "/src/assets/img-madres-2025-event/madre_16.webp",
+        src: "/assets/img-madres-2025-event/madre_16.webp",
       }
     ]
   },
   {
-    src: "/src/assets/img-nino-2025-event/nino_1.webp",
+    src: "/assets/img-nino-2025-event/nino_1.webp",
     alt: "Evento día del niño 2025",
     title: "Evento día del niño 2025",
     description: 'Imagenes del evento día del niño 2025',
     images: [
       {
-        src: "/src/assets/img-nino-2025-event/nino_1.webp",
+        src: "/assets/img-nino-2025-event/nino_1.webp",
       },
       {
-        src: "/src/assets/img-nino-2025-event/nino_2.webp",
+        src: "/assets/img-nino-2025-event/nino_2.webp",
       },
       {
-        src: "/src/assets/img-nino-2025-event/nino_3.webp",
+        src: "/assets/img-nino-2025-event/nino_3.webp",
       },
       {
-        src: "/src/assets/img-nino-2025-event/nino_4.webp",
+        src: "/assets/img-nino-2025-event/nino_4.webp",
       },
       {
-        src: "/src/assets/img-nino-2025-event/nino_5.webp",
+        src: "/assets/img-nino-2025-event/nino_5.webp",
       },
       {
-        src: "/src/assets/img-nino-2025-event/nino_6.webp",
+        src: "/assets/img-nino-2025-event/nino_6.webp",
       },
       {
-        src: "/src/assets/img-nino-2025-event/nino_7.webp",
+        src: "/assets/img-nino-2025-event/nino_7.webp",
       },
       {
-        src: "/src/assets/img-nino-2025-event/nino_8.webp",
+        src: "/assets/img-nino-2025-event/nino_8.webp",
       },
       {
-        src: "/src/assets/img-nino-2025-event/nino_9.webp",
+        src: "/assets/img-nino-2025-event/nino_9.webp",
       },
     ]
   },
   {
-    src: "/src/assets/img-nov-event/191.webp",
+    src: "/assets/img-nov-event/191.webp",
     alt: 'Aurelio Lozano - Ocotlan 2024',
     title: 'Aurelio Lozano - Ocotlan 2024',
     description: 'Curso de Personalidad y Automaquillaje',
     images: [
       {
-        src: "/src/assets/img-nov-event/182.webp",
+        src: "/assets/img-nov-event/182.webp",
       },
       {
-        src: "/src/assets/img-nov-event/183.webp",
+        src: "/assets/img-nov-event/183.webp",
       },
       {
-        src: "/src/assets/img-nov-event/184.webp",
+        src: "/assets/img-nov-event/184.webp",
       },
       {
-        src: "/src/assets/img-nov-event/185.webp",
+        src: "/assets/img-nov-event/185.webp",
       },
       {
-        src: "/src/assets/img-nov-event/186.webp",
+        src: "/assets/img-nov-event/186.webp",
       },
       {
-        src: "/src/assets/img-nov-event/187.webp",
+        src: "/assets/img-nov-event/187.webp",
       },
       {
-        src: "/src/assets/img-nov-event/188.webp",
+        src: "/assets/img-nov-event/188.webp",
       },
       {
-        src: "/src/assets/img-nov-event/189.webp",
+        src: "/assets/img-nov-event/189.webp",
       },
       {
-        src: "/src/assets/img-nov-event/190.webp",
+        src: "/assets/img-nov-event/190.webp",
       },
       {
-        src: "/src/assets/img-nov-event/181.webp",
+        src: "/assets/img-nov-event/181.webp",
       },
       {
-        src: "/src/assets/img-nov-event/192.webp",
+        src: "/assets/img-nov-event/192.webp",
       },
     ]
   },
   {
-    src: "/src/assets/img-nov-event/167.webp",
+    src: "/assets/img-nov-event/167.webp",
     alt: 'Aurelio Lozano - Matriz 2024',
     title: 'Aurelio Lozano - Matriz 2024',
     description: 'Curso de Personalidad y Automaquillaje',
     images: [
       {
-        src: "/src/assets/img-nov-event/156.webp",
+        src: "/assets/img-nov-event/156.webp",
       },
       {
-        src: "/src/assets/img-nov-event/157.webp",
+        src: "/assets/img-nov-event/157.webp",
       },
       {
-        src: "/src/assets/img-nov-event/158.webp",
+        src: "/assets/img-nov-event/158.webp",
       },
       {
-        src: "/src/assets/img-nov-event/159.webp",
+        src: "/assets/img-nov-event/159.webp",
       },
       {
-        src: "/src/assets/img-nov-event/160.webp",
+        src: "/assets/img-nov-event/160.webp",
       },
       {
-        src: "/src/assets/img-nov-event/161.webp",
+        src: "/assets/img-nov-event/161.webp",
       },
       {
-        src: "/src/assets/img-nov-event/162.webp",
+        src: "/assets/img-nov-event/162.webp",
       },
       {
-        src: "/src/assets/img-nov-event/163.webp",
+        src: "/assets/img-nov-event/163.webp",
       }, {
-        src: "/src/assets/img-nov-event/164.webp",
+        src: "/assets/img-nov-event/164.webp",
       },
       {
-        src: "/src/assets/img-nov-event/165.webp",
+        src: "/assets/img-nov-event/165.webp",
       },
       {
-        src: "/src/assets/img-nov-event/166.webp",
+        src: "/assets/img-nov-event/166.webp",
       },
       {
-        src: "/src/assets/img-nov-event/167.webp",
+        src: "/assets/img-nov-event/167.webp",
       },
     ]
   },
   {
-    src: "/src/assets/img-nov-event/150.webp",
+    src: "/assets/img-nov-event/150.webp",
     alt: 'Aurelio Lozano - Chapala 2024',
     title: 'Aurelio Lozano - Chapala 2024',
     description: 'Curso de la importancia de la imagen para ser líder',
     images: [
       {
-        src: "/src/assets/img-nov-event/150.webp",
+        src: "/assets/img-nov-event/150.webp",
       },
       {
-        src: "/src/assets/img-nov-event/152.webp",
+        src: "/assets/img-nov-event/152.webp",
       },
       {
-        src: "/src/assets/img-nov-event/153.webp",
+        src: "/assets/img-nov-event/153.webp",
       },
       {
-        src: "/src/assets/img-nov-event/154.webp",
+        src: "/assets/img-nov-event/154.webp",
       },
     ]
   },
   {
-    src: "/src/assets/img-nov-event/140.webp",
+    src: "/assets/img-nov-event/140.webp",
     alt: 'Evento día del Padre',
     title: 'Evento día del Padre',
     description: 'Imagenes del evento día del Padre en Salon La Piedra',
     images: [
       {
-        src: "/src/assets/img-nov-event/140.webp",
+        src: "/assets/img-nov-event/140.webp",
       },
       {
-        src: "/src/assets/img-nov-event/141.webp",
+        src: "/assets/img-nov-event/141.webp",
       },
       {
-        src: "/src/assets/img-nov-event/142.webp",
+        src: "/assets/img-nov-event/142.webp",
       },
       {
-        src: "/src/assets/img-nov-event/143.webp",
+        src: "/assets/img-nov-event/143.webp",
       },
       {
-        src: "/src/assets/img-nov-event/144.webp",
+        src: "/assets/img-nov-event/144.webp",
       },
       {
-        src: "/src/assets/img-nov-event/145.webp",
+        src: "/assets/img-nov-event/145.webp",
       },
       {
-        src: "/src/assets/img-nov-event/146.webp",
+        src: "/assets/img-nov-event/146.webp",
       },
       {
-        src: "/src/assets/img-nov-event/147.webp",
+        src: "/assets/img-nov-event/147.webp",
       },
       {
-        src: "/src/assets/img-nov-event/148.webp",
+        src: "/assets/img-nov-event/148.webp",
       },
       {
-        src: "/src/assets/img-nov-event/149.webp",
+        src: "/assets/img-nov-event/149.webp",
       },
     ]
   },
   {
-    src: "/src/assets/img-nov-event/129.webp",
+    src: "/assets/img-nov-event/129.webp",
     alt: 'Evento día del niño 2024',
     title: 'Evento día del niño 2024',
     description: 'Imagenes del evento día del Padre en Salon La Piedra',
     images: [
       {
-        src: "/src/assets/img-nov-event/126.webp",
+        src: "/assets/img-nov-event/126.webp",
       },
       {
-        src: "/src/assets/img-nov-event/127.webp",
+        src: "/assets/img-nov-event/127.webp",
       },
       {
-        src: "/src/assets/img-nov-event/128.webp",
+        src: "/assets/img-nov-event/128.webp",
       },
       {
-        src: "/src/assets/img-nov-event/129.webp",
+        src: "/assets/img-nov-event/129.webp",
       },
       {
-        src: "/src/assets/img-nov-event/130.webp",
+        src: "/assets/img-nov-event/130.webp",
       },
       {
-        src: "/src/assets/img-nov-event/131.webp",
+        src: "/assets/img-nov-event/131.webp",
       },
       {
-        src: "/src/assets/img-nov-event/132.webp",
+        src: "/assets/img-nov-event/132.webp",
       },
       {
-        src: "/src/assets/img-nov-event/133.webp",
+        src: "/assets/img-nov-event/133.webp",
       },
       {
-        src: "/src/assets/img-nov-event/134.webp",
+        src: "/assets/img-nov-event/134.webp",
       },
       {
-        src: "/src/assets/img-nov-event/135.webp",
+        src: "/assets/img-nov-event/135.webp",
       },
       {
-        src: "/src/assets/img-nov-event/136.webp",
+        src: "/assets/img-nov-event/136.webp",
       },
       {
-        src: "/src/assets/img-nov-event/137.webp",
+        src: "/assets/img-nov-event/137.webp",
       },
       {
-        src: "/src/assets/img-nov-event/138.webp",
+        src: "/assets/img-nov-event/138.webp",
       },
       {
-        src: "/src/assets/img-nov-event/139.webp",
+        src: "/assets/img-nov-event/139.webp",
       },
     ]
   },
   {
-    src: "/src/assets/img-nov-event/111.webp",
+    src: "/assets/img-nov-event/111.webp",
     alt: 'Evento día de las madres 2024',
     title: 'Evento día de las madres 2024',
     description: 'Imagenes del evento día de las madres',
     images: [
       {
-        src: "/src/assets/img-nov-event/112.webp",
+        src: "/assets/img-nov-event/112.webp",
       },
       {
-        src: "/src/assets/img-nov-event/113.webp",
+        src: "/assets/img-nov-event/113.webp",
       },
       {
-        src: "/src/assets/img-nov-event/114.webp",
+        src: "/assets/img-nov-event/114.webp",
       },
       {
-        src: "/src/assets/img-nov-event/115.webp",
+        src: "/assets/img-nov-event/115.webp",
       },
       {
-        src: "/src/assets/img-nov-event/116.webp",
+        src: "/assets/img-nov-event/116.webp",
       },
       {
-        src: "/src/assets/img-nov-event/117.webp",
+        src: "/assets/img-nov-event/117.webp",
       },
       {
-        src: "/src/assets/img-nov-event/118.webp",
+        src: "/assets/img-nov-event/118.webp",
       },
       {
-        src: "/src/assets/img-nov-event/119.webp",
+        src: "/assets/img-nov-event/119.webp",
       },
       {
-        src: "/src/assets/img-nov-event/120.webp",
+        src: "/assets/img-nov-event/120.webp",
       },
       {
-        src: "/src/assets/img-nov-event/121.webp",
+        src: "/assets/img-nov-event/121.webp",
       },
       {
-        src: "/src/assets/img-nov-event/122.webp",
+        src: "/assets/img-nov-event/122.webp",
       },
       {
-        src: "/src/assets/img-nov-event/123.webp",
+        src: "/assets/img-nov-event/123.webp",
       },
       {
-        src: "/src/assets/img-nov-event/124.webp",
+        src: "/assets/img-nov-event/124.webp",
       },
     ]
   },
   {
-    src: "/src/assets/img-nov-event/99.webp",
+    src: "/assets/img-nov-event/99.webp",
     alt: 'Inaguración Sucursal Centro Sur 2023',
     title: 'Inaguración Sucursal Centro Sur 2023',
     description: 'Imagenes Inaguración Sucursal Centro Sur',
     images: [
       {
-        src: "/src/assets/img-nov-event/99.webp",
+        src: "/assets/img-nov-event/99.webp",
       },
       {
-        src: "/src/assets/img-nov-event/100.webp",
+        src: "/assets/img-nov-event/100.webp",
       },
       {
-        src: "/src/assets/img-nov-event/101.webp",
+        src: "/assets/img-nov-event/101.webp",
       },
       {
-        src: "/src/assets/img-nov-event/102.webp",
+        src: "/assets/img-nov-event/102.webp",
       },
       {
-        src: "/src/assets/img-nov-event/103.webp",
+        src: "/assets/img-nov-event/103.webp",
       },
       {
-        src: "/src/assets/img-nov-event/104.webp",
+        src: "/assets/img-nov-event/104.webp",
       },
       {
-        src: "/src/assets/img-nov-event/105.webp",
+        src: "/assets/img-nov-event/105.webp",
       },
       {
-        src: "/src/assets/img-nov-event/106.webp",
+        src: "/assets/img-nov-event/106.webp",
       },
       {
-        src: "/src/assets/img-nov-event/107.webp",
+        src: "/assets/img-nov-event/107.webp",
       },
       {
-        src: "/src/assets/img-nov-event/108.webp",
+        src: "/assets/img-nov-event/108.webp",
       },
       {
-        src: "/src/assets/img-nov-event/109.webp",
+        src: "/assets/img-nov-event/109.webp",
       },
       {
-        src: "/src/assets/img-nov-event/110.webp",
+        src: "/assets/img-nov-event/110.webp",
       }
     ]
   },
   {
-    src: "/src/assets/img-nov-event/91.webp",
+    src: "/assets/img-nov-event/91.webp",
     alt: 'Competencias Directivas 2023',
     title: 'Competencias Directivas 2023',
     description: 'Imagenes Competencias Directivas',
     images: [
       {
-        src: "/src/assets/img-nov-event/89.webp",
+        src: "/assets/img-nov-event/89.webp",
       },
       {
-        src: "/src/assets/img-nov-event/90.webp",
+        src: "/assets/img-nov-event/90.webp",
       },
       {
-        src: "/src/assets/img-nov-event/91.webp",
+        src: "/assets/img-nov-event/91.webp",
       },
       {
-        src: "/src/assets/img-nov-event/92.webp",
+        src: "/assets/img-nov-event/92.webp",
       },
       {
-        src: "/src/assets/img-nov-event/93.webp",
+        src: "/assets/img-nov-event/93.webp",
       },
       {
-        src: "/src/assets/img-nov-event/94.webp",
+        src: "/assets/img-nov-event/94.webp",
       },
       {
-        src: "/src/assets/img-nov-event/95.webp",
+        src: "/assets/img-nov-event/95.webp",
       },
       {
-        src: "/src/assets/img-nov-event/96.webp",
+        src: "/assets/img-nov-event/96.webp",
       },
       {
-        src: "/src/assets/img-nov-event/97.webp",
+        src: "/assets/img-nov-event/97.webp",
       },
       {
-        src: "/src/assets/img-nov-event/98.webp",
+        src: "/assets/img-nov-event/98.webp",
       },
     ]
   },
   {
-    src: "/src/assets/img-nov-event/83.webp",
+    src: "/assets/img-nov-event/83.webp",
     alt: 'Inauguración de Sucursal Aleria',
     title: 'Inauguración de Sucursal Aleria',
     description: 'Imagenes Aleira 2023',
     images: [
       {
-        src: "/src/assets/img-nov-event/76.webp",
+        src: "/assets/img-nov-event/76.webp",
       },
       {
-        src: "/src/assets/img-nov-event/77.webp",
+        src: "/assets/img-nov-event/77.webp",
       },
       {
-        src: "/src/assets/img-nov-event/78.webp",
+        src: "/assets/img-nov-event/78.webp",
       },
       {
-        src: "/src/assets/img-nov-event/79.webp",
+        src: "/assets/img-nov-event/79.webp",
       },
       {
-        src: "/src/assets/img-nov-event/80.webp",
+        src: "/assets/img-nov-event/80.webp",
       },
       {
-        src: "/src/assets/img-nov-event/81.webp",
+        src: "/assets/img-nov-event/81.webp",
       },
       {
-        src: "/src/assets/img-nov-event/82.webp",
+        src: "/assets/img-nov-event/82.webp",
       },
       {
-        src: "/src/assets/img-nov-event/83.webp",
+        src: "/assets/img-nov-event/83.webp",
       },
       {
-        src: "/src/assets/img-nov-event/84.webp",
+        src: "/assets/img-nov-event/84.webp",
       },
       {
-        src: "/src/assets/img-nov-event/85.webp",
+        src: "/assets/img-nov-event/85.webp",
       },
       {
-        src: "/src/assets/img-nov-event/86.webp",
+        src: "/assets/img-nov-event/86.webp",
       },
       {
-        src: "/src/assets/img-nov-event/87.webp",
+        src: "/assets/img-nov-event/87.webp",
       },
     ]
   },
   {
-    src: "/src/assets/img-nov-event/51.webp",
+    src: "/assets/img-nov-event/51.webp",
     alt: 'Foro Coopertivo y Financiero 2023',
     title: 'Foro Coopertivo y Financiero 2023',
     description: 'Imagenes Foro Coopertivo y Financiero',
     images: [
       {
-        src: "/src/assets/img-nov-event/52.webp",
+        src: "/assets/img-nov-event/52.webp",
       },
       {
-        src: "/src/assets/img-nov-event/53.webp",
+        src: "/assets/img-nov-event/53.webp",
       },
       {
-        src: "/src/assets/img-nov-event/54.webp",
+        src: "/assets/img-nov-event/54.webp",
       },
       {
-        src: "/src/assets/img-nov-event/55.webp",
+        src: "/assets/img-nov-event/55.webp",
       },
       {
-        src: "/src/assets/img-nov-event/56.webp",
+        src: "/assets/img-nov-event/56.webp",
       },
       {
-        src: "/src/assets/img-nov-event/57.webp",
+        src: "/assets/img-nov-event/57.webp",
       },
       {
-        src: "/src/assets/img-nov-event/58.webp",
+        src: "/assets/img-nov-event/58.webp",
       },
       {
-        src: "/src/assets/img-nov-event/59.webp",
+        src: "/assets/img-nov-event/59.webp",
       },
       {
-        src: "/src/assets/img-nov-event/60.webp",
+        src: "/assets/img-nov-event/60.webp",
       },
       {
-        src: "/src/assets/img-nov-event/61.webp",
+        src: "/assets/img-nov-event/61.webp",
       },
       {
-        src: "/src/assets/img-nov-event/62.webp",
+        src: "/assets/img-nov-event/62.webp",
       },
       {
-        src: "/src/assets/img-nov-event/63.webp",
+        src: "/assets/img-nov-event/63.webp",
       },
       {
-        src: "/src/assets/img-nov-event/64.webp",
+        src: "/assets/img-nov-event/64.webp",
       },
       {
-        src: "/src/assets/img-nov-event/65.webp",
+        src: "/assets/img-nov-event/65.webp",
       },
       {
-        src: "/src/assets/img-nov-event/66.webp",
+        src: "/assets/img-nov-event/66.webp",
       },
       {
-        src: "/src/assets/img-nov-event/67.webp",
+        src: "/assets/img-nov-event/67.webp",
       },
       {
-        src: "/src/assets/img-nov-event/68.webp",
+        src: "/assets/img-nov-event/68.webp",
       },
       {
-        src: "/src/assets/img-nov-event/69.webp",
+        src: "/assets/img-nov-event/69.webp",
       },
       {
-        src: "/src/assets/img-nov-event/70.webp",
+        src: "/assets/img-nov-event/70.webp",
       }
     ]
   },
   {
-    src: "/src/assets/img-nov-event/37.webp",
+    src: "/assets/img-nov-event/37.webp",
     alt: 'Rally Coop 2023',
     title: 'Rally Coop 2023',
     description: 'Imagenes de Rally Coop 2023',
     images: [
       {
-        src: "/src/assets/img-nov-event/26.webp",
+        src: "/assets/img-nov-event/26.webp",
       },
       {
-        src: "/src/assets/img-nov-event/27.webp",
+        src: "/assets/img-nov-event/27.webp",
       },
       {
-        src: "/src/assets/img-nov-event/28.webp",
+        src: "/assets/img-nov-event/28.webp",
       },
       {
-        src: "/src/assets/img-nov-event/29.webp",
+        src: "/assets/img-nov-event/29.webp",
       },
       {
-        src: "/src/assets/img-nov-event/30.webp",
+        src: "/assets/img-nov-event/30.webp",
       },
       {
-        src: "/src/assets/img-nov-event/31.webp",
+        src: "/assets/img-nov-event/31.webp",
       },
       {
-        src: "/src/assets/img-nov-event/32.webp",
+        src: "/assets/img-nov-event/32.webp",
       },
       {
-        src: "/src/assets/img-nov-event/33.webp",
+        src: "/assets/img-nov-event/33.webp",
       },
       {
-        src: "/src/assets/img-nov-event/34.webp",
+        src: "/assets/img-nov-event/34.webp",
       },
       {
-        src: "/src/assets/img-nov-event/35.webp",
+        src: "/assets/img-nov-event/35.webp",
       },
       {
-        src: "/src/assets/img-nov-event/36.webp",
+        src: "/assets/img-nov-event/36.webp",
       },
       {
-        src: "/src/assets/img-nov-event/37.webp",
+        src: "/assets/img-nov-event/37.webp",
       },
       {
-        src: "/src/assets/img-nov-event/38.webp",
+        src: "/assets/img-nov-event/38.webp",
       },
       {
-        src: "/src/assets/img-nov-event/39.webp",
+        src: "/assets/img-nov-event/39.webp",
       },
       {
-        src: "/src/assets/img-nov-event/40.webp",
+        src: "/assets/img-nov-event/40.webp",
       },
       {
-        src: "/src/assets/img-nov-event/41.webp",
+        src: "/assets/img-nov-event/41.webp",
       },
       {
-        src: "/src/assets/img-nov-event/42.webp",
+        src: "/assets/img-nov-event/42.webp",
       },
       {
-        src: "/src/assets/img-nov-event/43.webp",
+        src: "/assets/img-nov-event/43.webp",
       },
       {
-        src: "/src/assets/img-nov-event/44.webp",
+        src: "/assets/img-nov-event/44.webp",
       },
       {
-        src: "/src/assets/img-nov-event/45.webp",
+        src: "/assets/img-nov-event/45.webp",
       },
       {
-        src: "/src/assets/img-nov-event/46.webp",
+        src: "/assets/img-nov-event/46.webp",
       },
       {
-        src: "/src/assets/img-nov-event/47.webp",
+        src: "/assets/img-nov-event/47.webp",
       },
       {
-        src: "/src/assets/img-nov-event/48.webp",
+        src: "/assets/img-nov-event/48.webp",
       },
       {
-        src: "/src/assets/img-nov-event/49.webp",
+        src: "/assets/img-nov-event/49.webp",
       },
       {
-        src: "/src/assets/img-nov-event/50.webp",
+        src: "/assets/img-nov-event/50.webp",
       }
     ]
   }
