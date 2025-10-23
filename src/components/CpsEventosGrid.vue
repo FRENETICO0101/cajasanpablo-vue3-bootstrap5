@@ -1,7 +1,7 @@
 <template>
   <div class="container overflow-hidden py-6">
     <div class="grid-wrapper col">
-      <div v-for="(value, index) in gallery" class="lc-block" :key="index">
+      <div v-for="(value, index) in randomGalleryImages()" class="lc-block" :key="index">
         <img class="img-fluid rounded rounded" :src="value.src" alt="" loading="lazy">
       </div>
     </div>
@@ -20,21 +20,76 @@ const gallery = [
     src: "/assets/img-inauguracion-el-salto/salto_1.jpeg"
   },
   {
+    src: "/assets/img-inauguracion-el-salto/salto_2.jpeg"
+  },
+  {
+    src: "/assets/img-madres-2025-event/madre_1.webp"
+  },
+  {
+    src: "/assets/img-madres-2025-event/madre_2.webp"
+  },
+  {
+    src: "/assets/img-madres-2025-event/madre_3.webp"
+  },
+  {
+    src: "/assets/img-madres-2025-event/madre_4.webp"
+  },
+  {
     src: "/assets/img-nino-2025-event/nino_1.webp"
+  },
+  {
+    src: "/assets/img-nino-2025-event/nino_2.webp"
+  },
+  {
+    src: "/assets/img-nino-2025-event/nino_3.webp"
+  },
+  {
+    src: "/assets/img-nino-2025-event/nino_4.webp"
   },
   {
     src: "/assets/img-nov-event/191.webp"
   },
   {
+    src: "/assets/img-nov-event/192.webp"
+  },
+  {
     src: "/assets/img-nov-event/167.webp"
+  },
+  {
+    src: "/assets/img-nov-event/168.webp"
+  },
+  {
+    src: "/assets/img-nov-event/169.webp"
   },
   {
     src: "/assets/img-nov-event/150.webp"
   },
   {
+    src: "/assets/img-nov-event/151.webp"
+  },
+  {
+    src: "/assets/img-nov-event/152.webp"
+  },
+  {
     src: "/assets/img-nov-event/140.webp"
+  },
+  {
+    src: "/assets/img-nov-event/141.webp"
+  },
+  {
+    src: "/assets/img-nov-event/142.webp"
   }
 ]
+function randomGalleryImages() {
+  const randomGallery = []
+
+  while (randomGallery.length < 6) {
+    const randomIndex = Math.floor(Math.random() * gallery.length)
+    randomGallery.push(gallery[randomIndex])
+  }
+
+  return randomGallery
+}
 </script>
 <style lang="css" scoped>
 /* Main CSS */
