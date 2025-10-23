@@ -8,7 +8,7 @@
       </div>
       <div class="credito-tipe">CONSUMO</div>
       <div class="card-container row justify-content-center">
-        <div class="col-3 card-credito">
+        <div class="col-12 col-sm-6 col-lg-3 card-credito">
           <img loading="lazy" alt="icono credito" src="/src/assets/icon/credits/automatico.png" />
           <div class="card-credito-details">
             Ideal para imprevistos o necesidades personales, te ofrecemos un préstamo de hasta el 90% de tus ahorros.
@@ -221,7 +221,7 @@
           </div>
         </div>
         <!---->
-        <div class="col-3 card-credito">
+        <div class="col-12 col-sm-6 col-lg-3 card-credito">
           <img loading="lazy" alt="icono credito" src="/src/assets/icon/credits/credilomio.png" />
           <div class="card-credito-details">
             Ideal para imprevistos o necesidades personales, te ofrecemos un préstamo de hasta el 90% de tus ahorros.
@@ -433,7 +433,7 @@
           </div>
         </div>
         <!---->
-        <div class="col-3 card-credito">
+        <div class="col-12 col-sm-6 col-lg-3 card-credito">
           <img loading="lazy" alt="icono credito" src="/src/assets/icon/credits/mi_primer_credito.png" />
           <div class="card-credito-details">
             Crédito para nuestros Socios jóvenes que desean comenzar con su historial de crédito. 
@@ -658,7 +658,7 @@
           </div>
         </div>
         <!---->
-        <div class="col-3 card-credito">
+        <div class="col-12 col-sm-6 col-lg-3 card-credito">
           <img loading="lazy" alt="icono credito" src="/src/assets/icon/credits/credigodin.png" />
           <div class="card-credito-details">
             Crédito pensado para nuestros asalariados, pensionados o jubilados que desean cubrir necesidades o gastos
@@ -890,7 +890,7 @@
           </div>
         </div>
         <!---->
-        <div class="col-3 card-credito">
+        <div class="col-12 col-sm-6 col-lg-3 card-credito">
           <img loading="lazy" alt="icono credito" width="220px" src="/src/assets/icon/credits/ordinario.png" />
           <div class="card-credito-details">
             Crédito personal de Caja Popular San Pablo, para que tú decidas en qué usarlo.
@@ -1123,7 +1123,7 @@
           </div>
         </div>
         <!---->
-        <div class="col-3 card-credito">
+        <div class="col-12 col-sm-6 col-lg-3 card-credito">
           <img loading="lazy" alt="icono credito" src="/src/assets/icon/credits/credileal.png" />
           <div class="card-credito-details">
             Crédito de consumo exclusivo para Socios con una sólida trayectoria en la cooperativa.
@@ -1367,7 +1367,7 @@
           </div>
         </div>
         <!---->
-        <div class="col-3 card-credito">
+        <div class="col-12 col-sm-6 col-lg-3 card-credito">
           <img loading="lazy" alt="icono credito" src="/src/assets/icon/credits/automovil.png" />
           <div class="card-credito-details">
             Adquiere tu auto nuevo o seminuevo (hasta 5 años de antigüedad) para uso personal, disponible en agencias
@@ -1608,7 +1608,7 @@
           </div>
         </div>
         <!---->
-        <div class="col-3 card-credito">
+        <div class="col-12 col-sm-6 col-lg-3 card-credito">
           <img loading="lazy" alt="icono credito" src="/src/assets/icon/credits/ordinario_hipotecario.png" />
           <div class="card-credito-details">
             Crédito con garantía hipotecaria para que adquieras lo que necesitas sin complicaciones.

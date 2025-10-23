@@ -3,7 +3,7 @@
     <section class="credito-contaner back-black">
       <div class="credito-tipe">COMERCIAL</div>
       <div class="card-container row justify-content-center">
-        <div class="col-3 card-credito">
+        <div class="col-12 col-sm-6 col-lg-3 card-credito">
           <img loading="lazy" alt="icono credito" src="/src/assets/icon/credits/prestamovil.png" />
           <div class="card-credito-details">
             Financiamiento diseñado especialmente para vehículos de transporte, plataformas digitales, taxis y
@@ -244,7 +244,7 @@
           </div>
         </div>
         <!---->
-        <div class="col-3 card-credito">
+        <div class="col-12 col-sm-6 col-lg-3 card-credito">
           <img loading="lazy" alt="icono credito" src="/src/assets/icon/credits/comercial_avio.png" />
           <div class="card-credito-details">
             Impulsa tu negocio, crédito pensado para actividades comerciales, agrícolas, ganaderas o empresariales.
@@ -490,7 +490,7 @@
           </div>
         </div>
         <!---->
-        <div class="col-3 card-credito">
+        <div class="col-12 col-sm-6 col-lg-3 card-credito">
           <img loading="lazy" alt="icono credito" src="/src/assets/icon/credits/comercial_refaccionario.png" />
           <div class="card-credito-details">
             Crédito a largo plazo destinado a impulsar tu negocio o actividad agropecuaria, ideal para invertir en la
@@ -733,7 +733,7 @@
           </div>
         </div>
         <!---->
-        <div class="col-3 card-credito">
+        <div class="col-12 col-sm-6 col-lg-3 card-credito">
           <img loading="lazy" alt="icono credito" src="/src/assets/icon/credits/refaccionario_hipotecario.png" />
           <div class="card-credito-details">
             Crédito a largo plazo con garantía hipotecaria para hacer crecer tu negocio o actividad agropecuaria.

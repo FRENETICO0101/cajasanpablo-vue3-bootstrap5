@@ -3,7 +3,7 @@
     <section class="credito-contaner">
       <div class="credito-tipe">VIVIENDA</div>
       <div class="card-container row justify-content-center">
-        <div class="col-3 card-credito">
+        <div class="col-12 col-sm-6 col-lg-3 card-credito">
           <img loading="lazy" alt="icono credito" src="/src/assets/icon/credits/vivienda.png" />
           <div class="card-credito-details">
             Diseñado para construir, remodelar o ampliar tu casa. Ideal para mejorar tu patrimonio.
