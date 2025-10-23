@@ -1,6 +1,6 @@
 <template>
-  <nav _ngcontent-ng-c2531277376 class="menu-superior navbar">
-    <div _ngcontent-ng-c2531277376 class="container">
+  <nav _ngcontent-ng-c2531277376 class="menu-superior navbar navbar-expand-lg navbar-light bg-ligh">
+    <div _ngcontent-ng-c2531277376 class="container-fluid">
       <a _ngcontent-ng-c2531277376 href="/"><img _ngcontent-ng-c2531277376 alt="Logo Caja Popular San Pablo"
           src="/src/assets/icon/LogoSitioWeb.webp" width="160px" height="44px" /></a>
       <ul _ngcontent-ng-c2531277376 class="nav d-none d-lg-flex justify-content-end gap-4">
@@ -51,16 +51,16 @@
         </li>
       </ul>
       <img _ngcontent-ng-c2531277376 src="/src/assets/icon/menu.webp" width="45" height="45" alt="Icono del menú"
-        class="menu-icon d-lg-none" />
+        class="menu-icon d-lg-none" v-on:click="toggleNavBar('menuNavBar')" />
     </div>
-    <ul _ngcontent-ng-c2531277376 class="menu-desplegable d-lg-none" style="display: none">
+    <ul _ngcontent-ng-c2531277376 class="menu-desplegable d-lg-none" id="menuNavBar" style="display: none;">
       <div _ngcontent-ng-c2531277376 class="container">
         <li _ngcontent-ng-c2531277376>
           <a _ngcontent-ng-c2531277376 href="/servicio/sucursales">SUCURSALES</a>
         </li>
         <hr _ngcontent-ng-c2531277376 class="linea-horizontal" />
         <li _ngcontent-ng-c2531277376>
-          <a _ngcontent-ng-c2531277376 href="/servicio/creditos/index2025.html">CRÉDITOSXXX</a>
+          <a _ngcontent-ng-c2531277376 href="/servicio/creditos">CRÉDITOS</a>
         </li>
         <hr _ngcontent-ng-c2531277376 class="linea-horizontal" />
         <li _ngcontent-ng-c2531277376>
@@ -79,6 +79,16 @@
     </ul>
   </nav>
 </template>
+<script setup lang="ts">
+function toggleNavBar(idElement: string) {
+  if (idElement) {
+    const element = document.getElementById(idElement)
+    if (element) {
+      element.style.display = element.style.display == 'block' ? 'none' : 'block'
+    }
+  }
+}
+</script>
 <style scoped>
 @charset "UTF-8";
 
@@ -2070,11 +2080,11 @@ a {
 
 .menu-superior[_ngcontent-ng-c2531277376] {
   background-color: var(--color-azul-oscuro);
-  padding: 10px;
-  height: 70px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  /* padding: 10px; */
+  /* height: 70px; */
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 10; */
 }
 
 .menu-superior[_ngcontent-ng-c2531277376] a[_ngcontent-ng-c2531277376] {
