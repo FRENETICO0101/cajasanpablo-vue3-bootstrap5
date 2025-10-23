@@ -274,21 +274,26 @@ a {
   text-decoration: none;
 }
 
-.boxed {
+/* .boxed {
   transition: all 0.3s;
-}
+} */
 
-.boxed:hover {
+/* .boxed:hover {
   transform: scale(1.15);
+} */
+
+.boxed {
+  box-shadow: 0 0 1px #00000024;
+  padding: 10px 5px;
 }
 
-.card {
+/* .card {
   transition: all 0.3s;
 }
 
 .card:hover {
   transform: scale(1.15);
-}
+} */
 
 .preg-frec .accordion-button {
   margin: 5px 0;
@@ -391,11 +396,6 @@ a {
 
 .texto-corto {
   text-decoration: none;
-}
-
-.boxed {
-  box-shadow: 0 0 1px #00000024;
-  padding: 10px 5px;
 }
 
 .adds-text {
