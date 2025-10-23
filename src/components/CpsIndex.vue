@@ -192,18 +192,17 @@ function loadUrl(urlString: string) {
   </section>
   <section class="otros container-fluid">
     <div class="row align-items-center">
-      <div class="col col-sm-12 col-md-12 col-lg-6 mb-5">
-        <a class="nov-event-titulo-boton col-md-4 col-xl-5" href="/servicio/nov-event">
-          <div class="nov-event-titulo text-center animate__animated animate__backInLeft animate__slow">
+      <div class="nov-event-titulo-boton col-12 col-lg-5">
+          <div class="nov-event-titulo text-center animate__animated animate__backInRight animate__slow">
             NOVEDADES<br />Y EVENTOS
           </div>
-          <div class="nov-event-enlace">
-            <div class="nov-event-boton animate__animated animate__backInLeft animate__slow animate__delay-1s">
+          <a href="/servicio/nov-event"
+            aria-label="Novedades y Eventos" class="nov-event-enlace">
+            <div class="nov-event-boton animate__animated animate__backInRight animate__slow animate__delay-1s">
               Conocer más
             </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
       <div class="col col-sm-12 col-md-12 col-lg-6">
         <EventosGrid />
       </div>
@@ -332,20 +331,6 @@ a {
   transform: translateY(0);
 }
 
-.buzon .nov-event-enlace .nov-event-boton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 194px;
-  height: 65px;
-  background-color: var(--color-primario);
-  color: #fff;
-  font-size: 1.5rem;
-  border-radius: 40px;
-  margin: 20px auto;
-  transition: all 0.3s ease;
-}
-
 .preg-frec .nov-event-boton {
   display: flex;
   justify-content: center;
@@ -359,6 +344,11 @@ a {
   margin: 20px auto;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+.preg-frec .nov-event-boton:hover {
+  color: white;
+  background-color: var(--color-naranja);
 }
 
 .descfb {
@@ -383,6 +373,11 @@ a {
 .btn-cards {
   background-color: var(--color-primario);
   color: white;
+}
+
+.btn-cards:hover {
+  color: white;
+  background-color: var(--color-naranja);
 }
 
 .text-cards-description {
@@ -451,4 +446,10 @@ a {
   border-radius: 40px;
   margin: 20px auto 0;
 }
+
+.otros .nov-event-titulo-boton .nov-event-enlace .nov-event-boton:hover {
+  color: white;
+  background-color: var(--color-naranja);
+}
+
 </style>
