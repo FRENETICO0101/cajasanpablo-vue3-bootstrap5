@@ -81,11 +81,13 @@ const gallery = [
   }
 ]
 function randomGalleryImages() {
-  const randomGallery = []
+  const randomGallery: { src: string }[] = []
 
   while (randomGallery.length < 6) {
     const randomIndex = Math.floor(Math.random() * gallery.length)
-    randomGallery.push(gallery[randomIndex])
+    if(!randomGallery.includes(gallery[randomIndex])){
+      randomGallery.push(gallery[randomIndex])
+    }
   }
 
   return randomGallery
