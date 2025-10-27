@@ -113,7 +113,7 @@ const places = [
     caption: "TONALÁ",
     address: "Av. Tonalá N° 50, Local 7 <br>Col. Tonalá Centro, Tonalá, Jal.",
     phone: "333792-6340",
-    schedule: "Lunes a Viernes de 10:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    schedule: "Lunes a Viernes de 10:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: centroSur,
@@ -153,7 +153,7 @@ const places = [
     caption: "TLAQUEPAQUE",
     address: "Calle 16 de Septiembre N° 9, <br>Col. Tlaquepaque Centro, San Pedro Tlaquepaque Jalisco.",
     phone: "331001-0760",
-    schedule: "Lunes a Viernes de 10:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    schedule: "Lunes a Viernes de 10:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: salto,
@@ -161,7 +161,7 @@ const places = [
     caption: "EL SALTO",
     address: "Emilio Carranza No. 79",
     phone: "3337324904",
-    schedule: "Lunes a Viernes de 10:00 a 17:45 horas Sábado de 9:00 a 13:00 horas"
+    schedule: "Lunes a Viernes de 10:00 a 17:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
     url: medico,
@@ -169,7 +169,7 @@ const places = [
     caption: "SERVICIO MÉDICO",
     address: "Segunda de Carlos González Peña #360 Col. Libertad, a unas puertas del estacionamiento de Oficina Matriz",
     phone: "33 3801 8780",
-    schedule: "Lunes a Viernes de 10:00 a 18:45 horas Sábado de 9:00 a 13:00 horas"
+    schedule: "Lunes a Viernes de 10:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   }
 ]
 

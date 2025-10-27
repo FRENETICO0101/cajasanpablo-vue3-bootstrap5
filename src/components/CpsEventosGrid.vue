@@ -8,13 +8,6 @@
   </div>
 </template>
 <script setup lang="ts">
-// import image1 from "@/assets/img-inauguracion-el-salto/salto_1.jpeg";
-// import image2 from "@/assets/img-nino-2025-event/nino_1.webp";
-// import image3 from "@/assets/img-nov-event/191.webp";
-// import image4 from "@/assets/img-nov-event/167.webp";
-// import image5 from "@/assets/img-nov-event/150.webp";
-// import image6 from "@/assets/img-nov-event/140.webp";
-
 const gallery = [
   {
     src: "/assets/img-inauguracion-el-salto/salto_1.jpeg"
