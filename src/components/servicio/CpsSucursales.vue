@@ -136,7 +136,7 @@ const places = [
     href: "https://maps.app.goo.gl/jCUL8Zqm2vGiCJgq8",
     caption: "CHAPALITA",
     address: "Avenida Guadalupe 1162 int. 10 Colonia Chapalita",
-    phone: "3337324904",
+    phone: "3331606541",
     schedule: "Lunes a Viernes de 9:00 a 18:45 horas <br>Sábado de 9:00 a 13:00 horas"
   },
   {
