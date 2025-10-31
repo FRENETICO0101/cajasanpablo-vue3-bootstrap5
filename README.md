@@ -37,3 +37,16 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Deploy in Server Production
+
+```sh
+cd /home/developer/cajasanpablo-vue3-bootstrap5
+
+git pull origin main
+
+npm run build
+
+cp -var dist/* /usr/share/nginx/html/
+
+```
