@@ -40,7 +40,9 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
+
 import { useLazyImage } from '@/composables/usePerformance'
+
 
 interface Props {
   src: string
@@ -61,7 +63,7 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  placeholder: '/src/assets/img-carousel/placeholder.jpg',
+  placeholder: `${assetPrefix}/assets/img-carousel/placeholder.jpg`,
   errorText: 'Image failed to load',
   objectFit: 'cover',
   showLoadingSpinner: true,
@@ -134,6 +136,10 @@ defineExpose({
 
 <script lang="ts">
 import { watchEffect } from 'vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 
 <style scoped>

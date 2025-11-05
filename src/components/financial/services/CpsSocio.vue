@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="QUIERO SER SOCIO"
-      imageUrl="/src/assets/quieres_ser_socio.webp"
+      :image-url="`${assetPrefix}/assets/quieres_ser_socio.webp`"
       imageAlt="Dos personas chocando la mano"
       colorText="text-white"
     />
@@ -18,7 +18,7 @@
             Adultos
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Identificación oficial vigente con fotografía (INE, Pasaporte
@@ -27,28 +27,28 @@
             </div>
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Constancia de RFC con homoclave.
             </div>
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Constancia de CURP.
             </div>
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Comprobante de domicilio no mayor a 60 días de su emisión.
             </div>
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Parte Social $1,000.00.
@@ -59,14 +59,14 @@
             Datos adicionales
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Teléfono celular del Titular.
             </div>
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Correo electrónico del titular.
@@ -78,14 +78,14 @@
             Ahorradores menores de edad (De 1 a 17 años)
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Acta de nacimiento del menor.
             </div>
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Presentarse acompañado de papá o mamá con identificación oficial
@@ -94,28 +94,28 @@
             </div>
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Constancia de CURP del menor.
             </div>
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Constancia de RFC con homoclave de padre/tutor.
             </div>
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Comprobante de domicilio no mayor a 60 días de su emisión.
             </div>
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               $100.00 mínimo para abrir la cuenta.
@@ -129,7 +129,7 @@
             con los datos antes mencionados, deberán presentar:
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Carta de Naturalización. (Instrumento jurídico por el cual se
@@ -138,7 +138,7 @@
             </div>
           </div>
           <div class="check--descripcion">
-            <img loading="lazy" width="45" height="45" src="/src/assets/icon/cheque.webp"
+            <img loading="lazy" width="45" height="45" :src="`${assetPrefix}/assets/icon/cheque.webp`"
               alt="icono check" />
             <div class="check--descripcion-text">
               Dato de su domicilio en el país de origen.
@@ -156,6 +156,10 @@
 
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 
 <style lang="css" scoped>

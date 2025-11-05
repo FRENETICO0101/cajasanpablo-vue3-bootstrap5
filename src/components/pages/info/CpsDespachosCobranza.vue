@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="DESPACHOS DE COBRANZA EXTERNOS"
-      image-url="/src/assets/Despacho de cobranza.webp"
+      :image-url="`${assetPrefix}/assets/Despacho de cobranza.webp`"
       image-alt="cuatro personas sentadas tras su computadora"
       color-text="text-white"
     />
@@ -12,14 +12,14 @@
             <div class="col-12 col-md-6">
               <p >Consulta nuestro aviso de datos <strong >dando click
                   en la imagen</strong></p><a href="/assets/pdf/datos de cobranza.pdf"
-                target="_blank"><img src="/src/assets/Despachos.webp"
+                target="_blank"><img :src="`${assetPrefix}/assets/Despachos.webp`"
                   alt="Despacho de cobranza" class="img-fluid"></a>
             </div>
             <div class="col-12 col-md-6">
               <p >Consultar nuestro directorio <strong >dando click en
                   la imagen</strong></p><a
                 href="/assets/pdf/AVISO DE DATOS DESPACHOS DE COBRANZA.pdf" target="_blank"><img
-                  src="/src/assets/Aviso de datos de Despachos de Cobranza.webp"
+                  :src="`${assetPrefix}/assets/Aviso de datos de Despachos de Cobranza.webp`"
                   alt="Despacho de cobranza" class="img-fluid"></a>
             </div>
           </div>
@@ -29,6 +29,10 @@
 </template>
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 <style lang="css" scoped>
 .despacho-cobranza {

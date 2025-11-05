@@ -44,11 +44,15 @@ import CpsLoadingState from '@/components/ui/CpsLoadingState.vue'
 import { useResourcePreloader } from '@/composables/usePerformance'
 import { ErrorType, ErrorSeverity, type AppError } from '@/composables/useErrorHandler'
 
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
+
 const revistas = ref<RevistaData[]>([
   {
     id: 'dic-2022',
     title: 'Diciembre 2022',
-    imageSrc: '/src/assets/img-revistas/REV Diciembre 2022.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Diciembre 2022.webp`,
     pdfUrl: '/assets/pdf/REV Diciembre 2022.pdf',
     date: new Date(2022, 11, 1),
     isNew: true
@@ -56,42 +60,42 @@ const revistas = ref<RevistaData[]>([
   {
     id: 'nov-2022',
     title: 'Noviembre 2022',
-    imageSrc: '/src/assets/img-revistas/REV Noviembre 2022.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Noviembre 2022.webp`,
     pdfUrl: '/assets/pdf/REV Noviembre 2022.pdf',
     date: new Date(2022, 10, 1)
   },
   {
     id: 'oct-2022',
     title: 'Octubre 2022',
-    imageSrc: '/src/assets/img-revistas/REV Octubre 2022.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Octubre 2022.webp`,
     pdfUrl: '/assets/pdf/REV Octubre 2022.pdf',
     date: new Date(2022, 9, 1)
   },
   {
     id: 'sep-2022',
     title: 'Septiembre 2022',
-    imageSrc: '/src/assets/img-revistas/REV Septiembre 2022.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Septiembre 2022.webp`,
     pdfUrl: '/assets/pdf/REV Septiembre 2022.pdf',
     date: new Date(2022, 8, 1)
   },
   {
     id: 'ago-2022',
     title: 'Agosto 2022',
-    imageSrc: '/src/assets/img-revistas/REV Agosto 2022.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Agosto 2022.webp`,
     pdfUrl: '/assets/pdf/REV Agosto 2022.pdf',
     date: new Date(2022, 7, 1)
   },
   {
     id: 'jul-2022',
     title: 'Julio 2022',
-    imageSrc: '/src/assets/img-revistas/REV Julio 2022.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Julio 2022.webp`,
     pdfUrl: '/assets/pdf/REV Julio 2022.pdf',
     date: new Date(2022, 6, 1)
   },
   {
     id: 'jun-2022',
     title: 'Junio 2022',
-    imageSrc: '/src/assets/img-revistas/REV Junio 2022.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Junio 2022.webp`,
     pdfUrl: '/assets/pdf/REV Junio 2022.pdf',
     date: new Date(2022, 5, 1),
     featured: true
@@ -99,35 +103,35 @@ const revistas = ref<RevistaData[]>([
   {
     id: 'may-2022',
     title: 'Mayo 2022',
-    imageSrc: '/src/assets/img-revistas/REV Mayo 2022.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Mayo 2022.webp`,
     pdfUrl: '/assets/pdf/REV Mayo 2022.pdf',
     date: new Date(2022, 4, 1)
   },
   {
     id: 'abr-2022',
     title: 'Abril 2022',
-    imageSrc: '/src/assets/img-revistas/REV Abril 2022.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Abril 2022.webp`,
     pdfUrl: '/assets/pdf/REV Abril 2022.pdf',
     date: new Date(2022, 3, 1)
   },
   {
     id: 'mar-2022',
     title: 'Marzo 2022',
-    imageSrc: '/src/assets/img-revistas/REV Marzo 2022.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Marzo 2022.webp`,
     pdfUrl: '/assets/pdf/REV Marzo 2022.pdf',
     date: new Date(2022, 2, 1)
   },
   {
     id: 'feb-2022',
     title: 'Febrero 2022',
-    imageSrc: '/src/assets/img-revistas/REV Febrero 2022.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Febrero 2022.webp`,
     pdfUrl: '/assets/pdf/REV Febrero 2022.pdf',
     date: new Date(2022, 1, 1)
   },
   {
     id: 'ene-2022',
     title: 'Enero 2022',
-    imageSrc: '/src/assets/img-revistas/REV Enero 2022.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Enero 2022.webp`,
     pdfUrl: '/assets/pdf/REV Enero 2022.pdf',
     date: new Date(2022, 0, 1)
   }

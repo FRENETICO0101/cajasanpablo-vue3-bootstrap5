@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="ASESORÍA JURÍDICA"
-      image-url="/src/assets/joven-pareja-feliz-consultando-gerente-banco-reunion-oficina.webp"
+      :image-url="`${assetPrefix}/assets/joven-pareja-feliz-consultando-gerente-banco-reunion-oficina.webp`"
       image-alt="joven pareja feliz consultando gerente banco reunion oficina"
       color-text="text-white"
     />
@@ -16,7 +16,7 @@
             todas las demás ventajas, debes mantener tu ahorro sistemático así como el pago puntual en tus préstamos.
           </p>
           <div class="col-12 col-md-6"><img
-              src="/src/assets/mujer-asesoria.webp" alt="Mujer asesora" class="img-thumbnail"></div>
+              :src="`${assetPrefix}/assets/mujer-asesoria.webp`" alt="Mujer asesora" class="img-thumbnail"></div>
         </div>
         <div class="title-ubicacion text-center">
           <h2 class="fs-1 my-5">UBICACIÓN</h2>
@@ -63,6 +63,10 @@
 </template>
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 <style lang="css" scoped>
 .center-image {

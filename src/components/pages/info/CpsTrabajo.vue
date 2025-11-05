@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="BOLSA DE TRABAJO"
-      imageUrl="/src/assets/bolsa_de_trabajo_oct_2025.webp"
+      :image-url="`${assetPrefix}/assets/bolsa_de_trabajo_oct_2025.webp`"
       imageAlt="Dos mujeres empresarias"
       colorText="text-black"
     />
@@ -10,7 +10,7 @@
         <div class="container">
           <div class="row py-5">
             <div class="col-12 col-md-6 d-flex justify-content-center align-items-start">
-              <img src="/src/assets/RH.webp " alt="..." class="img-fluid" />
+              <img :src="`${assetPrefix}/assets/RH.webp`" alt="..." class="img-fluid" />
             </div>
             <div
               class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-start gap-1">
@@ -40,6 +40,10 @@
 
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 
 <style lang="css" scoped>

@@ -16,6 +16,10 @@
 <script setup lang="ts">
 import CpsCreditCard from '@/components/cards/CpsCreditCard.vue'
 
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
+
 // Define types locally
 interface CreditSection {
   id: string
@@ -38,7 +42,7 @@ const commercialCredits: CreditData[] = [
   {
     id: 'creditPrestaMovil',
     name: 'PrestaMovil',
-    icon: '/src/assets/icon/credits/prestamovil.png',
+    icon: `${assetPrefix}/assets/icon/credits/prestamovil.png`,
     description: 'Crédito diseñado para adquirir unidades de transporte público de carga y pasajeros.',
     simulatorUrl: '/inicio/simulador/prestamovil',
     sections: [
@@ -107,7 +111,7 @@ const commercialCredits: CreditData[] = [
   {
     id: 'creditComertialAvio',
     name: 'Comercial Avío',
-    icon: '/src/assets/icon/credits/comercial_avio.png',
+    icon: `${assetPrefix}/assets/icon/credits/comercial_avio.png`,
     description: 'Impulsa tu negocio, crédito pensado para actividades comerciales, agrícolas, ganaderas o empresariales.',
     simulatorUrl: '/inicio/simulador/comercial-avio',
     sections: [
@@ -170,7 +174,7 @@ const commercialCredits: CreditData[] = [
   {
     id: 'creditComertialRefacc',
     name: 'Comercial Refaccionario',
-    icon: '/src/assets/icon/credits/comercial_refaccionario.png',
+    icon: `${assetPrefix}/assets/icon/credits/comercial_refaccionario.png`,
     description: 'Crédito a largo plazo destinado a impulsar tu negocio o actividad agropecuaria, ideal para invertir en la compra, instalación de maquinarias o refacciones que fortalezcan y desarrollen tu producción.',
     simulatorUrl: '/inicio/simulador/comercial-refaccionario',
     sections: [
@@ -233,7 +237,7 @@ const commercialCredits: CreditData[] = [
   {
     id: 'creditComertialRefaccHipo',
     name: 'Comercial Refaccionario Hipotecario',
-    icon: '/src/assets/icon/credits/refaccionario_hipotecario.png',
+    icon: `${assetPrefix}/assets/icon/credits/refaccionario_hipotecario.png`,
     description: 'Crédito a largo plazo con garantía hipotecaria para hacer crecer tu negocio o actividad agropecuaria. Invierte, equípate y fortalece tu producción.',
     simulatorUrl: '/inicio/simulador/comercial-refaccionario-hipotecario',
     sections: [

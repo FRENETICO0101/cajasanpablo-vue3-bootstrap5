@@ -5,7 +5,7 @@
         <div class="row">
           <div class="footer-img col-12 col-md-4" tabindex="0">
             <img @click="loadUrl('/info/buro')" loading="lazy" width="120" height="110"
-              src="/src/assets/icon/logo-de-buro.webp" alt="logo buro" />
+              :src="`${assetPrefix}/assets/icon/logo-de-buro.webp`" alt="logo buro" />
           </div>
           <hr class="linea-horizontal d-md-none" />
           <div class="col-12 col-md-4 text-center text-md-start mb-5 mb-md-0">
@@ -54,6 +54,10 @@
 </template>
 <script setup lang="ts">
 import CpsSocialMediaBlock from '@/components/media/CpsSocialMediaBlock.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 
 function loadUrl(urlString: string) {
   window.location.href = urlString

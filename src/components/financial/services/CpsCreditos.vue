@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="CRÉDITOS"
-      imageUrl="/src/assets/credito_fondo_liso.webp"
+      :image-url="`${assetPrefix}/assets/credito_fondo_liso.webp`"
       imageAlt="Hombre sonriente con fondo gris"
       colorText="text-black"
     />
@@ -13,9 +13,16 @@
 </template>
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
 import CreditosComercial from './CpsCreditosComercial.vue';
+
 import CreditosConsumo from './CpsCreditosConsumo.vue'
+
 import CreditosVivienda from './CpsCreditosVivienda.vue';
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 
 </script>
 <style lang="css" scoped>

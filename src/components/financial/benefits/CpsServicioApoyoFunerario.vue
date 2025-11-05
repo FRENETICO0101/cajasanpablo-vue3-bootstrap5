@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="Servicio de Apoyo Funerario"
-      imageUrl="/src/assets/profun.webp"
+      :image-url="`${assetPrefix}/assets/profun.webp`"
       imageAlt="Hombre parado en las montañas"
       colorText="text-white"
     />
@@ -68,6 +68,10 @@
 
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 
 <style lang="css" scoped>

@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="Protección al Ahorro y Crédito"
-      image-url="/src/assets/proteccion_al_ahorro_y_credito.webp"
+      :image-url="`${assetPrefix}/assets/proteccion_al_ahorro_y_credito.webp`"
       image-alt="Planta con frasco de dinero"
       color-text="text-black"
     />
@@ -34,6 +34,10 @@
 </template>
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 <style lang="css" scoped>
 .proteccion {

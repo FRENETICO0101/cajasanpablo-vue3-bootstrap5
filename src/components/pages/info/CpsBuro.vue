@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="BURÓ DE ENTIDADES FINANCIERAS"
-      imageUrl="/src/assets/buro de entidades financieras.webp"
+      :image-url="`${assetPrefix}/assets/buro de entidades financieras.webp`"
       imageAlt="hombre feliz su esposa reuniendose asesor financiero firmando acuerdo oficina"
       colorText="text-white"
     />
@@ -10,7 +10,7 @@
         <div class="container">
           <div class="row py-5">
             <div class="col-12 col-md-4">
-              <img src="/src/assets/BURO.webp" alt="imagen buro" />
+              <img :src="`${assetPrefix}/assets/BURO.webp`" alt="imagen buro" />
             </div>
             <div class="col-12 col-md-8">
               <h3 >¿Qué es?</h3>
@@ -53,7 +53,7 @@
             </div>
           </div>
           <div class="tabla position-relative">
-            <img src="/src/assets/buro_Enero_Marzo_2025.png" alt="tabla Enero - Marzo 2025" />
+            <img :src="`${assetPrefix}/assets/buro_Enero_Marzo_2025.png`" alt="tabla Enero - Marzo 2025" />
             <div data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn">
               ver
             </div>
@@ -74,7 +74,7 @@
                   class="btn-close"></button>
               </div>
               <div class="modal-body">
-                <img src="/src/assets/evaluacion_condusef_ene_dic_2024.webp"
+                <img :src="`${assetPrefix}/assets/evaluacion_condusef_ene_dic_2024.webp`"
                   alt="Evaluacion condusef" />
               </div>
               <div class="modal-footer">
@@ -91,6 +91,10 @@
 
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 
 <style lang="css" scoped>

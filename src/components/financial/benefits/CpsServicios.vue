@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="PAGO DE SERVICIOS"
-      image-url="/src/assets/pago_de_servicios.webp"
+      :image-url="`${assetPrefix}/assets/pago_de_servicios.webp`"
       image-alt="emocionada mujer hermosa parte superior recortada verano mira asombrado camara comprando tarjeta credito pie sobre fondo azul"
       color-text="text-black"
     />
@@ -16,7 +16,7 @@
             créditos, evita los retiros a tu cuenta de Ahorro y aprovecha todas las ventajas que tenemos para ti.</p>
           <div class="row justify-content-evenly">
             <div class="col-12 col-lg-5 col-xl-4 mb-3"><img
-                src="/src/assets/siapa.webp" alt="logo SIAPA" class="img-thumbnail rounded"></div>
+                :src="`${assetPrefix}/assets/siapa.webp`" alt="logo SIAPA" class="img-thumbnail rounded"></div>
           </div>
         </div>
       </section>
@@ -25,6 +25,10 @@
 
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 
 <style lang="css" scoped>

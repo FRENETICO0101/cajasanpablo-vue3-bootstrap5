@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="AVISO DE PRIVACIDAD"
-      imageUrl="/src/assets/aviso de privacidad.webp"
+      :image-url="`${assetPrefix}/assets/aviso de privacidad.webp`"
       imageAlt="manos de mujer en teclado de una laptop"
       colorText="text-white"
     />
@@ -160,6 +160,10 @@
 
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 
 <style lang="css" scoped>

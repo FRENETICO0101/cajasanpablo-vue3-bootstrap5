@@ -5,7 +5,7 @@
         <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
           <section class="preg-frec py-5 py-lg-0">
             <div class="container text-center">
-              <img loading="lazy" width="200px" height="200px" src="/src/assets/icon/informacion.webp"
+              <img loading="lazy" width="200px" height="200px" :src="`${assetPrefix}/assets/icon/informacion.webp`"
                 alt="icono signo de interrogación" class="imgfb" />
               <div class="titulofb text-center fs-1 my-4 text-center">
                 Preguntas Frecuentes
@@ -407,7 +407,7 @@
         <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
           <section class="buzon mb-5 py-5 py-lg-0">
             <div class="container text-center">
-              <img width="200px" height="200px" loading="lazy" src="/src/assets/icon/buzon.webp"
+              <img width="200px" height="200px" loading="lazy" :src="`${assetPrefix}/assets/icon/buzon.webp`"
                 alt="Buzón de Comentarios" />
               <div class="titulofb fs-1 my-3">
                 Buzón de Comentarios
@@ -428,6 +428,10 @@
 </template>
 <script setup lang="ts">
 import { ref } from 'vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 
 // Direct implementation to test if import is the issue
 const isVisible = ref(false)

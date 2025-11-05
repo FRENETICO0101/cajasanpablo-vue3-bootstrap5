@@ -17,6 +17,10 @@
 <script setup lang="ts">
 import CpsCreditCard from '@/components/cards/CpsCreditCard.vue'
 
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
+
 // Define types locally
 interface CreditSection {
   id: string
@@ -39,7 +43,7 @@ const viviendaCredits: CreditData[] = [
   {
     id: 'prestamoVivienda',
     name: 'Crédito Vivienda',
-    icon: '/src/assets/icon/credits/vivienda.png',
+    icon: `${assetPrefix}/assets/icon/credits/vivienda.png`,
     description: 'Diseñado para construir, remodelar o ampliar tu casa. Ideal para mejorar tu patrimonio.',
     simulatorUrl: '/inicio/simulador/vivienda',
     sections: [

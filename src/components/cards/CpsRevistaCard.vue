@@ -110,8 +110,13 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import CpsCard from '@/components/cards/CpsCard.vue'
 import CpsLazyImage from '@/components/ui/CpsLazyImage.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 
 export interface RevistaData {
   id: string
@@ -146,7 +151,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   size: 'md',
   hoverable: true,
-  imagePlaceholder: '/src/assets/img-revistas/placeholder.jpg',
+  imagePlaceholder: '/assets/img-revistas/placeholder.jpg',
   linkTarget: '_blank',
   downloadButtonText: 'Leer más',
   downloadText: 'Descargar PDF',
@@ -160,7 +165,8 @@ const emit = defineEmits<{
   imageError: [event: Event]
 }>()
 
-// Helper functions
+// Computed properties
+const imagePlaceholder = computed(() => `${assetPrefix}${props.imagePlaceholder}`)
 const formatDate = (date: Date | string): string => {
   const dateObj = typeof date === 'string' ? new Date(date) : date
   return dateObj.toLocaleDateString('es-ES', {

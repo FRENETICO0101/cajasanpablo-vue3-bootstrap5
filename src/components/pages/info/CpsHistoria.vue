@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="HISTORIA"
-      imageUrl="/src/assets/historia.webp"
+      :image-url="`${assetPrefix}/assets/historia.webp`"
       imageAlt="foto sucursal caja popular san pablo matriz"
       colorText="text-black"
     />
@@ -60,6 +60,10 @@
 
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 
 <style lang="css" scoped>
@@ -102,7 +106,7 @@ import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
 }
 
 .quienes-somos .logo {
-  background-image: url("/src/assets/media/LOGOTIPO1-N5CLWHFF.webp");
+  background-image: url(`${assetPrefix}/assets/media/LOGOTIPO1-N5CLWHFF.webp`");
   background-size: cover;
   height: 45px;
   width: 35px
@@ -143,15 +147,15 @@ import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
 }
 
 .mvv .mision {
-  background-image: url("/src/assets/mision-6XM2ESYQ.webp")
+  background-image: url(`${assetPrefix}/assets/mision-6XM2ESYQ.webp`")
 }
 
 .mvv .vision {
-  background-image: url("/src/assets/testigo-ODA3STMN.webp")
+  background-image: url(`${assetPrefix}/assets/testigo-ODA3STMN.webp`")
 }
 
 .mvv .valores {
-  background-image: url("/src/assets/propuesta-de-valor-MFU5OJD3.webp")
+  background-image: url(`${assetPrefix}/assets/propuesta-de-valor-MFU5OJD3.webp`")
 }
 
 header {

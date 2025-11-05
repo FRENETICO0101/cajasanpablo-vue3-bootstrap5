@@ -1,27 +1,52 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue';
+
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
 import matriz from "/src/assets/media/suc-matriz-6H6L367K.webp";
+
 import pinMap from "/src/assets/icon/mapas-de-google.webp"
+
 import chapala from "/src/assets/media/chapala-3-AM3NNGUT.webp"
+
 import ocotlan from "/src/assets/media/ocotlan-5TU4MCEL.webp"
+
 import zalatitan from "/src/assets/media/suczalatitan-XESY22I7.webp"
+
 import centro from "/src/assets/media/centro-BO7DGDSJ.webp"
+
 import aleira from "/src/assets/media/aleira-4L4TYFDR.webp"
+
 import iglesias from "/src/assets/media/jose-ma.-i-JXJCIUAL.webp"
+
 import obrero from "/src/assets/media/sucobrero-2E2YKXKD.webp"
+
 import belisario from "/src/assets/media/suc-belisario-TRSC2NC2.webp"
+
 import zapopan from "/src/assets/media/suc.-zapopan-3-5NQJTLFS.webp"
+
 import tonala from "/src/assets/media/tonala1-GSQS6C4W.webp"
+
 import centroSur from "/src/assets/media/Centro-Sur-WQU36CMY.webp"
+
 import pedrito from "/src/assets/media/san-pedrito-46WBOKT7.webp"
+
 import chapalita from "/src/assets/media/chapalita-ZSFKAIAY.webp"
+
 import santaFe from "/src/assets/media/sucsantafe-UBGMNHHR.webp"
+
 import tlaquepaque from "/src/assets/media/tlaquepaque-BVQLGZOI.webp"
+
 import salto from "/src/assets/media/sucursal_el_salto.webp"
+
 import medico from "/src/assets/media/serviciomed-626x417-OMYNMLHJ.webp"
 
+
 import { Modal } from 'bootstrap';
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 
 const selectedPlace = ref()
 const modalInstance = ref<Modal | null>(null);
@@ -202,7 +227,7 @@ onUnmounted(() => {
 </script>
 <template>
   <main>
-    <CpsPageHeader title="SUCURSALES" image-url="/src/assets/historia.webp"
+    <CpsPageHeader title="SUCURSALES" :image-url="`${assetPrefix}/assets/historia.webp`"
       image-alt="Mujer sosteniendo un mapa y un celular" color-text="text-white" />
     <section class="sucursales">
       <div class="container py-5">

@@ -83,7 +83,7 @@
         @click="toggleMenu('menuNavBar')"
       >
         <img
-          src="/src/assets/icon/menu.webp"
+          :src="`${assetPrefix}/assets/icon/menu.webp`"
           width="45"
           height="45"
           alt=""
@@ -146,10 +146,14 @@ import { useMobileMenu } from '@/composables/useMobileMenu'
 import { useAccessibility } from '@/composables/useAccessibility'
 import type { NavBarProps, LogoConfig, ExternalLink } from '@/components/types/navbar'
 
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
+
 // Props with default values and type safety
 const props = withDefaults(defineProps<NavBarProps>(), {
   logo: () => ({
-    src: '/src/assets/icon/LogoSitioWeb.webp',
+    src: '/assets/icon/LogoSitioWeb.webp',
     alt: 'Logo Caja Popular San Pablo',
     width: 160,
     height: 44,
@@ -162,12 +166,18 @@ const props = withDefaults(defineProps<NavBarProps>(), {
 })
 
 // Reactive props
-const { logo, showOnlineBanking, className, customNavigationItems } = toRefs(props)
+const { showOnlineBanking, className, customNavigationItems } = toRefs(props)
 
 // Composables
 const { navigationItems, onlineBankingLink, isActiveRoute, getIconSvg } = useNavigation()
 const { isMenuOpen, toggleMenu, setupClickOutside, cleanup } = useMobileMenu()
 const { announceToScreenReader } = useAccessibility()
+
+// Computed properties
+const logoWithAssetPrefix = computed(() => ({
+  ...props.logo,
+  src: `${assetPrefix}${props.logo.src}`
+}))
 
 // Computed properties with proper typing
 const currentNavigationItems = computed(() =>
@@ -175,11 +185,11 @@ const currentNavigationItems = computed(() =>
 )
 
 const logoConfig = computed((): LogoConfig => ({
-  src: logo.value.src,
-  alt: logo.value.alt,
-  width: logo.value.width,
-  height: logo.value.height,
-  href: logo.value.href || '/'
+  src: logoWithAssetPrefix.value.src,
+  alt: logoWithAssetPrefix.value.alt,
+  width: logoWithAssetPrefix.value.width,
+  height: logoWithAssetPrefix.value.height,
+  href: logoWithAssetPrefix.value.href || '/'
 }))
 
 const onlineBankingConfig = computed((): ExternalLink => ({

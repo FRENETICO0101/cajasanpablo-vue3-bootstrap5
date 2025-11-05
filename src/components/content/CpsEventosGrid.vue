@@ -15,8 +15,10 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 
-// Get asset prefix from environment variable
+// Get asset prefix from environment
 const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
+// Get asset prefix from environment variable
 
 const gallery = [
   {

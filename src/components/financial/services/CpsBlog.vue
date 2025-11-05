@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
 
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
+
 // Blog card data
 interface BlogCard {
   id: number
@@ -16,7 +20,7 @@ const blogCards: BlogCard[] = [
     id: 1,
     title: "Año Internacional de las Cooperativas",
     description: "Las Cooperativas construyen un mundo mejor.",
-    image: "/src/assets/img-blog/ano_cooperativas.webp",
+    image: `${assetPrefix}/assets/img-blog/ano_cooperativas.webp`,
     url: "assets/pdf/ano_cooperativas.pdf",
     alt: "Año Internacional de las Cooperativas"
   },
@@ -24,7 +28,7 @@ const blogCards: BlogCard[] = [
     id: 2,
     title: "¿Sabes que es el Phishing?",
     description: "Existen formas ilegales de obtener tus datos personales y los de tus cuentas para estafarte. El Phishing es un tipo de fraude telefónico que pone en riesgo tu seguridad financiera.",
-    image: "/src/assets/img-blog/VISHING.webp",
+    image: `${assetPrefix}/assets/img-blog/VISHING.webp`,
     url: "assets/pdf/VISHING.pdf",
     alt: "Ofertas de credito enganosas"
   },
@@ -32,7 +36,7 @@ const blogCards: BlogCard[] = [
     id: 3,
     title: "Cuidado con ofertas de crédito engañosas",
     description: "Es común que algunas empresas no reguladas ofrezcan préstamos con condiciones que parecen demasiado buenas para ser verdad",
-    image: "/src/assets/img-blog/ofertas-de-credito-enganosas.webp",
+    image: `${assetPrefix}/assets/img-blog/ofertas-de-credito-enganosas.webp`,
     url: "assets/pdf/Ofertas de credito enganosas.pdf",
     alt: "Ofertas de credito enganosas"
   },
@@ -40,7 +44,7 @@ const blogCards: BlogCard[] = [
     id: 4,
     title: "7 tips de ahorro",
     description: "Conoce los 7 tips de ahorro que te ayudarán a mejorar tus finanzas personales.",
-    image: "/src/assets/img-blog/7 tips de ahorro.webp",
+    image: `${assetPrefix}/assets/img-blog/7 tips de ahorro.webp`,
     url: "assets/pdf/7 tips de ahorro.pdf",
     alt: "7 tips de ahorro"
   },
@@ -48,7 +52,7 @@ const blogCards: BlogCard[] = [
     id: 5,
     title: "Los créditos nos facilitan el manejo de los recursos",
     description: "Conoce cómo los créditos nos facilitan el manejo de los recursos y cómo puedes utilizarlos a tu favor.",
-    image: "/src/assets/img-blog/creditos.webp",
+    image: `${assetPrefix}/assets/img-blog/creditos.webp`,
     url: "assets/pdf/creditos.pdf",
     alt: "creditos"
   },
@@ -56,7 +60,7 @@ const blogCards: BlogCard[] = [
     id: 6,
     title: "Presupuesto",
     description: "Conoce la importancia de tener un presupuesto y cómo puedes hacer uno para mejorar tus finanzas personales.",
-    image: "/src/assets/img-blog/Presupuesto.webp",
+    image: `${assetPrefix}/assets/img-blog/Presupuesto.webp`,
     url: "assets/pdf/Presupuesto.pdf",
     alt: "Presupuesto"
   },
@@ -64,7 +68,7 @@ const blogCards: BlogCard[] = [
     id: 7,
     title: "5 tips ecologicos",
     description: "Conoce los 5 tips ecológicos que te ayudarán a cuidar el medio ambiente y a mejorar tu calidad de vida.",
-    image: "/src/assets/img-blog/tips ecologicos.webp",
+    image: `${assetPrefix}/assets/img-blog/tips ecologicos.webp`,
     url: "assets/pdf/tips ecologicos.pdf",
     alt: "tips ecologicos"
   },
@@ -72,7 +76,7 @@ const blogCards: BlogCard[] = [
     id: 8,
     title: "Vacaciones sin estrés",
     description: "Conoce cómo puedes disfrutar de unas vacaciones sin estrés y cómo puedes planearlas para que sean inolvidables.",
-    image: "/src/assets/img-blog/Vacaciones sin estres.webp",
+    image: `${assetPrefix}/assets/img-blog/Vacaciones sin estres.webp`,
     url: "assets/pdf/Vacaciones sin estres.pdf",
     alt: "Vacaciones sin estres"
   },
@@ -80,7 +84,7 @@ const blogCards: BlogCard[] = [
     id: 9,
     title: "Ventajas de ahorra en Caja Pupular San Pablo",
     description: "Conoce las ventajas de ahorrar en Caja Popular San Pablo y cómo puedes mejorar tus finanzas personales.",
-    image: "/src/assets/img-blog/ventajasdeahorrarencajapopularsanpablo.webp",
+    image: `${assetPrefix}/assets/img-blog/ventajasdeahorrarencajapopularsanpablo.webp`,
     url: "assets/pdf/ventajasdeahorrarencajapopularsanpablo.pdf",
     alt: "Ventajas de ahorra en Caja Popular San Pablo"
   },
@@ -88,7 +92,7 @@ const blogCards: BlogCard[] = [
     id: 10,
     title: "Historia de Mariana",
     description: "Conoce la historia de Mariana, una mujer que se enfrentó al COVID-19 y logró vencerlo.",
-    image: "/src/assets/img-blog/covid-historia-de-mariana-506x486.webp",
+    image: `${assetPrefix}/assets/img-blog/covid-historia-de-mariana-506x486.webp`,
     url: "https://www.mentelaboral.com/",
     alt: "Vacuna"
   },
@@ -96,7 +100,7 @@ const blogCards: BlogCard[] = [
     id: 11,
     title: "Cooperativas de éxito",
     description: "Conoce las cooperativas de éxito que han logrado sobresalir en el mercado.",
-    image: "/src/assets/img-blog/cooperativas-de-exito-1250x1196.webp",
+    image: `${assetPrefix}/assets/img-blog/cooperativas-de-exito-1250x1196.webp`,
     url: "https://www.elsoldeleon.com.mx/local/son-cooperativas-alternativa-para-economia-social-exitosa-6640928.html",
     alt: "ImgCooExito"
   },
@@ -104,7 +108,7 @@ const blogCards: BlogCard[] = [
     id: 12,
     title: "Coopertivismo a nivel mundial",
     description: "Conoce el cooperativismo a nivel mundial y cómo ha logrado sobresalir en el mercado.",
-    image: "/src/assets/img-blog/cooperativismo-a-nivel-mundial-1250x1200.webp",
+    image: `${assetPrefix}/assets/img-blog/cooperativismo-a-nivel-mundial-1250x1200.webp`,
     url: "https://www.concamex.coop/media/cooperativismo/cooperativismo-a-nivel-mundial.html",
     alt: "AnivelMundial"
   },
@@ -112,7 +116,7 @@ const blogCards: BlogCard[] = [
     id: 13,
     title: "Tipos de cooperativas",
     description: "Conoce los tipos de cooperativas que existen y cómo puedes ser parte de una de ellas.",
-    image: "/src/assets/img-blog/tipos-de-cooperativas-1250x1200.webp",
+    image: `${assetPrefix}/assets/img-blog/tipos-de-cooperativas-1250x1200.webp`,
     url: "https://www.concamex.coop/media/cooperativismo/tipos-de-cooperativas.html",
     alt: "AnivelMundial"
   },
@@ -120,7 +124,7 @@ const blogCards: BlogCard[] = [
     id: 14,
     title: "Tips para ahorrar",
     description: "Conoce los tips para ahorrar y cómo puedes mejorar tus finanzas personales.",
-    image: "/src/assets/img-blog/educa-tu-cartera-1250x1200.webp",
+    image: `${assetPrefix}/assets/img-blog/educa-tu-cartera-1250x1200.webp`,
     url: "https://webappsos.condusef.gob.mx/EducaTuCartera/index.html",
     alt: "AnivelMundial"
   },
@@ -128,7 +132,7 @@ const blogCards: BlogCard[] = [
     id: 15,
     title: "Diseños actuales de los billetes mexicanos",
     description: "Conoce los diseños actuales de los billetes mexicanos y cómo han evolucionado a lo largo de los años.",
-    image: "/src/assets/img-blog/disenos-actuales-1253x1201.webp",
+    image: `${assetPrefix}/assets/img-blog/disenos-actuales-1253x1201.webp`,
     url: "https://www.banxico.org.mx/billetes-y-monedas/disenos-actuales-circulacion-.html",
     alt: "AnivelMundial"
   },
@@ -136,7 +140,7 @@ const blogCards: BlogCard[] = [
     id: 16,
     title: "Validez de piezas (billetes)",
     description: "Conoce la validez de tus billetes y cómo puedes identificar si son falsos o verdaderos.",
-    image: "/src/assets/img-blog/validez-de-tus-piezas-1253x1203.webp",
+    image: `${assetPrefix}/assets/img-blog/validez-de-tus-piezas-1253x1203.webp`,
     url: "https://www.banxico.org.mx/billetes-y-monedas/validez-piezas-validez-banco-.html",
     alt: "AnivelMundial"
   },
@@ -144,7 +148,7 @@ const blogCards: BlogCard[] = [
     id: 17,
     title: "Para cuando crezcas",
     description: "Conoce el sitio infantil de la CONDUSEF y cómo puedes aprender a cuidar tus finanzas personales desde pequeño.",
-    image: "/src/assets/img-blog/sitio-infantil-condusef-1258x1205.webp",
+    image: `${assetPrefix}/assets/img-blog/sitio-infantil-condusef-1258x1205.webp`,
     url: "https://webappsos.condusef.gob.mx/EducaTuCartera/ni%C3%B1os.html",
     alt: "AnivelMundial"
   },
@@ -152,7 +156,7 @@ const blogCards: BlogCard[] = [
     id: 18,
     title: "Haz más con tu dinero",
     description: "Conoce cómo puedes hacer más con tu dinero y cómo puedes mejorar tus finanzas personales.",
-    image: "/src/assets/img-blog/dinero-condusef-1250x1200.webp",
+    image: `${assetPrefix}/assets/img-blog/dinero-condusef-1250x1200.webp`,
     url: "https://webappsos.condusef.gob.mx/EducaTuCartera/inversion.html",
     alt: "AnivelMundial"
   }
@@ -169,7 +173,7 @@ function openLink(url: string) {
     <div class="blog-container">
       <CpsPageHeader
         title="LIGAS DE INTERÉS"
-        image-url="/src/assets/family-spending-time-together.webp"
+        :image-url="`${assetPrefix}/assets/family-spending-time-together.webp`"
         image-alt="familia leyendo algo interesante"
         color-text="text-white"
       />

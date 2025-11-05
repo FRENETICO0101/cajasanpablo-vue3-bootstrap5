@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="EDUCACIÓN COOPERATIVA Y FINANCIERA"
-      imageUrl="/src/assets/img-inicio-cards/educacion_cooperativa_y_financiera.webp"
+      :image-url="`${assetPrefix}/assets/img-inicio-cards/educacion_cooperativa_y_financiera.webp`"
       imageAlt="Dos personas chocando la mano"
       colorText="text-white"
     />
@@ -10,11 +10,11 @@
       <div class="row">
         <div class="col d-flex justify-content-center"><a
             href="/servicio/mantenimiento" class="card text-center"><img
-              src="/src/assets/icon/puerco_educoof.webp" loading="lazy" alt="educoof.com"
+              :src="`${assetPrefix}/assets/icon/puerco_educoof.webp`" loading="lazy" alt="educoof.com"
               style="object-fit: contain; background-color: var(--color-primario);"></a></div>
         <div class="col d-flex justify-content-center"><a
             routerlink="/servicio/blog" class="card text-center" href="/servicio/blog"><img
-              src="/src/assets/icon/blog_educoof.gif" loading="lazy" alt="Blog educación cooperativa y financiera"
+              :src="`${assetPrefix}/assets/icon/blog_educoof.gif`" loading="lazy" alt="Blog educación cooperativa y financiera"
               style="object-fit: contain;"></a></div>
       </div>
     </div>
@@ -23,6 +23,10 @@
 
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 
 <style lang="css" scoped>

@@ -106,8 +106,14 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
+
 import CpsCard from '@/components/cards/CpsCard.vue'
+
 import CpsLazyImage from '@/components/ui/CpsLazyImage.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 
 export interface EventData {
   id: string
@@ -143,7 +149,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   size: 'md',
   hoverable: true,
-  imagePlaceholder: '/src/assets/img-carousel/placeholder.jpg',
+  imagePlaceholder: `${assetPrefix}/assets/img-carousel/placeholder.jpg`,
   showDetailsButton: true,
   detailsButtonText: 'Ver más',
   showRegisterButton: false,

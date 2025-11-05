@@ -5,6 +5,10 @@ import IndexSlide from './CpsIndexSlide.vue'
 import YouTubeChannel from '@/components/media/CpsYouTubeChannel.vue'
 import NovedadesEventos from './CpsNovedadesEventos.vue'
 
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
+
 const weAreStyle = {
   backgroundImage: `url(${backgroundImageWeAre})`,
   backgroundSize: 'cover',
@@ -21,7 +25,7 @@ function loadUrl(urlString: string) {
     <div class="row row-cols-1 row-cols-lg-4 g-4">
       <div class="col">
         <div class="card h-100 shadow-lg">
-          <img src="/src/assets/quieres_ser_socio.webp" class="card-img-top" alt="..." />
+          <img :src="`${assetPrefix}/assets/quieres_ser_socio.webp`" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title text-center">QUIERO SER SOCIO</h5>
             <p class="card-text text-center text-cards-description">
@@ -37,18 +41,18 @@ function loadUrl(urlString: string) {
       </div>
       <div class="col">
         <div class="card h-100 shadow-lg">
-          <img src="/src/assets/img-inicio-cards/beneficios_oct_2025.webp" class="card-img-top" alt="..." />
+          <img :src="`${assetPrefix}/assets/img-inicio-cards/beneficios_oct_2025.webp`" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title text-center">BENEFICIOS</h5>
             <div class="row text-center">
               <div class="col benefit-item">
-                <img src="/src/assets/icon/consulta.webp" alt="Asesoría Jurídica" class="img-beneficio" />
+                <img :src="`${assetPrefix}/assets/icon/consulta.webp`" alt="Asesoría Jurídica" class="img-beneficio" />
                 <div>
                   <a href="/beneficios/asesoria" class="texto-corto">Asesoría Jurídica</a>
                 </div>
               </div>
               <div class="col benefit-item">
-                <img src="/src/assets/icon/ahorrar-dinero.webp" alt="Protección al Ahorro y Crédito"
+                <img :src="`${assetPrefix}/assets/icon/ahorrar-dinero.webp`" alt="Protección al Ahorro y Crédito"
                   class="img-beneficio" />
                 <div>
                   <a href="/beneficios/proteccion" class="texto-corto">Protección al Ahorro y Crédito</a>
@@ -57,13 +61,13 @@ function loadUrl(urlString: string) {
             </div>
             <div class="row text-center">
               <div class="col benefit-item">
-                <img src="/src/assets/icon/asistencia-medica.webp" alt="Asesoría Jurídica" class="img-beneficio" />
+                <img :src="`${assetPrefix}/assets/icon/asistencia-medica.webp`" alt="Asesoría Jurídica" class="img-beneficio" />
                 <div>
                   <a href="/beneficios/medico" class="texto-corto">Servicios Médicos</a>
                 </div>
               </div>
               <div class="col benefit-item">
-                <img src="/src/assets/icon/pago.webp" alt="Protección al Ahorro y Crédito" class="img-beneficio" />
+                <img :src="`${assetPrefix}/assets/icon/pago.webp`" alt="Protección al Ahorro y Crédito" class="img-beneficio" />
                 <div>
                   <a href="/beneficios/servicios" class="texto-corto">Pago de Servicios</a>
                 </div>
@@ -71,7 +75,7 @@ function loadUrl(urlString: string) {
             </div>
             <div class="row text-center">
               <div class="col benefit-item">
-                <img src="/src/assets/icon/me-gusta.webp" alt="Asesoría Jurídica" class="img-beneficio" />
+                <img :src="`${assetPrefix}/assets/icon/me-gusta.webp`" alt="Asesoría Jurídica" class="img-beneficio" />
                 <div>
                   <a href="/beneficios/servicio-apoyo-funerario/" class="texto-corto">Servicio de Apoyo Funerario</a>
                 </div>
@@ -82,7 +86,7 @@ function loadUrl(urlString: string) {
       </div>
       <div class="col">
         <div class="card h-100 shadow-lg">
-          <img src="/src/assets/img-inicio-cards/educacion_cooperativa_y_financiera.webp" class="card-img-top"
+          <img :src="`${assetPrefix}/assets/img-inicio-cards/educacion_cooperativa_y_financiera.webp`" class="card-img-top"
             alt="..." />
           <div class="card-body">
             <h5 class="card-title text-center">EDUCACIÓN COOPERATIVA Y FINANCIERA</h5>
@@ -100,7 +104,7 @@ function loadUrl(urlString: string) {
       </div>
       <div class="col">
         <div class="card h-100 shadow-lg">
-          <img src="/src/assets/img-inicio-cards/cheerful-excited-young-woman-with-mobile-phone-credit-card.webp"
+          <img :src="`${assetPrefix}/assets/img-inicio-cards/cheerful-excited-young-woman-with-mobile-phone-credit-card.webp`"
             class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title text-center">CRÉDITOS</h5>
@@ -126,7 +130,7 @@ function loadUrl(urlString: string) {
             <div class="overlay position-absolute"></div>
             <img loading="lazy" width="250px" height="250px"
               style="border-radius: 7%; box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75)"
-              src="/src/assets/img-revistas/revista_oct_2025.webp" alt="Revista Libertador Cooperativo" />
+              :src="`${assetPrefix}/assets/img-revistas/revista_oct_2025.webp`" alt="Revista Libertador Cooperativo" />
           </div>
         </a>
       </div>
@@ -137,7 +141,7 @@ function loadUrl(urlString: string) {
             <div class="overlay position-absolute"></div>
             <img loading="lazy" width="250px" height="250px"
               style="border-radius: 7%; box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75)"
-              src="/src/assets/Promociones.webp" alt="Promociones 2025" />
+              :src="`${assetPrefix}/assets/Promociones.webp`" alt="Promociones 2025" />
           </div>
         </a>
       </div>
@@ -147,7 +151,7 @@ function loadUrl(urlString: string) {
             <div class="overlay position-absolute"></div>
             <img loading="lazy" width="250px" height="250px"
               style="border-radius: 7%; box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75)"
-              src="/src/assets/alianzas.webp" alt="Alianzas Estratégicas" />
+              :src="`${assetPrefix}/assets/alianzas.webp`" alt="Alianzas Estratégicas" />
           </div>
         </a>
       </div>
@@ -158,7 +162,7 @@ function loadUrl(urlString: string) {
             <div class="overlay position-absolute"></div>
             <img loading="lazy" width="250px" height="250px"
               style="border-radius: 7%; box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75)"
-              src="/src/assets/portlibro.webp" alt="Libro Conmemorativo" />
+              :src="`${assetPrefix}/assets/portlibro.webp`" alt="Libro Conmemorativo" />
           </div>
         </a>
       </div>
@@ -177,12 +181,12 @@ function loadUrl(urlString: string) {
               </div>
               <div @click="loadUrl('/info/historia')"
                 class="circuloycheck animate__animated animate__fadeInUp animate__slow" tabindex="0">
-                <img loading="lazy" width="50px" height="50px" src="/src/assets/icon/cheque.webp" alt="icono check" />
+                <img loading="lazy" width="50px" height="50px" :src="`${assetPrefix}/assets/icon/cheque.webp`" alt="icono check" />
                 <div class="texto-circulo">HISTORIA</div>
               </div>
               <div @click="loadUrl('/info/trabajo')"
                 class="circuloycheck animate__animated animate__fadeInUp animate__slow animate__delay-1s" tabindex="0">
-                <img loading="lazy" width="50px" height="50px" src="/src/assets/icon/cheque.webp" alt="icono check" />
+                <img loading="lazy" width="50px" height="50px" :src="`${assetPrefix}/assets/icon/cheque.webp`" alt="icono check" />
                 <div class="texto-circulo">BOLSA DE TRABAJO</div>
               </div>
             </div>

@@ -34,6 +34,9 @@
 </template>
 
 <script setup lang="ts">
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 interface SocialLink {
   type: 'facebook' | 'instagram' | 'twitter' | 'youtube' | 'tiktok' | 'email' | 'phone' | 'website'
   url: string
@@ -52,18 +55,19 @@ defineProps<{
   alianza: Alianza
 }>()
 
+
 const getSocialIcon = (type: string): string => {
   const iconMap: Record<string, string> = {
-    facebook: '/src/assets/icon/facebook.png',
-    instagram: '/src/assets/icon/instagram.png',
-    twitter: '/src/assets/icon/x.png',
-    youtube: '/src/assets/icon/youtube.png',
-    tiktok: '/src/assets/icon/tik-tok.png',
-    email: '/src/assets/icon/email.png',
-    phone: '/src/assets/icon/telefono.png',
-    website: '/src/assets/icon/sitio-web.png'
+    facebook: `${assetPrefix}/assets/icon/facebook.png`,
+    instagram: `${assetPrefix}/assets/icon/instagram.png`,
+    twitter: `${assetPrefix}/assets/icon/x.png`,
+    youtube: `${assetPrefix}/assets/icon/youtube.png`,
+    tiktok: `${assetPrefix}/assets/icon/tik-tok.png`,
+    email: `${assetPrefix}/assets/icon/email.png`,
+    phone: `${assetPrefix}/assets/icon/telefono.png`,
+    website: `${assetPrefix}/assets/icon/sitio-web.png`
   }
-  return iconMap[type] || '/src/assets/icon/sitio-web.png'
+  return iconMap[type] || `${assetPrefix}/assets/icon/sitio-web.png`
 }
 </script>
 

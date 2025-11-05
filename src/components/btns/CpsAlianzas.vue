@@ -1,6 +1,6 @@
 <template>
   <main>
-    <CpsPageHeader title="ALIANZAS ESTRATÉGICAS" imageUrl="/src/assets/pago_de_servicios_black.webp"
+    <CpsPageHeader title="ALIANZAS ESTRATÉGICAS" :image-url="`${assetPrefix}/assets/pago_de_servicios_black.webp`"
       imageAlt="apreton manos socios comerciales reunion grupo que hace inversion proyecto primer"
       colorText="text-black" />
 
@@ -26,7 +26,12 @@
 
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
 import CpsAlianzaCard from '@/components/cards/CpsAlianzaCard.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 
 interface SocialLink {
   type: 'facebook' | 'instagram' | 'twitter' | 'youtube' | 'tiktok' | 'email' | 'phone' | 'website'
@@ -46,7 +51,7 @@ const alianzas: Alianza[] = [
   {
     id: 1,
     title: 'Hotel Sierra Tigre Mazamitla',
-    image: '/src/assets/hotel_sierra_tigre_mazamitla.png',
+    image: `${assetPrefix}/assets/hotel_sierra_tigre_mazamitla.png`,
     description: 'Descuento: 10% de descuento',
     socialLinks: [
       { type: 'facebook', url: 'https://www.facebook.com/SIERRATIGREHOTEL' },
@@ -59,7 +64,7 @@ const alianzas: Alianza[] = [
   {
     id: 2,
     title: 'Escuela de Personalidad y Belleza (Clase y Estilo)',
-    image: '/src/assets/Clase y estilo.webp',
+    image: `${assetPrefix}/assets/Clase y estilo.webp`,
     description: 'Descuento: 10% de descuento',
     socialLinks: [
       { type: 'facebook', url: 'https://www.facebook.com/claseyestilomx/?locale=es_LA' },
@@ -71,7 +76,7 @@ const alianzas: Alianza[] = [
   {
     id: 3,
     title: 'Hotel Balneario San Juan Cosala',
-    image: '/src/assets/san juan cosala.webp',
+    image: `${assetPrefix}/assets/san juan cosala.webp`,
     description: 'LUNES A SABADO- ADULTO $340/ NIÑOS MENORES A 130CM DE ALTURA $170.00 (MAXIMO 5 PERSONAS POR SOCIO O COLABORADOR)',
     socialLinks: [
       { type: 'facebook', url: 'https://www.facebook.com/Hotel.Balneario.SanJuan.Cosala/?locale=es_LA' },
@@ -85,7 +90,7 @@ const alianzas: Alianza[] = [
   {
     id: 4,
     title: 'Consultorio Dental Rey Quintil Guadalajara',
-    image: '/src/assets/Consultorio Dental Rey Quintil Guadalajara.webp',
+    image: `${assetPrefix}/assets/Consultorio Dental Rey Quintil Guadalajara.webp`,
     description: '25% de descuento a Socios. • 30% de descuento a colaboradores de la Cooperativa.',
     socialLinks: [
       { type: 'facebook', url: 'https://www.facebook.com/ConsultorioQuintil/?locale=es_LA' },
@@ -99,7 +104,7 @@ const alianzas: Alianza[] = [
   {
     id: 5,
     title: 'CEP (Centro de Estudios Profesionales)',
-    image: '/src/assets/CEO (Centro de Estudios Profecionales).webp',
+    image: `${assetPrefix}/assets/CEO (Centro de Estudios Profecionales).webp`,
     description: 'Inscripción gratuita y descuento de 25% en colegiaturas',
     socialLinks: [
       { type: 'facebook', url: 'https://www.facebook.com/p/Cep-Centro-de-Estudios-Profesionales-100063491893674/' },
@@ -112,7 +117,7 @@ const alianzas: Alianza[] = [
   {
     id: 6,
     title: 'CECATI 15',
-    image: '/src/assets/CECATI 15.webp',
+    image: `${assetPrefix}/assets/CECATI 15.webp`,
     description: 'Descuento: 50% cursos presenciales de lunes a viernes',
     socialLinks: [
       { type: 'facebook', url: 'https://www.facebook.com/Cecati15CapacitacionyCursos/?locale=es_LA' },
@@ -125,7 +130,7 @@ const alianzas: Alianza[] = [
   {
     id: 7,
     title: 'CECATI 16',
-    image: '/src/assets/CECATI 16.webp',
+    image: `${assetPrefix}/assets/CECATI 16.webp`,
     description: 'Descuento: 60% cursos presenciales de lunes a viernes',
     socialLinks: [
       { type: 'facebook', url: 'https://www.facebook.com/p/Cecati-16-100063910751195/?locale=es_LA' },
@@ -137,7 +142,7 @@ const alianzas: Alianza[] = [
   {
     id: 8,
     title: 'CECATI 161',
-    image: '/src/assets/CECATI 161.webp',
+    image: `${assetPrefix}/assets/CECATI 161.webp`,
     description: 'Todos los cursos presenciales de lunes a viernes: 50% (Excepto Salud Visual)',
     socialLinks: [
       { type: 'facebook', url: 'https://www.facebook.com/cecati161/?locale=es_LA' },
@@ -150,7 +155,7 @@ const alianzas: Alianza[] = [
   {
     id: 9,
     title: 'CECATI 190',
-    image: '/src/assets/CECATI 190.webp',
+    image: `${assetPrefix}/assets/CECATI 190.webp`,
     description: 'Descuento: 25% cursos presenciales de lunes a viernes',
     socialLinks: [
       { type: 'facebook', url: 'https://www.facebook.com/Cecati190CursosYCapacitaciones/?locale=es_LA' },
@@ -163,7 +168,7 @@ const alianzas: Alianza[] = [
   {
     id: 10,
     title: 'SELVA MAGICA',
-    image: '/src/assets/SELVA MAGICA.webp',
+    image: `${assetPrefix}/assets/SELVA MAGICA.webp`,
     description: 'Descuento: Cupones 2x1 en pase platino.',
     socialLinks: [
       { type: 'facebook', url: 'https://www.facebook.com/SelvaMagicaOficial/' },
@@ -178,7 +183,7 @@ const alianzas: Alianza[] = [
   {
     id: 11,
     title: 'DISTRING',
-    image: '/src/assets/distring.webp',
+    image: `${assetPrefix}/assets/distring.webp`,
     description: 'Descuento: 5% para el Socio.',
     socialLinks: [
       { type: 'facebook', url: 'https://www.facebook.com/Distring' },
@@ -191,7 +196,7 @@ const alianzas: Alianza[] = [
   {
     id: 12,
     title: 'VIAJES ALONDRA',
-    image: '/src/assets/VIAJES ALONDRA.webp',
+    image: `${assetPrefix}/assets/VIAJES ALONDRA.webp`,
     description: 'Descuento de 7% al socio',
     socialLinks: [
       { type: 'facebook', url: 'https://www.facebook.com/p/Viajes-Alondra-100064162056949/?locale=es_LA' },

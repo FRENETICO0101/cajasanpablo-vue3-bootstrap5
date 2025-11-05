@@ -4,7 +4,7 @@
         <div class="container">
           <div class="row text-center">
             <div class="col-12 text-center"><img
-                src="/src/assets/puerco_educoof.webp">
+                :src="`${assetPrefix}/assets/puerco_educoof.webp`">
               <h1 class="my-2">Estamos en Mantenimiento</h1>
               <p >Para mejorar tu experiencia en Educación Cooperativa y Financiera. <br
                   > Volveremos pronto. <br ><span
@@ -15,6 +15,11 @@
       </div>
   </main>
 </template>
+
+<script setup lang="ts">
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+</script>
 <style lang="css" scoped>
 .mantenimiento {
   height: 80vh;

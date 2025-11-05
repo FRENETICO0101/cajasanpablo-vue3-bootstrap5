@@ -38,17 +38,26 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+
 import CpsRevistaCard, { type RevistaData } from '@/components/cards/CpsRevistaCard.vue'
+
 import CpsErrorBoundary from '@/components/ui/CpsErrorBoundary.vue'
+
 import CpsLoadingState from '@/components/ui/CpsLoadingState.vue'
+
 import { useResourcePreloader } from '@/composables/usePerformance'
+
 import { ErrorType, ErrorSeverity, type AppError } from '@/composables/useErrorHandler'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 
 const revistas = ref<RevistaData[]>([
   {
     id: 'dic-2023',
     title: 'Diciembre 2023',
-    imageSrc: '/src/assets/img-revistas/REV Diciembre 2023.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Diciembre 2023.webp`,
     pdfUrl: '/assets/pdf/REV Diciembre 2023.pdf',
     date: new Date(2023, 11, 1),
     isNew: true
@@ -56,42 +65,42 @@ const revistas = ref<RevistaData[]>([
   {
     id: 'nov-2023',
     title: 'Noviembre 2023',
-    imageSrc: '/src/assets/img-revistas/REV Noviembre 2023.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Noviembre 2023.webp`,
     pdfUrl: '/assets/pdf/REV Noviembre 2023.pdf',
     date: new Date(2023, 10, 1)
   },
   {
     id: 'oct-2023',
     title: 'Octubre 2023',
-    imageSrc: '/src/assets/img-revistas/REV Octubre 2023.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Octubre 2023.webp`,
     pdfUrl: '/assets/pdf/REV Octubre 2023.pdf',
     date: new Date(2023, 9, 1)
   },
   {
     id: 'sep-2023',
     title: 'Septiembre 2023',
-    imageSrc: '/src/assets/img-revistas/REV Septiembre 2023.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Septiembre 2023.webp`,
     pdfUrl: '/assets/pdf/REV Septiembre 2023.pdf',
     date: new Date(2023, 8, 1)
   },
   {
     id: 'ago-2023',
     title: 'Agosto 2023',
-    imageSrc: '/src/assets/img-revistas/REV Agosto 2023.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Agosto 2023.webp`,
     pdfUrl: '/assets/pdf/REV Agosto 2023.pdf',
     date: new Date(2023, 7, 1)
   },
   {
     id: 'jul-2023',
     title: 'Julio 2023',
-    imageSrc: '/src/assets/img-revistas/REV Julio 2023.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Julio 2023.webp`,
     pdfUrl: '/assets/pdf/REV Julio 2023.pdf',
     date: new Date(2023, 6, 1)
   },
   {
     id: 'jun-2023',
     title: 'Junio 2023',
-    imageSrc: '/src/assets/img-revistas/REV Junio 2023.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Junio 2023.webp`,
     pdfUrl: '/assets/pdf/REV Junio 2023.pdf',
     date: new Date(2023, 5, 1),
     featured: true
@@ -99,35 +108,35 @@ const revistas = ref<RevistaData[]>([
   {
     id: 'may-2023',
     title: 'Mayo 2023',
-    imageSrc: '/src/assets/img-revistas/REV Mayo 2023.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Mayo 2023.webp`,
     pdfUrl: '/assets/pdf/REV Mayo 2023.pdf',
     date: new Date(2023, 4, 1)
   },
   {
     id: 'abr-2023',
     title: 'Abril 2023',
-    imageSrc: '/src/assets/img-revistas/REV Abril 2023.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Abril 2023.webp`,
     pdfUrl: '/assets/pdf/REV Abril 2023.pdf',
     date: new Date(2023, 3, 1)
   },
   {
     id: 'mar-2023',
     title: 'Marzo 2023',
-    imageSrc: '/src/assets/img-revistas/REV Marzo 2023.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Marzo 2023.webp`,
     pdfUrl: '/assets/pdf/REV Marzo 2023.pdf',
     date: new Date(2023, 2, 1)
   },
   {
     id: 'feb-2023',
     title: 'Febrero 2023',
-    imageSrc: '/src/assets/img-revistas/REV Febrero 2023.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Febrero 2023.webp`,
     pdfUrl: '/assets/pdf/REV Febrero 2023.pdf',
     date: new Date(2023, 1, 1)
   },
   {
     id: 'ene-2023',
     title: 'Enero 2023',
-    imageSrc: '/src/assets/img-revistas/REV Enero 2023.webp',
+    imageSrc: `${assetPrefix}/assets/img-revistas/REV Enero 2023.webp`,
     pdfUrl: '/assets/pdf/REV Enero 2023.pdf',
     date: new Date(2023, 0, 1)
   }

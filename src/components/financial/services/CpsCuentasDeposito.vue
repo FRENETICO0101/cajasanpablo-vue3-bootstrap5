@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="CUENTAS DE DEPÓSITO"
-      imageUrl="/src/assets/cuentas_deposito_resized.webp"
+      :image-url="'/src/assets/cuentas_deposito_resized.webp'"
       imageAlt="familia-mexicana-sonriente-tiro-medio"
       colorText="text-black"
     />
@@ -107,7 +107,10 @@
 </template>
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
 import CpsDepositAccountModal from '@/components/modals/CpsDepositAccountModal.vue'
+
+
 
 // Data for Ahorro Adulto modal
 const ahorroAdultoData = {

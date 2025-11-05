@@ -21,6 +21,10 @@
 <script setup lang="ts">
 import CpsCreditCard from '@/components/cards/CpsCreditCard.vue'
 
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
+
 interface CreditSection {
   id: string
   title: string
@@ -42,7 +46,7 @@ const consumoCredits: CreditData[] = [
   {
     id: 'creditAutomatic',
     name: 'Crédito Automático',
-    icon: '/src/assets/icon/credits/automatico.png',
+    icon: `${assetPrefix}/assets/icon/credits/automatico.png`,
     description: 'Ideal para imprevistos o necesidades personales, te ofrecemos un préstamo de hasta el 90% de tus ahorros.',
     simulatorUrl: '/inicio/simulador/automatico',
     sections: [
@@ -103,7 +107,7 @@ const consumoCredits: CreditData[] = [
   {
     id: 'creditLomio',
     name: 'Credilomio',
-    icon: '/src/assets/icon/credits/credilomio.png',
+    icon: `${assetPrefix}/assets/icon/credits/credilomio.png`,
     description: 'Ideal para imprevistos o necesidades personales, te ofrecemos un préstamo de hasta el 90% de tus ahorros.',
     simulatorUrl: '/inicio/simulador/credilomio',
     sections: [
@@ -164,7 +168,7 @@ const consumoCredits: CreditData[] = [
   {
     id: 'creditGodin',
     name: 'Crédito Godín',
-    icon: '/src/assets/icon/credits/credigodin.png',
+    icon: `${assetPrefix}/assets/icon/credits/credigodin.png`,
     description: 'Crédito pensado para nuestros asalariados, pensionados o jubilados que desean cubrir necesidades o gastos personales.',
     simulatorUrl: '/inicio/simulador/credilomio',
     sections: [
@@ -222,7 +226,7 @@ const consumoCredits: CreditData[] = [
   {
     id: 'creditPrimero',
     name: 'Mi Primer Crédito',
-    icon: '/src/assets/icon/credits/mi_primer_credito.png',
+    icon: `${assetPrefix}/assets/icon/credits/mi_primer_credito.png`,
     description: 'Crédito para nuestros Socios jóvenes que desean comenzar con su historial de crédito.',
     simulatorUrl: '/inicio/simulador/mi-primer-credito',
     sections: [
@@ -281,7 +285,7 @@ const consumoCredits: CreditData[] = [
   {
     id: 'creditConstruccion',
     name: 'Crédito Construcción',
-    icon: '/src/assets/icon/credits/vivienda.png',
+    icon: `${assetPrefix}/assets/icon/credits/vivienda.png`,
     description: 'Crédito diseñado para desarrollar proyectos de construcción de vivienda, comercio o servicios.',
     simulatorUrl: '/inicio/simulador/construccion',
     sections: [
@@ -342,7 +346,7 @@ const consumoCredits: CreditData[] = [
   {
     id: 'creditOrdinarioHipo',
     name: 'Crédito Ordinario Hipotecario',
-    icon: '/src/assets/icon/credits/ordinario_hipotecario.png',
+    icon: `${assetPrefix}/assets/icon/credits/ordinario_hipotecario.png`,
     description: 'Crédito con garantía hipotecaria para que adquieras lo que necesitas sin complicaciones.',
     simulatorUrl: '/inicio/simulador/hipotecario',
     sections: [
@@ -402,7 +406,7 @@ const consumoCredits: CreditData[] = [
   {
     id: 'creditEducativo',
     name: 'Crédito Educativo',
-    icon: '/src/assets/icon/credits/ordinario.png',
+    icon: `${assetPrefix}/assets/icon/credits/ordinario.png`,
     description: 'Financiamiento para estudios universitarios, posgrados y cursos de especialización.',
     simulatorUrl: '/inicio/simulador/educativo',
     sections: [
@@ -462,7 +466,7 @@ const consumoCredits: CreditData[] = [
   {
     id: 'creditEmergencia',
     name: 'Crédito de Emergencia',
-    icon: '/src/assets/icon/credits/automatico.png',
+    icon: `${assetPrefix}/assets/icon/credits/automatico.png`,
     description: 'Crédito rápido para situaciones de emergencia médica o familiar urgente.',
     simulatorUrl: '/inicio/simulador/emergencia',
     sections: [

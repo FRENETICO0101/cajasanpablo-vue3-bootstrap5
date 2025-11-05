@@ -1,12 +1,16 @@
 <script setup lang="ts">
 import VideoThumbnail from './CpsVideoThumbnail.vue'
 
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
+
 // Video thumbnails data
 const videos = [
   {
     id: 1,
     videoUrl: "https://www.youtube.com/watch?v=3W9E1b9_r7Q",
-    imageUrl: "/src/assets/min-yt1.webp",
+    imageUrl: `${assetPrefix}/assets/min-yt1.webp`,
     altText: "Historias de Éxito San Pablo",
     animationDelay: "3s",
     title: "Historias de Éxito San Pablo",
@@ -16,7 +20,7 @@ const videos = [
   {
     id: 2,
     videoUrl: "https://www.youtube.com/watch?v=bLuf3GoJBPM",
-    imageUrl: "/src/assets/img_logralo.webp",
+    imageUrl: `${assetPrefix}/assets/img_logralo.webp`,
     altText: "Necesitas un Crédito",
     animationDelay: "3s",
     title: "Necesitas un Crédito",
@@ -26,7 +30,7 @@ const videos = [
   {
     id: 3,
     videoUrl: "https://www.youtube.com/watch?v=ffbZKWobhrw",
-    imageUrl: "/src/assets/min-yt3.webp",
+    imageUrl: `${assetPrefix}/assets/min-yt3.webp`,
     altText: "miniatura youtube",
     animationDelay: "1.5s",
     title: "Historias de Éxito San Pablo",
@@ -36,7 +40,7 @@ const videos = [
   {
     id: 4,
     videoUrl: "https://www.youtube.com/watch?v=Fl8aYzjgyRQ",
-    imageUrl: "/src/assets/min-yt4.webp",
+    imageUrl: `${assetPrefix}/assets/min-yt4.webp`,
     altText: "RALLYCOOP2022",
     animationDelay: "3s",
     title: "RALLYCOOP2022",
@@ -46,7 +50,7 @@ const videos = [
   {
     id: 5,
     videoUrl: "https://youtu.be/wRfz1qZwJ04?si=y5Ttm65H6q9zaMkU",
-    imageUrl: "/src/assets/becas_youtube.webp",
+    imageUrl: `${assetPrefix}/assets/becas_youtube.webp`,
     altText: "BECAS ESCOLARES 2023-2024",
     animationDelay: "3s",
     title: "BECAS ESCOLARES 2023-2024",
@@ -56,7 +60,7 @@ const videos = [
   {
     id: 6,
     videoUrl: "https://www.youtube.com/watch?v=9wI-J3yFDPM",
-    imageUrl: "/src/assets/img_historias_exito.webp",
+    imageUrl: `${assetPrefix}/assets/img_historias_exito.webp`,
     altText: "HISTORIAS DE ÉXITO SAN PABLO",
     animationDelay: "3s",
     title: "HISTORIAS DE ÉXITO SAN PABLO",

@@ -8,6 +8,9 @@ import {
   CpsTikTokIcon
 } from '@/components/icons'
 
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 
 <template>
@@ -16,7 +19,7 @@ import {
       <div class="row">
         <div class="col-6 d-flex align-items-center justify-content-center gap-2">
           CONOCE LOS
-          <a href="/src/assets/pdf/dias inhabiles.pdf" target="_blank">DÍAS INHÁBILES
+          <a :href="`${assetPrefix}/assets/pdf/dias inhabiles.pdf`" target="_blank">DÍAS INHÁBILES
             2025</a>
         </div>
         <div class="col-6 d-flex align-items-center justify-content-center gap-2">
@@ -47,6 +50,6 @@ import {
     <CpsNavBar />
     <a href="https://www.messenger.com/t/CajaSanPabloOficial" target="_blank"
       class="contactanos-flotante"><img width="50px" height="50px"
-        src="/src/assets/icon/mensajero.webp" alt="icono-messenger-meta" /></a>
+        :src="`${assetPrefix}/assets/icon/mensajero.webp`" alt="icono-messenger-meta" /></a>
   </div>
 </template>

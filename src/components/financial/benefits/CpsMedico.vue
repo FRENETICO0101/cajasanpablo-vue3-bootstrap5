@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="SERVICIOS MÉDICOS"
-      image-url="/src/assets/servicios_medicos.webp"
+      :image-url="`${assetPrefix}/assets/servicios_medicos.webp`"
       image-alt="Enfermera sosteniendo un estetoscopio en forma de corazon"
       color-text="text-white"
     />
@@ -57,6 +57,10 @@
 </template>
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 </script>
 <style lang="css" scoped>
 .medico {

@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
+
 const events = [
   {
     src: "/assets/img-inauguracion-el-salto/salto_1.jpeg",
@@ -677,7 +680,7 @@ const events = [
       </div>
       <div class="video-container"><video id="miVideo" autoplay loop
           playsinline>
-          <source src="/src/assets/nov-event-web4.mp4" muted type="video/mp4">
+          <source :src="`${assetPrefix}/assets/nov-event-web4.mp4`" muted type="video/mp4">
         </video></div>
     </header>
     <div class="container mb-3 mt-5">
