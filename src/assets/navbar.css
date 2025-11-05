@@ -1,0 +1,191 @@
+/* Navbar component specific styles */
+.menu-superior {
+  background-color: var(--color-azul-oscuro);
+  /* padding: 10px; */
+  position: relative;
+  z-index: 7;
+  width: 100%;
+}
+
+.menu-superior a {
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.menu-superior ul {
+  align-items: center;
+}
+
+.menu-superior ul .svg-img-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  animation-duration: 1.5s;
+}
+
+.menu-superior ul .svg-img-text .ruta-activa {
+  color: var(--color-naranja);
+}
+
+.menu-superior ul .svg-img-text .ruta-activa .svg-image {
+  fill: var(--color-naranja);
+}
+
+.menu-superior ul .svg-img-text a {
+  padding: 1px 5px;
+  text-decoration: none;
+  font-size: 10px;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.menu-superior ul .svg-img-text a:hover {
+  color: var(--color-naranja);
+}
+
+.menu-superior ul .svg-img-text a:hover .svg-image {
+  fill: var(--color-naranja);
+}
+
+.menu-superior ul .svg-img-text a .ruta-activa {
+  color: var(--color-naranja);
+  font-weight: bold;
+}
+
+.menu-superior ul .svg-img-text a .svg-image {
+  margin-bottom: 5px;
+  fill: #fff;
+  transition: fill 0.2s ease;
+}
+
+@media (max-width: 1200px) {
+  .menu-superior ul .svg-img-text a .svg-image {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu-superior ul .svg-img-text {
+    margin-bottom: 20px;
+  }
+}
+
+.menu-superior ul .svg-img-text:nth-child(1) {
+  animation-name: fadeInDown;
+}
+
+.menu-superior ul .svg-img-text:nth-child(2) {
+  animation-name: fadeInUp;
+}
+
+.menu-superior ul .svg-img-text:nth-child(3) {
+  animation-name: fadeInDown;
+}
+
+.menu-superior ul .svg-img-text:nth-child(4) {
+  animation-name: fadeInUp;
+}
+
+.menu-superior ul .btn-saldo {
+  margin-right: 20px;
+}
+
+.menu-superior ul .btn-saldo .saldos {
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: var(--color-naranja);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.menu-superior ul .btn-saldo .saldos:hover {
+  background-color: var(--color-naranja-hover);
+}
+
+.menu-superior .menu-icon {
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.menu-superior .menu-icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-superior .menu-icon span {
+  background: #fff;
+  border: none;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1.5px;
+  transition: all 0.3s;
+}
+
+.menu-superior .menu-icon span:before,
+.menu-superior .menu-icon span:after {
+  background: #fff;
+  content: "";
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.menu-superior .menu-icon span:before {
+  top: -8px;
+}
+
+.menu-superior .menu-icon span:after {
+  bottom: -8px;
+}
+
+.menu-superior .menu-icon.x span {
+  background: transparent;
+}
+
+.menu-superior .menu-icon.x span:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.menu-superior .menu-icon.x span:after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.menu-superior .menu-desplegable {
+  position: absolute;
+  background-color: var(--color-azul-oscuro);
+  width: 100%;
+  top: 68px;
+  right: 0;
+  text-align: end;
+  z-index: 2;
+  padding: 15px;
+}
+
+.menu-superior .menu-desplegable .linea-horizontal {
+  color: #fff;
+}
+
+.menu-superior .menu-desplegable li {
+  list-style: none;
+}
+
+.menu-superior .menu-desplegable li a {
+  color: #fff;
+}

@@ -1,9 +1,4 @@
 @charset "UTF-8";
-:root {
-  --animate-duration: 1s;
-  --animate-delay: 1s;
-  --animate-repeat: 1;
-}
 @-webkit-keyframes bounce {
   0%,
   20%,
@@ -1561,15 +1556,6 @@
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
   }
-}
-:root {
-  --color-primario: #3066be;
-  --color-secundario: #6d9dc5;
-  --color-blanco: white;
-  --color-negro: black;
-  --color-azul-oscuro: #003063;
-  --color-naranja: #dc9c48;
-  --color-gris: #dfdfdf;
 }
 .visuallyhidden {
   position: absolute;

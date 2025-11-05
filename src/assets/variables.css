@@ -1,0 +1,39 @@
+/**
+ * CSS Custom Properties (Variables)
+ * Centralized variable definitions for the Caja San Pablo website
+ *
+ * This file consolidates all CSS variables to avoid duplication
+ * and provide a single source of truth for design tokens.
+ */
+
+:root {
+  /* Animation Variables */
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+
+  /* Color Variables */
+  --color-primario: #3066be;
+  --color-secundario: #6d9dc5;
+  --color-blanco: white;
+  --color-negro: black;
+  --color-azul-oscuro: #003063;
+  --color-naranja: #dc9c48;
+  --color-gris: #dfdfdf;
+
+  /* Typography Variables (future expansion) */
+  /* --font-family-primary: 'Arial', sans-serif; */
+
+  /* Spacing Variables (future expansion) */
+  /* --spacing-xs: 0.25rem; */
+  /* --spacing-sm: 0.5rem; */
+  /* --spacing-md: 1rem; */
+  /* --spacing-lg: 1.5rem; */
+  /* --spacing-xl: 2rem; */
+
+  /* Breakpoint Variables (future expansion) */
+  /* --breakpoint-sm: 576px; */
+  /* --breakpoint-md: 768px; */
+  /* --breakpoint-lg: 992px; */
+  /* --breakpoint-xl: 1200px; */
+}

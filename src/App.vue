@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import CpsFooter from './components/CpsFooter.vue';
-import CpsHeader from './components/CpsHeader.vue';
+import CpsFooter from './components/layout/CpsFooter.vue';
+import CpsHeader from './components/layout/CpsHeader.vue';
 
 </script>
 
