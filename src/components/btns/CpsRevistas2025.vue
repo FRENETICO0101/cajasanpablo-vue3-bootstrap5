@@ -47,7 +47,7 @@ import CpsLoadingState from '@/components/ui/CpsLoadingState.vue'
 
 import { useResourcePreloader } from '@/composables/usePerformance'
 
-import { useErrorHandler, ErrorType, ErrorSeverity, type AppError } from '@/composables/useErrorHandler'
+import { ErrorType, ErrorSeverity, type AppError } from '@/composables/useErrorHandler'
 
 // Get asset prefix from environment
 const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
@@ -55,40 +55,48 @@ const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
 
 const revistas = ref<RevistaData[]>([
   {
+    id: 'nov-2025',
+    title: 'Noviembre 2025',
+    imageSrc: `${assetPrefix}/assets/img-revistas/revista_nov_2025.webp`,
+    pdfUrl: '/assets/pdf/REV_Noviembre_2025.pdf',
+    date: new Date(2025, 11, 1),
+    isNew: true
+  },
+  {
     id: 'oct-2025',
     title: 'Octubre 2025',
     imageSrc: `${assetPrefix}/assets/img-revistas/revista_oct_2025.webp`,
     pdfUrl: '/assets/pdf/REV_Octubre_2025.pdf',
-    date: new Date(2025, 9, 1), // October 1, 2025
-    isNew: true
+    date: new Date(2025, 10, 1),
+    isNew: false
   },
   {
     id: 'sep-2025',
     title: 'Septiembre 2025',
     imageSrc: `${assetPrefix}/assets/img-revistas/revista_septiembre_2025.webp`,
     pdfUrl: '/assets/pdf/REV_Septiembre_2025.pdf',
-    date: new Date(2025, 8, 1)
+    date: new Date(2025, 9, 1)
   },
   {
     id: 'ago-2025',
     title: 'Agosto 2025',
     imageSrc: `${assetPrefix}/assets/img-revistas/revista_agosto_2025.webp`,
     pdfUrl: '/assets/pdf/REV_Agosto_2025.pdf',
-    date: new Date(2025, 7, 1)
+    date: new Date(2025, 8, 1)
   },
   {
     id: 'jul-2025',
     title: 'Julio 2025',
     imageSrc: `${assetPrefix}/assets/img-revistas/revista_julio_2025.webp`,
     pdfUrl: '/assets/pdf/REV_Julio_2025.pdf',
-    date: new Date(2025, 6, 1)
+    date: new Date(2025, 7, 1)
   },
   {
     id: 'jun-2025',
     title: 'Junio 2025',
     imageSrc: `${assetPrefix}/assets/img-revistas/revista_dia_padre_2025.webp`,
     pdfUrl: '/assets/pdf/REV_Junio_2025.pdf',
-    date: new Date(2025, 5, 1),
+    date: new Date(2025, 6, 1),
     featured: true
   },
   {
@@ -96,35 +104,35 @@ const revistas = ref<RevistaData[]>([
     title: 'Mayo 2025',
     imageSrc: `${assetPrefix}/assets/img-revistas/REV_Mayo_2025.webp`,
     pdfUrl: '/assets/pdf/REV_Mayo_2025.pdf',
-    date: new Date(2025, 4, 1)
+    date: new Date(2025, 5, 1)
   },
   {
     id: 'abr-2025',
     title: 'Abril 2025',
     imageSrc: `${assetPrefix}/assets/img-revistas/REV Abril 2025.webp`,
     pdfUrl: '/assets/pdf/REV_Abril_2025.pdf',
-    date: new Date(2025, 3, 1)
+    date: new Date(2025, 4, 1)
   },
   {
     id: 'mar-2025',
     title: 'Marzo 2025',
     imageSrc: `${assetPrefix}/assets/img-revistas/REV Marzo 2025.webp`,
     pdfUrl: '/assets/pdf/REV-Marzo-2025 (1).pdf',
-    date: new Date(2025, 2, 1)
+    date: new Date(2025, 3, 1)
   },
   {
     id: 'feb-2025',
     title: 'Febrero 2025',
     imageSrc: `${assetPrefix}/assets/img-revistas/REV Febrero 2025.webp`,
     pdfUrl: '/assets/pdf/REV-Febrero-2025.pdf',
-    date: new Date(2025, 1, 1)
+    date: new Date(2025, 2, 1)
   },
   {
     id: 'ene-2025',
     title: 'Enero 2025',
     imageSrc: `${assetPrefix}/assets/img-revistas/REV Enero 2025.webp`,
     pdfUrl: '/assets/pdf/REV Enero 2025.pdf',
-    date: new Date(2025, 0, 1)
+    date: new Date(2025, 1, 1)
   }
 ])
 

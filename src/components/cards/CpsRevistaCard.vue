@@ -43,13 +43,9 @@
     <!-- Revista title and metadata -->
     <template #default>
       <div class="revista-card__content">
-        <h3 class="revista-card__title">{{ revista.title }}</h3>
 
         <!-- Revista metadata -->
-        <div v-if="revista.date || revista.edition || revista.pages" class="revista-card__meta">
-          <div v-if="revista.date" class="revista-card__date">
-            {{ formatDate(revista.date) }}
-          </div>
+        <div v-if="revista.edition || revista.pages" class="revista-card__meta">
 
           <div v-if="revista.edition" class="revista-card__edition">
             Edición {{ revista.edition }}
@@ -167,13 +163,6 @@ const emit = defineEmits<{
 
 // Computed properties
 const imagePlaceholder = computed(() => `${assetPrefix}${props.imagePlaceholder}`)
-const formatDate = (date: Date | string): string => {
-  const dateObj = typeof date === 'string' ? new Date(date) : date
-  return dateObj.toLocaleDateString('es-ES', {
-    year: 'numeric',
-    month: 'long'
-  })
-}
 
 const handleCardClick = (event: MouseEvent) => {
   emit('click', event, props.revista)

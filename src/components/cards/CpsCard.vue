@@ -46,13 +46,6 @@
       </slot>
     </div>
 
-    <!-- Body section -->
-    <div v-if="$slots.default || description" class="cps-card__body">
-      <slot name="default">
-        <p v-if="description" class="cps-card__description">{{ description }}</p>
-      </slot>
-    </div>
-
     <!-- Footer/Actions section -->
     <footer v-if="$slots.footer || $slots.actions" class="cps-card__footer">
       <slot name="footer">
@@ -261,11 +254,6 @@ const handleClick = (event: MouseEvent) => {
   aspect-ratio: 3/4;
 }
 
-.cps-card__body {
-  padding: 1rem;
-  flex: 1;
-}
-
 .cps-card__description {
   margin: 0;
   color: #6c757d;
@@ -342,8 +330,7 @@ const handleClick = (event: MouseEvent) => {
     width: 100%;
   }
 
-  .cps-card__header,
-  .cps-card__body {
+  .cps-card__header {
     padding: 0.75rem;
   }
 
