@@ -2,7 +2,7 @@
   <main>
     <CpsPageHeader
       title="CUENTAS DE DEPÓSITO"
-      :image-url="'/src/assets/cuentas_deposito_resized.webp'"
+      :image-url="`${assetPrefix}/assets/cuentas_deposito_resized.webp`"
       imageAlt="familia-mexicana-sonriente-tiro-medio"
       colorText="text-black"
     />
@@ -110,7 +110,8 @@ import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
 
 import CpsDepositAccountModal from '@/components/modals/CpsDepositAccountModal.vue'
 
-
+// Get asset prefix from environment
+const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
 
 // Data for Ahorro Adulto modal
 const ahorroAdultoData = {
