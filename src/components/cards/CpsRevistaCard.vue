@@ -333,13 +333,20 @@ const handleDownload = () => {
   .revista-card {
     height: auto;
     width: 100%;
-    max-width: 300px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
   .revista-card__image-container {
     aspect-ratio: 3/4;
-    max-height: 250px;
+    max-height: none;
+    width: 100%;
+  }
+
+  .revista-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .revista-card__title {
@@ -358,11 +365,12 @@ const handleDownload = () => {
 
 @media (max-width: 480px) {
   .revista-card {
-    max-width: 240px;
+    max-width: 100%;
   }
 
   .revista-card__image-container {
-    max-height: 200px;
+    max-height: none;
+    width: 100%;
   }
 }
 </style>

@@ -334,6 +334,25 @@ const handleClick = (event: MouseEvent) => {
     padding: 0.75rem;
   }
 
+  .cps-card__image {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .cps-card__img {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  .cps-card--revista .cps-card__img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 3/4;
+    object-fit: cover !important;
+  }
+
   .cps-card__footer {
     padding: 0.5rem 0.75rem 0.75rem;
   }
