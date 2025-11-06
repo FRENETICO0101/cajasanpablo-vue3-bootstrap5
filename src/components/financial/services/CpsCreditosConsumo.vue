@@ -268,7 +268,7 @@ const consumoCredits: CreditData[] = [
   },
   {
     id: 'creditGodin',
-    name: 'Crédito Godín',
+    name: 'CRÉDITO CREDI GODÍN',
     icon: `${assetPrefix}/assets/icon/credits/credigodin.png`,
     description: 'Crédito pensado para nuestros asalariados, pensionados o jubilados que desean cubrir necesidades o gastos personales.',
     simulatorUrl: '/inicio/simulador/credilomio',
@@ -276,42 +276,64 @@ const consumoCredits: CreditData[] = [
       {
         id: 'GodinOne',
         title: 'Montos y plazos',
-        content: ['Desde $1,000 hasta $30,000 | Hasta 36 meses']
+        content: ['Desde $5,000 hasta $100,000 | Hasta 72 meses']
       },
       {
         id: 'GodinTwo',
         title: 'Tasa Ordinaria',
         content: [
-          'Mensual 1.35%',
-          'Anual 16.2%'
+          'Mensual 2%',
+          'Anual 24%'
         ]
       },
       {
         id: 'GodinThree',
         title: 'Tasa Moratoria',
         content: [
-          'Mensual 3%',
-          'Anual 36%'
+          'Mensual 4%',
+          'Anual 48%'
         ]
       },
       {
         id: 'GodinFour',
         title: 'CAT promedio (sin IVA)',
-        content: ['18.0%']
+        content: [
+          '26.8%',
+          'CAT promedio para fines informativos y de comparación.'
+        ]
       },
       {
         id: 'GodinFive',
         title: 'Comisiones',
-        content: ['Sin comisión por apertura']
+        content: ['Este producto no genera ninguna Comisión.']
+      },
+      {
+        id: 'GodinNine',
+        title: 'Pagos',
+        content: ['Mensuales, sobre saldo insoluto']
       },
       {
         id: 'GodinSix',
         title: 'Requisitos',
         content: [
-          'Llenar y firmar solicitud',
-          'Comprobante de ingresos mensual por los últimos 3 meses',
+          '18 años en adelante',
+          'Ser Socio con parte social completa y expediente actualizado',
+          '10% de garantía financiera en tu cuenta de ahorro.',
           'Identificación oficial vigente',
-          'Comprobante de domicilio no mayor a 3 meses'
+          'Comprobante de domicilio (no mayor a 60 días)',
+          'Comprobante de ingresos (Estado de cuenta bancaria y/o nómina timbrada de los últimos 30 días) En caso de asalariado, contar con 6 meses de antigüedad comprobable en el empleo.',
+          'Autorización para consulta de buró de crédito (SIC) del solicitante.',
+          'Aval con buen historial crediticio.',
+          'Autorización para consulta de buró de crédito (SIC) del aval.'
+        ]
+      },
+      {
+        id: 'GodinTen',
+        title: 'Beneficios',
+        content: [
+          'Especial para quienes reciben nómina o pensión',
+          'Puedes acceder incluso si ya estás jubilado',
+          'Si pagas de manera puntal capital e interés, puedes acceder a un descuento en la tasa de interés ordinaria.'
         ]
       },
       {
@@ -319,7 +341,8 @@ const consumoCredits: CreditData[] = [
         title: 'Nota',
         content: [
           'Incumplir tus obligaciones te puede generar comisiones e intereses moratorios',
-          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio'
+          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio',
+          'El avalista, obligado solidario o coacreditado responderá como obligado principal por el total del pago frente a la Institución Financiera'
         ]
       }
     ]
