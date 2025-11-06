@@ -116,7 +116,7 @@ const consumoCredits: CreditData[] = [
   },
   {
     id: 'creditLomio',
-    name: 'Credilomio',
+    name: 'CREDILOMIO',
     icon: `${assetPrefix}/assets/icon/credits/credilomio.png`,
     description: 'Ideal para imprevistos o necesidades personales, te ofrecemos un préstamo de hasta el 90% de tus ahorros.',
     simulatorUrl: '/inicio/simulador/credilomio',
@@ -126,7 +126,7 @@ const consumoCredits: CreditData[] = [
         title: 'Montos y plazos',
         content: [
           'Desde $500 hasta $50,000 | Hasta 36 meses',
-          'De $50,001 hasta el 3% del capital neto de la entidad| Hasta 60 meses'
+          'De $50,001 hasta el 3% del capital neto de la entidad | Hasta 60 meses',
         ]
       },
       {
@@ -148,21 +148,35 @@ const consumoCredits: CreditData[] = [
       {
         id: 'LomioFour',
         title: 'CAT promedio (sin IVA)',
-        content: ['13.5%']
+        content: ['201.5%', 'CAT promedio para fines informativos y de comparación.']
       },
       {
         id: 'LomioFive',
         title: 'Comisiones',
-        content: ['Sin comisión por apertura']
+        content: ['Este producto no genera ninguna Comisión.']
+      },
+      {
+        id: 'LomioNine',
+        title: 'Pagos',
+        content: ['Mensuales, sobre saldo insoluto']
       },
       {
         id: 'LomioSix',
         title: 'Requisitos',
         content: [
-          'Llenar y firmar solicitud',
-          'Comprobante de ingresos',
+          'Ser Socio con parte social completa y expediente actualizado',
           'Identificación oficial vigente',
-          'Comprobante de domicilio no mayor a 3 meses'
+          'Comprobante de domicilio (no mayor a 60 días)',
+          'Comprobante de ingresos (no mayor a 30 días)'
+        ]
+      },
+      {
+        id: 'LomioTen',
+        title: 'Beneficios',
+        content: [
+          'No es necesario un aval',
+          'No necesitas justificar en qué gastas el crédito',
+          'Si pagas de manera puntal capital e interés, puedes acceder a un descuento en la tasa de interés ordinaria.'
         ]
       },
       {
