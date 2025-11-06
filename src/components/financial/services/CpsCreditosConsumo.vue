@@ -8,11 +8,7 @@
       </div>
       <div class="credito-tipe">CONSUMO</div>
       <div class="card-container row justify-content-center">
-        <CpsCreditCard
-          v-for="credit in consumoCredits"
-          :key="credit.id"
-          :credit="credit"
-        />
+        <CpsCreditCard v-for="credit in consumoCredits" :key="credit.id" :credit="credit" />
       </div>
     </section>
   </main>
@@ -77,7 +73,7 @@ const consumoCredits: CreditData[] = [
       {
         id: 'AutomaticFour',
         title: 'CAT promedio (sin IVA)',
-        content: ['13.5%']
+        content: ['195.3%', 'CAT promedio para fines informativos y de comparación.']
       },
       {
         id: 'AutomaticFive',
