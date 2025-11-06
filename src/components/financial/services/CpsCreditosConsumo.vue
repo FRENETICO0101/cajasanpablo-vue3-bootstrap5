@@ -41,7 +41,7 @@ interface CreditData {
 const consumoCredits: CreditData[] = [
   {
     id: 'creditAutomatic',
-    name: 'Crédito Automático',
+    name: 'CRÉDITO AUTOMÁTICO',
     icon: `${assetPrefix}/assets/icon/credits/automatico.png`,
     description: 'Ideal para imprevistos o necesidades personales, te ofrecemos un préstamo de hasta el 90% de tus ahorros.',
     simulatorUrl: '/inicio/simulador/automatico',
@@ -78,16 +78,30 @@ const consumoCredits: CreditData[] = [
       {
         id: 'AutomaticFive',
         title: 'Comisiones',
-        content: ['Sin comisión por apertura']
+        content: ['Este producto no genera ninguna Comisión.']
+      },
+      {
+        id: 'AutomaticEight',
+        title: 'Pagos',
+        content: ['Mensuales, sobre saldo insoluto']
       },
       {
         id: 'AutomaticSix',
         title: 'Requisitos',
         content: [
-          'Llenar y firmar solicitud',
-          'Comprobante de ingresos',
+          'Ser Socio con parte social completa y expediente actualizado',
           'Identificación oficial vigente',
-          'Comprobante de domicilio no mayor a 3 meses'
+          'Comprobante de domicilio (no mayor a 60 días)',
+          'Comprobante de ingresos (no mayor a 30 días)'
+        ]
+      },
+      {
+        id: 'AutomaticNine',
+        title: 'Beneficios',
+        content: [
+          'No es necesario un aval',
+          'No necesitas justificar en qué gastas el crédito',
+          'Si pagas de manera puntal capital e interés, puedes acceder a un descuento en la tasa de interés ordinaria.',
         ]
       },
       {
@@ -162,6 +176,65 @@ const consumoCredits: CreditData[] = [
     ]
   },
   {
+    id: 'creditPrimero',
+    name: 'Mi Primer Crédito',
+    icon: `${assetPrefix}/assets/icon/credits/mi_primer_credito.png`,
+    description: 'Crédito para nuestros Socios jóvenes que desean comenzar con su historial de crédito.',
+    simulatorUrl: '/inicio/simulador/mi-primer-credito',
+    sections: [
+      {
+        id: 'PrimeroOne',
+        title: 'Montos y plazos',
+        content: ['Desde $500 hasta $10,000 | Hasta 18 meses']
+      },
+      {
+        id: 'PrimeroTwo',
+        title: 'Tasa Ordinaria',
+        content: [
+          'Mensual 1.5%',
+          'Anual 18%'
+        ]
+      },
+      {
+        id: 'PrimeroThree',
+        title: 'Tasa Moratoria',
+        content: [
+          'Mensual 3%',
+          'Anual 36%'
+        ]
+      },
+      {
+        id: 'PrimeroFour',
+        title: 'CAT promedio (sin IVA)',
+        content: ['20.1%']
+      },
+      {
+        id: 'PrimeroFive',
+        title: 'Comisiones',
+        content: ['Sin comisión por apertura']
+      },
+      {
+        id: 'PrimeroSix',
+        title: 'Requisitos',
+        content: [
+          'Llenar y firmar solicitud',
+          'Comprobante de ingresos mensual por los últimos 3 meses',
+          'Identificación oficial vigente',
+          'Comprobante de domicilio no mayor a 3 meses',
+          'Ser mayor de 18 años y menor de 30 años'
+        ]
+      },
+      {
+        id: 'PrimeroSeven',
+        title: 'Nota',
+        content: [
+          'Incumplir tus obligaciones te puede generar comisiones e intereses moratorios',
+          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio'
+        ]
+      }
+    ]
+  },
+  {
     id: 'creditGodin',
     name: 'Crédito Godín',
     icon: `${assetPrefix}/assets/icon/credits/credigodin.png`,
@@ -220,27 +293,27 @@ const consumoCredits: CreditData[] = [
     ]
   },
   {
-    id: 'creditPrimero',
-    name: 'Mi Primer Crédito',
-    icon: `${assetPrefix}/assets/icon/credits/mi_primer_credito.png`,
-    description: 'Crédito para nuestros Socios jóvenes que desean comenzar con su historial de crédito.',
-    simulatorUrl: '/inicio/simulador/mi-primer-credito',
+    id: 'creditOrdinarioHipo',
+    name: 'Crédito Ordinario Hipotecario',
+    icon: `${assetPrefix}/assets/icon/credits/ordinario_hipotecario.png`,
+    description: 'Crédito con garantía hipotecaria para que adquieras lo que necesitas sin complicaciones.',
+    simulatorUrl: '/inicio/simulador/hipotecario',
     sections: [
       {
-        id: 'PrimeroOne',
+        id: 'OrdinarioHipoOne',
         title: 'Montos y plazos',
-        content: ['Desde $500 hasta $10,000 | Hasta 18 meses']
+        content: ['Desde $300,001 hasta $5,000,000 | Hasta 240 meses']
       },
       {
-        id: 'PrimeroTwo',
+        id: 'OrdinarioHipoTwo',
         title: 'Tasa Ordinaria',
         content: [
-          'Mensual 1.5%',
-          'Anual 18%'
+          'Mensual 0.83%',
+          'Anual 10%'
         ]
       },
       {
-        id: 'PrimeroThree',
+        id: 'OrdinarioHipoThree',
         title: 'Tasa Moratoria',
         content: [
           'Mensual 3%',
@@ -248,28 +321,29 @@ const consumoCredits: CreditData[] = [
         ]
       },
       {
-        id: 'PrimeroFour',
+        id: 'OrdinarioHipoFour',
         title: 'CAT promedio (sin IVA)',
-        content: ['20.1%']
+        content: ['11.6%']
       },
       {
-        id: 'PrimeroFive',
+        id: 'OrdinarioHipoFive',
         title: 'Comisiones',
-        content: ['Sin comisión por apertura']
+        content: ['1% + IVA']
       },
       {
-        id: 'PrimeroSix',
+        id: 'OrdinarioHipoSix',
         title: 'Requisitos',
         content: [
           'Llenar y firmar solicitud',
-          'Comprobante de ingresos mensual por los últimos 3 meses',
+          'Comprobante de ingresos',
           'Identificación oficial vigente',
           'Comprobante de domicilio no mayor a 3 meses',
-          'Ser mayor de 18 años y menor de 30 años'
+          'Estados de cuenta bancarios',
+          'Documentos del inmueble'
         ]
       },
       {
-        id: 'PrimeroSeven',
+        id: 'OrdinarioHipoSeven',
         title: 'Nota',
         content: [
           'Incumplir tus obligaciones te puede generar comisiones e intereses moratorios',
@@ -331,66 +405,6 @@ const consumoCredits: CreditData[] = [
       },
       {
         id: 'ConstruccionSeven',
-        title: 'Nota',
-        content: [
-          'Incumplir tus obligaciones te puede generar comisiones e intereses moratorios',
-          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio'
-        ]
-      }
-    ]
-  },
-  {
-    id: 'creditOrdinarioHipo',
-    name: 'Crédito Ordinario Hipotecario',
-    icon: `${assetPrefix}/assets/icon/credits/ordinario_hipotecario.png`,
-    description: 'Crédito con garantía hipotecaria para que adquieras lo que necesitas sin complicaciones.',
-    simulatorUrl: '/inicio/simulador/hipotecario',
-    sections: [
-      {
-        id: 'OrdinarioHipoOne',
-        title: 'Montos y plazos',
-        content: ['Desde $300,001 hasta $5,000,000 | Hasta 240 meses']
-      },
-      {
-        id: 'OrdinarioHipoTwo',
-        title: 'Tasa Ordinaria',
-        content: [
-          'Mensual 0.83%',
-          'Anual 10%'
-        ]
-      },
-      {
-        id: 'OrdinarioHipoThree',
-        title: 'Tasa Moratoria',
-        content: [
-          'Mensual 3%',
-          'Anual 36%'
-        ]
-      },
-      {
-        id: 'OrdinarioHipoFour',
-        title: 'CAT promedio (sin IVA)',
-        content: ['11.6%']
-      },
-      {
-        id: 'OrdinarioHipoFive',
-        title: 'Comisiones',
-        content: ['1% + IVA']
-      },
-      {
-        id: 'OrdinarioHipoSix',
-        title: 'Requisitos',
-        content: [
-          'Llenar y firmar solicitud',
-          'Comprobante de ingresos',
-          'Identificación oficial vigente',
-          'Comprobante de domicilio no mayor a 3 meses',
-          'Estados de cuenta bancarios',
-          'Documentos del inmueble'
-        ]
-      },
-      {
-        id: 'OrdinarioHipoSeven',
         title: 'Nota',
         content: [
           'Incumplir tus obligaciones te puede generar comisiones e intereses moratorios',
