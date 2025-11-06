@@ -191,7 +191,7 @@ const consumoCredits: CreditData[] = [
   },
   {
     id: 'creditPrimero',
-    name: 'Mi Primer Crédito',
+    name: 'MI PRIMER CRÉDITO',
     icon: `${assetPrefix}/assets/icon/credits/mi_primer_credito.png`,
     description: 'Crédito para nuestros Socios jóvenes que desean comenzar con su historial de crédito.',
     simulatorUrl: '/inicio/simulador/mi-primer-credito',
@@ -199,43 +199,60 @@ const consumoCredits: CreditData[] = [
       {
         id: 'PrimeroOne',
         title: 'Montos y plazos',
-        content: ['Desde $500 hasta $10,000 | Hasta 18 meses']
+        content: ['Desde $5,000 hasta $25,000 | Hasta 36 meses']
       },
       {
         id: 'PrimeroTwo',
         title: 'Tasa Ordinaria',
         content: [
-          'Mensual 1.5%',
-          'Anual 18%'
+          'Mensual 2',
+          'Anual 24%'
         ]
       },
       {
         id: 'PrimeroThree',
         title: 'Tasa Moratoria',
         content: [
-          'Mensual 3%',
-          'Anual 36%'
+          'Mensual 4%',
+          'Anual 48%'
         ]
       },
       {
         id: 'PrimeroFour',
         title: 'CAT promedio (sin IVA)',
-        content: ['20.1%']
+        content: ['26.8%', 'CAT promedio para fines informativos y de comparación.']
       },
       {
         id: 'PrimeroFive',
         title: 'Comisiones',
-        content: ['Sin comisión por apertura']
+        content: ['Este producto no genera ninguna Comisión.']
+      },
+      {
+        id: 'PrimeroNine',
+        title: 'Pagos',
+        content: ['Mensuales, sobre saldo insoluto']
       },
       {
         id: 'PrimeroSix',
         title: 'Requisitos',
         content: [
-          'Llenar y firmar solicitud',
-          'Comprobante de ingresos mensual por los últimos 3 meses',
+          'Edad de 18 a 20 años',
+          'Ser Socio con parte social completa y expediente actualizado',
+          '10% de garantía financiera en tu cuenta de ahorro.',
           'Identificación oficial vigente',
-          'Comprobante de domicilio no mayor a 3 meses',
-          'Ser mayor de 18 años y menor de 30 años'
+          'Comprobante de domicilio (no mayor a 60 días)',
+          'Comprobante de ingresos (no mayor a 30 días)',
+          'Autorización para consulta de buró de crédito (SIC) del solicitante.',
+          'Aval con buen historial crediticio.',
+          'Autorización para consulta de buró de crédito (SIC) del aval.'
+        ]
+      },
+      {
+        id: 'PrimeroNine',
+        title: 'Beneficios',
+        content: [
+          'Comienza a generar historial crediticio.',
+          'Flexibilidad en tu primer crédito.'
         ]
       },
       {
@@ -243,7 +260,8 @@ const consumoCredits: CreditData[] = [
         title: 'Nota',
         content: [
           'Incumplir tus obligaciones te puede generar comisiones e intereses moratorios',
-          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio'
+          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio',
+          'El avalista, obligado solidario o coacreditado responderá como obligado principal por el total del pago frente a la Institución Financiera'
         ]
       }
     ]
