@@ -349,52 +349,71 @@ const consumoCredits: CreditData[] = [
   },
   {
     id: 'creditOrdinarioHipo',
-    name: 'Crédito Ordinario Hipotecario',
-    icon: `${assetPrefix}/assets/icon/credits/ordinario_hipotecario.png`,
-    description: 'Crédito con garantía hipotecaria para que adquieras lo que necesitas sin complicaciones.',
-    simulatorUrl: '/inicio/simulador/hipotecario',
+    name: 'PRÉSTAMO ORDINARIO',
+    icon: `${assetPrefix}/assets/icon/credits/ordinario.png`,
+    description: 'Crédito personal de Caja Popular San Pablo, para que tú decidas en qué usarlo.',
+    simulatorUrl: '/inicio/simulador/ordinario',
     sections: [
       {
         id: 'OrdinarioHipoOne',
         title: 'Montos y plazos',
-        content: ['Desde $300,001 hasta $5,000,000 | Hasta 240 meses']
+        content: ['Desde $5,000 hasta $300,000 | Hasta 72 meses']
       },
       {
         id: 'OrdinarioHipoTwo',
         title: 'Tasa Ordinaria',
         content: [
-          'Mensual 0.83%',
-          'Anual 10%'
+          'Mensual 1.8%',
+          'Anual 21.60%'
         ]
       },
       {
         id: 'OrdinarioHipoThree',
         title: 'Tasa Moratoria',
         content: [
-          'Mensual 3%',
-          'Anual 36%'
+          'Mensual 4%',
+          'Anual 46%'
         ]
       },
       {
         id: 'OrdinarioHipoFour',
         title: 'CAT promedio (sin IVA)',
-        content: ['11.6%']
+        content: [
+          '18.5%',
+          'CAT promedio para fines informativos y de comparación.'
+        ]
       },
       {
         id: 'OrdinarioHipoFive',
         title: 'Comisiones',
-        content: ['1% + IVA']
+        content: ['Este producto no genera ninguna Comisión.']
+      },
+      {
+        id: 'OrdinarioHipoFive',
+        title: 'Pagos',
+        content: ['Mensuales, sobre saldo insoluto']
       },
       {
         id: 'OrdinarioHipoSix',
         title: 'Requisitos',
         content: [
-          'Llenar y firmar solicitud',
-          'Comprobante de ingresos',
+          '18 años en adelante',
+          'Ser Socio con parte social completa y expediente actualizado',
+          '10% de garantía financiera en tu cuenta de ahorro.',
           'Identificación oficial vigente',
-          'Comprobante de domicilio no mayor a 3 meses',
-          'Estados de cuenta bancarios',
-          'Documentos del inmueble'
+          'Comprobante de domicilio (no mayor a 60 días)',
+          'Comprobante de ingresos (de los últimos 30 días)',
+          'Autorización para consulta de buró de crédito (SIC) del solicitante.',
+          'Aval con buen historial crediticio.',
+          'Autorización para consulta de buró de crédito (SIC) del aval.'
+        ]
+      },
+      {
+        id: 'OrdinarioHipoTen',
+        title: 'Beneficios',
+        content: [
+          'Se podrá exentar el requisito de aval.',
+          'Si pagas de manera puntual capital e interés, puedes acceder a un descuento en la tasa de interés ordinaria.'
         ]
       },
       {
@@ -402,7 +421,8 @@ const consumoCredits: CreditData[] = [
         title: 'Nota',
         content: [
           'Incumplir tus obligaciones te puede generar comisiones e intereses moratorios',
-          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio'
+          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio',
+          'El avalista, obligado solidario o coacreditado responderá como obligado principal por el total del pago frente a la Institución Financiera'
         ]
       }
     ]
