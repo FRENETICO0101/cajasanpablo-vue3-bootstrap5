@@ -4,11 +4,7 @@
       <div class="credito-tipe">COMERCIAL</div>
       <div class="card-container row justify-content-center">
         <!-- Data-driven credit cards using CpsCreditCard component -->
-        <CpsCreditCard
-          v-for="credit in commercialCredits"
-          :key="credit.id"
-          :credit="credit"
-        />
+        <CpsCreditCard v-for="credit in commercialCredits" :key="credit.id" :credit="credit" />
       </div>
     </section>
   </main>
@@ -40,52 +36,69 @@ interface CreditData {
 // Commercial credit data
 const commercialCredits: CreditData[] = [
   {
-    id: 'creditPrestaMovil',
-    name: 'PrestaMovil',
-    icon: `${assetPrefix}/assets/icon/credits/prestamovil.png`,
-    description: 'Crédito diseñado para adquirir unidades de transporte público de carga y pasajeros.',
-    simulatorUrl: '/inicio/simulador/prestamovil',
+    id: 'creditComertialAvio',
+    name: 'PRÉSTAMO COMERCIAL AVÍO',
+    icon: `${assetPrefix}/assets/icon/credits/comercial_avio.png`,
+    description: 'Impulsa tu negocio, crédito pensado para actividades comerciales, agrícolas, ganaderas o empresariales.',
+    simulatorUrl: '/inicio/simulador/comercial-avio',
     sections: [
       {
-        id: 'terminos',
-        title: 'Términos',
-        content: ['Monto 300,000 – 5,000,000 Plazo: hasta 120 meses']
+        id: 'montos-y-plazos',
+        title: 'Montos y Plazos',
+        content: [
+          'AVÍO COMERCIAL con giro y/o actividad menor a un año de antigüedad: desde $5,000 hasta $50,000 | Hasta 24 meses',
+          'AVÍO COMERCIAL con giro y/o actividad mayor a un año de antigüedad: desde $5,000 hasta $300,000 | Hasta 60 meses',
+          'AVÍO AGRO/GANADERO (sector primario) con giro y/o actividad mayor a un año de antigüedad: desde $5,000 hasta $300,000 | Hasta 12 meses'
+        ]
       },
       {
         id: 'tasa-ordinaria',
         title: 'Tasa Ordinaria',
-        content: ['Mensual 1.65%', 'Anual 21.78%']
+        content: [
+          'Mensual 1.80%',
+          'Anual 21.60%'
+        ]
       },
       {
         id: 'tasa-moratoria',
         title: 'Tasa Moratoria',
-        content: ['Mensual 2.48%', 'Anual 34.25%']
+        content: [
+          'Mensual 4%',
+          'Anual 48%'
+        ]
       },
       {
         id: 'cat',
-        title: 'CAT',
-        content: ['<span class="cat-gat">29.2%</span>', 'CAT promedio para fines informativos y de comparación.']
+        title: 'CAT promedio (sin IVA)',
+        content: [
+          '13.6%',
+          'CAT promedio para fines informativos y de comparación.'
+        ]
+      },
+      {
+        id: 'comisiones',
+        title: 'Comisiones',
+        content: ['Este producto no genera ninguna comisión.']
       },
       {
         id: 'pagos',
         title: 'Pagos',
-        content: ['Mensual sobre saldos insolutos']
+        content: ['Mensuales o de acuerdo con tu ciclo productivo']
       },
       {
         id: 'requisitos',
         title: 'Requisitos',
         content: [
+          '18 años en adelante',
+          'Ser Socio con parte social completa y expediente actualizado',
+          '10% de garantía financiera en tu cuenta de ahorros',
           'Identificación Oficial vigente',
-          'Comprobante de domicilio particular del solicitante No mayor a 3 meses',
-          'RFC del solicitante',
-          'Documentos de ingresos de los últimos 12 meses',
-          'Enganche de al menos el 30% del valor comercial de la unidad vehicular.',
-          'Cotización de la unidad vehicular',
-          'Cotización de Póliza de seguro vehicular',
+          'Comprobante de domicilio (no mayor a 60 días)',
+          'Comprobante de ingresos (no mayor a 30 días)',
           'Constancia de situación fiscal que coincidan con la actividad comercial declarada.',
           'Opinión de cumplimiento en positivo',
           'Autorización para consulta de buró de crédito (SIC) del solicitante.',
-          'Aval con buen historial crediticio.',
+          'Auval con buen historial crediticio.',
           'Autorización para consulta de buró de crédito (SIC) del aval.'
         ]
       },
@@ -109,54 +122,77 @@ const commercialCredits: CreditData[] = [
     ]
   },
   {
-    id: 'creditComertialAvio',
-    name: 'Comercial Avío',
-    icon: `${assetPrefix}/assets/icon/credits/comercial_avio.png`,
-    description: 'Impulsa tu negocio, crédito pensado para actividades comerciales, agrícolas, ganaderas o empresariales.',
-    simulatorUrl: '/inicio/simulador/comercial-avio',
+    id: 'creditComertialRefacc',
+    name: 'PRÉSTAMO COMERCIAL REFACCIONARIO',
+    icon: `${assetPrefix}/assets/icon/credits/comercial_refaccionario.png`,
+    description: 'Crédito a largo plazo destinado a impulsar tu negocio o actividad agropecuaria, ideal para    invertir en la compra, instalación de maquinarias o refacciones que fortalezcan y desarrollen tu producción.',
+    simulatorUrl: '/inicio/simulador/comercial-refaccionario',
     sections: [
       {
-        id: 'terminos',
-        title: 'Términos',
-        content: ['Monto: 100,000 – 10,000,000 Plazo: hasta 60 meses']
+        id: 'moontos-y-plazos',
+        title: 'Montos y Plazos',
+        content: [
+          'REFACCIONARIO COMERCIAL Y AGRO/GANADERO con giro y/o actividad menor a un año de antigüedad: Desde $5,000 hasta $50,000 | Hasta 24 meses',
+          'REFACCIONARIO COMERCIAL Y AGRO/GANADERO (con giro y/o actividad mayor a un año de antigüedad): Desde $5,000 hasta $300,000 | Hasta 48 meses'
+        ]
       },
       {
         id: 'tasa-ordinaria',
         title: 'Tasa Ordinaria',
-        content: ['Mensual 1.80%', 'Anual 23.97%']
+        content: [
+          'Mensual 1.80%',
+          'Anual 21.60%'
+        ]
       },
       {
         id: 'tasa-moratoria',
         title: 'Tasa Moratoria',
-        content: ['Mensual 2.70%', 'Anual 37.93%']
+        content: [
+          'Mensual 4%',
+          'Anual 48%'
+        ]
       },
       {
         id: 'cat',
-        title: 'CAT',
-        content: ['<span class="cat-gat">31.1%</span>', 'CAT promedio para fines informativos y de comparación.']
+        title: 'CAT promedio (sin IVA)',
+        content: [
+          '13.5%',
+          'CAT promedio para fines informativos y de comparación.'
+        ]
+      },
+      {
+        id: 'comisiones',
+        title: 'Comisiones',
+        content: ['Este producto no genera ninguna comisión.']
       },
       {
         id: 'pagos',
         title: 'Pagos',
-        content: ['Mensual sobre saldos insolutos']
+        content: ['Mensual o conforme a tu giro de negocio']
       },
       {
         id: 'requisitos',
         title: 'Requisitos',
         content: [
+          '18 años en adelante',
+          'Ser Socio con parte social completa y expediente actualizado',
+          '10% de garantía financiera en tu cuenta de ahorros',
           'Identificación Oficial vigente',
-          'Comprobante de domicilio particular del solicitante No mayor a 3 meses',
-          'RFC del solicitante',
-          'Documentos de ingresos de los últimos 12 meses',
-          'Aval con buen historial crediticio',
-          'Autorización para consulta de buró de crédito (SIC) del solicitante y aval.'
+          'Comprobante de domicilio (no mayor a 60 días)',
+          'Comprobante de ingresos (no mayor a 30 días)',
+          'Constancia de situación fiscal que coincidan con la actividad comercial declarada.',
+          'Opinión de cumplimiento en positivo',
+          'Autorización para consulta de buró de crédito (SIC) del solicitante.',
+          'Auval con buen historial crediticio.',
+          'Autorización para consulta de buró de crédito (SIC) del aval.',
+          'Comprobación del destino del crédito'
         ]
       },
       {
         id: 'beneficios',
         title: 'Beneficios',
         content: [
-          'Crédito exento de IVA.',
+          '          Crédito exento de IVA',
           'Si pagas de manera puntal capital e interés, puedes acceder a un descuento en la tasa de interés ordinaria.'
         ]
       },
@@ -172,54 +208,76 @@ const commercialCredits: CreditData[] = [
     ]
   },
   {
-    id: 'creditComertialRefacc',
-    name: 'Comercial Refaccionario',
-    icon: `${assetPrefix}/assets/icon/credits/comercial_refaccionario.png`,
-    description: 'Crédito a largo plazo destinado a impulsar tu negocio o actividad agropecuaria, ideal para invertir en la compra, instalación de maquinarias o refacciones que fortalezcan y desarrollen tu producción.',
-    simulatorUrl: '/inicio/simulador/comercial-refaccionario',
+    id: 'creditPrestaMovil',
+    name: 'PRÉSTAMO PRESTA-MÓVIL ',
+    icon: `${assetPrefix}/assets/icon/credits/prestamovil.png`,
+    description: 'Financiamiento diseñado especialmente para vehículos de transporte, plataformas digitales, taxis y unidades utilitarias',
+    simulatorUrl: '/inicio/simulador/prestamovil',
     sections: [
       {
-        id: 'terminos',
-        title: 'Términos',
-        content: ['Monto: 100,000 – 10,000,000 Plazo: hasta 60 meses']
+        id: 'montos-y-plazos',
+        title: 'Montos y Plazos',
+        content: ['Desde $50,000 hasta $1,400,000 | Hasta 72 meses']
       },
       {
         id: 'tasa-ordinaria',
         title: 'Tasa Ordinaria',
-        content: ['Mensual 1.80%', 'Anual 23.97%']
+        content: [
+          'Mensual 1.20%',
+          'Anual 14.40%'
+        ]
       },
       {
         id: 'tasa-moratoria',
         title: 'Tasa Moratoria',
-        content: ['Mensual 2.70%', 'Anual 37.93%']
+        content: [
+          'Mensual 4%',
+          'Anual 48%'
+        ]
       },
       {
         id: 'cat',
-        title: 'CAT',
-        content: ['<span class="cat-gat">13.4%</span>', 'CAT promedio para fines informativos y de comparación.']
+        title: 'CAT promedio (sin IVA)',
+        content: [
+          '12.7%',
+          'CAT promedio para fines informativos y de comparación.'
+        ]
+      },
+      {
+        id: 'comisiones',
+        title: 'Comisiones',
+        content: ['Este producto no genera ninguna comisión.']
       },
       {
         id: 'pagos',
         title: 'Pagos',
-        content: ['Mensual sobre saldos insolutos']
+        content: ['Mensuales, sobre saldo insoluto']
       },
       {
         id: 'requisitos',
         title: 'Requisitos',
         content: [
+          '18 años en adelante',
+          'Ser Socio con parte social completa y expediente actualizado',
+          '10% de garantía financiera en tu cuenta de ahorros',
           'Identificación Oficial vigente',
-          'Comprobante de domicilio particular del solicitante No mayor a 3 meses',
-          'RFC del solicitante',
-          'Documentos de ingresos de los últimos 12 meses',
-          'Documentación de la garantía: escritura, comprobante de pago de predial, Para más detalles, acércate a tu asesor.',
-          'Cotización de las pólizas de seguros de vida y daños',
-          'Autorización para consulta de buró de crédito (SIC) del solicitante.'
+          'Comprobante de domicilio (no mayor a 60 días)',
+          'Comprobante de ingresos (no mayor a 30 días)',
+          'Permiso vigente para la prestación del servicio de transporte.',
+          'Cotización del auto.',
+          'Cotización de Póliza de seguro vehicular.',
+          'Constancia de situación fiscal que coincidan con la actividad comercial declarada.',
+          'Opinión de cumplimiento en positivo',
+          'Autorización para consulta de buró de crédito (SIC) del solicitante.',
+          'Auval con buen historial crediticio.',
+          'Autorización para consulta de buró de crédito (SIC) del aval.'
         ]
       },
       {
         id: 'beneficios',
         title: 'Beneficios',
         content: [
+          'Crédito exento de IVA.',
           'Si pagas de manera puntal capital e interés, puedes acceder a un descuento en la tasa de interés ordinaria.'
         ]
       },
