@@ -4,16 +4,11 @@
       <div class="credito-tipe">VIVIENDA</div>
       <div class="card-container row justify-content-center">
         <!-- Data-driven credit cards using CpsCreditCard component with modal -->
-        <CpsCreditCard
-          v-for="credit in viviendaCredits"
-          :key="credit.id"
-          :credit="credit"
-          button-text="Ver detalles"
-        />
+        <CpsCreditCard v-for="credit in viviendaCredits" :key="credit.id" :credit="credit" button-text="Ver detalles" />
       </div>
     </section>
   </main>
-</template> 
+</template>
 <script setup lang="ts">
 import CpsCreditCard from '@/components/cards/CpsCreditCard.vue'
 
@@ -42,7 +37,7 @@ interface CreditData {
 const viviendaCredits: CreditData[] = [
   {
     id: 'prestamoVivienda',
-    name: 'Crédito Vivienda',
+    name: 'PRÉSTAMO VIVIENDA',
     icon: `${assetPrefix}/assets/icon/credits/vivienda.png`,
     description: 'Diseñado para construir, remodelar o ampliar tu casa. Ideal para mejorar tu patrimonio.',
     simulatorUrl: '/inicio/simulador/vivienda',
@@ -50,22 +45,33 @@ const viviendaCredits: CreditData[] = [
       {
         id: 'montos-plazos',
         title: 'Montos y plazos',
-        content: ['Desde $300,001 hasta $8,000,000 | Hasta 240 meses']
+        content: [
+          'Desde $300,001 hasta $8,000,000 | Hasta 240 meses'
+        ]
       },
       {
         id: 'tasa-ordinaria',
         title: 'Tasa Ordinaria',
-        content: ['Mensual 0.8%', 'Anual 9.60 %']
+        content: [
+          'Mensual 0.8%',
+          'Anual 9.60 %'
+        ]
       },
       {
         id: 'tasa-moratoria',
         title: 'Tasa Moratoria',
-        content: ['Mensual 3%', 'Anual 36%']
+        content: [
+          'Mensual 3%',
+          'Anual 36%'
+        ]
       },
       {
         id: 'cat',
         title: 'CAT promedio (sin IVA)',
-        content: ['<span class="cat-gat">11.1%</span>', 'CAT promedio para fines informativos y de comparación.']
+        content: [
+          '11.1%',
+          'CAT promedio para fines informativos y de comparación.'
+        ]
       },
       {
         id: 'comisiones',
