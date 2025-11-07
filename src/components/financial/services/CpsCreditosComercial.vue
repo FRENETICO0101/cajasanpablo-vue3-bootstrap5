@@ -294,30 +294,47 @@ const commercialCredits: CreditData[] = [
   },
   {
     id: 'creditComertialRefaccHipo',
-    name: 'Comercial Refaccionario Hipotecario',
+    name: 'PRÉSTAMO COMERCIAL REFACCIONARIO HIPOTECARIO',
     icon: `${assetPrefix}/assets/icon/credits/refaccionario_hipotecario.png`,
     description: 'Crédito a largo plazo con garantía hipotecaria para hacer crecer tu negocio o actividad agropecuaria. Invierte, equípate y fortalece tu producción.',
     simulatorUrl: '/inicio/simulador/comercial-refaccionario-hipotecario',
     sections: [
       {
-        id: 'terminos',
-        title: 'Términos',
-        content: ['Monto: 500,000 – 20,000,000 Plazo: hasta 180 meses']
+        id: 'montos-y-plazos',
+        title: 'Montos y Plazos',
+        content: [
+          'REFACCIONARIO HIPOTECARIO NEGOCIO: Desde $300,001 hasta $5,000,000 | Hasta 120 meses',
+          'REFACCIONARIO HIPOTECARIO AGROGANAERO: Desde $300,001 hasta $5,000,000 | Hasta 48 meses'
+        ]
       },
       {
         id: 'tasa-ordinaria',
         title: 'Tasa Ordinaria',
-        content: ['Mensual 1.80%', 'Anual 23.97%']
+        content: [
+          'Mensual 1.80%',
+          'Anual 21.60%'
+        ]
       },
       {
         id: 'tasa-moratoria',
         title: 'Tasa Moratoria',
-        content: ['Mensual 2.70%', 'Anual 37.93%']
+        content: [
+          'Mensual 4%',
+          'Anual 48%'
+        ]
       },
       {
         id: 'cat',
-        title: 'CAT',
-        content: ['<span class="cat-gat">13.4%</span>', 'CAT promedio para fines informativos y de comparación.']
+        title: 'CAT promedio (sin IVA)',
+        content: [
+          '13.4',
+          'CAT promedio para fines informativos y de comparación.'
+        ]
+      },
+      {
+        id: 'comisiones',
+        title: 'Comisiones',
+        content: ['Este producto no genera ninguna comisión.']
       },
       {
         id: 'pagos',
@@ -328,10 +345,16 @@ const commercialCredits: CreditData[] = [
         id: 'requisitos',
         title: 'Requisitos',
         content: [
+          '18 años en adelante',
+          'Ser Socio con parte social completa y expediente actualizado',
+          '$20,000 pesos de garantía financiera en tu cuenta de ahorro.',
           'Identificación Oficial vigente',
-          'Comprobante de domicilio particular del solicitante No mayor a 3 meses',
-          'RFC del solicitante',
-          'Documentos de ingresos de los últimos 12 meses',
+          'Comprobante de domicilio (no mayor a 60 días)',
+          'Comprobante de ingresos (no mayor a 30 días)',
+          'Constancia de situación fiscal que coincidan con la actividad comercial declarada.',
+          'Opinión de cumplimiento en positivo',
+          'Avaluó de propiedad a hipotecar.',
+          'Garantía hipotecaria: se financiará hasta un máximo del 80% del valor del avalúo de la garantía.',
           'Documentación de la garantía: escritura, comprobante de pago de predial, Para más detalles, acércate a tu asesor.',
           'Cotización de las pólizas de seguros de vida y daños',
           'Autorización para consulta de buró de crédito (SIC) del solicitante.'
@@ -341,7 +364,9 @@ const commercialCredits: CreditData[] = [
         id: 'beneficios',
         title: 'Beneficios',
         content: [
-          'Si pagas de manera puntal capital e interés, puedes acceder a un descuento en la tasa de interés ordinaria.'
+          'Crédito exento de IVA',
+          'Acompañamiento legal para la formalización de la hipoteca.',
+          'Si pagas de manera puntual capital e interés, puedes acceder a un descuento en la tasa de interés ordinaria.'
         ]
       },
       {
@@ -350,7 +375,8 @@ const commercialCredits: CreditData[] = [
         content: [
           'Incumplir tus obligaciones te puede generar comisiones e intereses moratorios',
           'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio',
-          'El avalista, obligado solidario o coacreditado responderá como obligado principal por el total del pago frente a la Institución Financiera'
+          'El avalista, obligado solidario o coacreditado responderá como obligado principal por el total del pago frente a la Institución Financiera',
+          'Los gastos de escrituración y avalúos corren por cuenta del socio.'
         ]
       }
     ]
