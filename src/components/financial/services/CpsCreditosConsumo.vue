@@ -515,123 +515,176 @@ const consumoCredits: CreditData[] = [
     ]
   },
   {
-    id: 'creditEducativo',
-    name: 'Crédito Educativo',
-    icon: `${assetPrefix}/assets/icon/credits/ordinario.png`,
-    description: 'Financiamiento para estudios universitarios, posgrados y cursos de especialización.',
-    simulatorUrl: '/inicio/simulador/educativo',
+    id: 'creditAutomovil',
+    name: 'PRÉSTAMO AUTOMOVIL',
+    icon: `${assetPrefix}/assets/icon/credits/automovil.png`,
+    description: 'Adquiere tu auto nuevo o seminuevo (hasta 5 años de antigüedad) para uso personal, disponible en agencias distribuidoras autorizadas o en lotes registrados ante ANCA o AMDA.',
+    simulatorUrl: '/inicio/simulador/crediAutomovil',
     sections: [
       {
-        id: 'EducativoOne',
+        id: 'CreditAutomovilOne',
         title: 'Montos y plazos',
-        content: ['Desde $5,000 hasta $200,000 | Hasta 60 meses']
+        content: [
+          'AUTO NUEVO: desde $50,000 hasta $700,000 | Hasta 72 meses',
+          'AUTO SEMINUEVO: desde $50,000 hasta $300,000 | Hasta 60 meses'
+        ]
       },
       {
-        id: 'EducativoTwo',
+        id: 'CreditAutomovilTwo',
         title: 'Tasa Ordinaria',
         content: [
           'Mensual 1.20%',
-          'Anual 14.4%'
+          'Anual 14.40%'
         ]
       },
       {
-        id: 'EducativoThree',
+        id: 'CreditAutomovilThree',
         title: 'Tasa Moratoria',
         content: [
-          'Mensual 3%',
-          'Anual 36%'
+          'Mensual 4%',
+          'Anual 48%'
         ]
       },
       {
-        id: 'EducativoFour',
+        id: 'CreditAutomovilFour',
         title: 'CAT promedio (sin IVA)',
-        content: ['16.2%']
+        content: [
+          '15.8%',
+          'CAT promedio para fines informativos y de comparación.'
+        ]
       },
       {
-        id: 'EducativoFive',
+        id: 'CreditAutomovilFive',
         title: 'Comisiones',
-        content: ['Sin comisión por apertura']
+        content: ['Este producto no genera ninguna Comisión.']
       },
       {
-        id: 'EducativoSix',
+        id: 'CreditAutomovilNine',
+        title: 'Pagos',
+        content: ['Mensuales, sobre saldo insoluto']
+      },
+      {
+        id: 'CreditAutomovilSix',
         title: 'Requisitos',
         content: [
-          'Llenar y firmar solicitud',
-          'Comprobante de ingresos',
+          '18 años en adelante',
+          'Ser Socio con parte social completa y expediente actualizado',
+          '10% de garantía financiera en tu cuenta de ahorro.',
           'Identificación oficial vigente',
-          'Comprobante de domicilio no mayor a 3 meses',
-          'Carta de aceptación de institución educativa',
-          'Comprobante de costos educativos'
+          'Comprobante de domicilio (no mayor a 60 días)',
+          'Comprobante de ingresos (no mayor a 30 días)',
+          'Cotización del auto',
+          'Cotización de Póliza de seguro vehicular',
+          'Autorización para consulta de buró de crédito (SIC) del solicitante.',
+          'Aval con buen historial crediticio.',
+          'Autorización para consulta de buró de crédito (SIC) del aval.'
         ]
       },
       {
-        id: 'EducativoSeven',
+        id: 'CreditAutomovilTen',
+        title: 'Beneficios',
+        content: [
+          'Se podrá exentar el requisito de aval.',
+          'Si pagas de manera puntual capital e interés, puedes acceder a un descuento en la tasa de interés ordinaria.',
+          'Este tipo de préstamo podrá otorgarse al acreditado independientemente si cuenta con otro u otros préstamos con saldo a favor de la Cooperativa.'
+        ]
+      },
+      {
+        id: 'CreditAutomovilSeven',
         title: 'Nota',
         content: [
           'Incumplir tus obligaciones te puede generar comisiones e intereses moratorios',
-          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio'
+          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio',
+          'El avalista, obligado solidario o coacreditado responderá como obligado principal por el total del pago frente a la Institución Financiera'
         ]
       }
     ]
   },
   {
-    id: 'creditEmergencia',
-    name: 'Crédito de Emergencia',
-    icon: `${assetPrefix}/assets/icon/credits/automatico.png`,
-    description: 'Crédito rápido para situaciones de emergencia médica o familiar urgente.',
-    simulatorUrl: '/inicio/simulador/emergencia',
+    id: 'creditOrdinarioHipotecario',
+    name: 'PRÉSTAMO ORDINARIO HIPOTECARIO',
+    icon: `${assetPrefix}/assets/icon/credits/ordinario_hipotecario.png`,
+    description: 'Crédito con garantía hipotecaria para que adquieras lo que necesitas sin complicaciones. Montos y plazos',
+    simulatorUrl: '/inicio/simulador/creditOrdinarioHipotecario',
     sections: [
       {
-        id: 'EmergenciaOne',
+        id: 'CreditOrdinarioHipoOne',
         title: 'Montos y plazos',
-        content: ['Desde $1,000 hasta $25,000 | Hasta 24 meses']
+        content: [
+          'Desde $300,001 hasta $5,000,000 | Hasta 240 meses',
+        ]
       },
       {
-        id: 'EmergenciaTwo',
+        id: 'CreditOrdinarioHipoTwo',
         title: 'Tasa Ordinaria',
         content: [
-          'Mensual 1.75%',
-          'Anual 21%'
+          'Mensual 1.00%',
+          'Anual 12.00%'
         ]
       },
       {
-        id: 'EmergenciaThree',
+        id: 'CreditOrdinarioHipoThree',
         title: 'Tasa Moratoria',
         content: [
-          'Mensual 3%',
-          'Anual 36%'
+          'Mensual 4%',
+          'Anual 48%'
         ]
       },
       {
-        id: 'EmergenciaFour',
+        id: 'CreditOrdinarioHipoFour',
         title: 'CAT promedio (sin IVA)',
-        content: ['23.5%']
+        content: [
+          '13.5%',
+          'CAT promedio para fines informativos y de comparación.'
+        ]
       },
       {
-        id: 'EmergenciaFive',
+        id: 'CreditOrdinarioHipoFive',
         title: 'Comisiones',
-        content: ['Sin comisión por apertura']
+        content: ['Este producto no genera ninguna Comisión.']
       },
       {
-        id: 'EmergenciaSix',
+        id: 'CreditOrdinarioHipoNine',
+        title: 'Pagos',
+        content: ['Mensuales']
+      },
+      {
+        id: 'CreditOrdinarioHipoSix',
         title: 'Requisitos',
         content: [
-          'Llenar y firmar solicitud',
+          '18 años en adelante',
+          'Ser Socio con parte social completa y expediente actualizado',
+          '$20,000 pesos de garantía financiera en tu cuenta de ahorro.',
           'Identificación oficial vigente',
-          'Comprobante de domicilio no mayor a 3 meses',
-          'Comprobante de la emergencia (médica o familiar)'
+          'Comprobante de domicilio (no mayor a 60 días)',
+          'Comprobante de ingresos (no mayor a 30 días)',
+          'Garantía hipotecaria: se financiará hasta un máximo del 50% del valor del avalúo de la garantía. Documentación de la garantía: escritura, comprobante de pago de predial, Para más detalles, acércate a tu asesor.',
+          'Avaluó de propiedad a hipotecar.',
+          'Cotización de las pólizas de seguros de vida y daños',
+          'Autorización para consulta de buró de crédito (SIC) del solicitante.'
         ]
       },
       {
-        id: 'EmergenciaSeven',
+        id: 'CreditOrdinarioHipoTen',
+        title: 'Beneficios',
+        content: [
+          'No necesitas un aval',
+          'Tasa de interés competitiva',
+          'Acompañamiento legal para la formalización de la hipoteca'
+        ]
+      },
+      {
+        id: 'CreditOrdinarioHipoSeven',
         title: 'Nota',
         content: [
           'Incumplir tus obligaciones te puede generar comisiones e intereses moratorios',
-          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio'
+          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio',
+          'El avalista, obligado solidario o coacreditado responderá como obligado principal por el total del pago frente a la Institución Financiera',
+          'Los gastos de escrituración y avalúos corren por cuenta del socio'
         ]
       }
     ]
-  }
+  },
 ]
 </script>
 
