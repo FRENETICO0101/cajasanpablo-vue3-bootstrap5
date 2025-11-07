@@ -348,19 +348,19 @@ const consumoCredits: CreditData[] = [
     ]
   },
   {
-    id: 'creditOrdinarioHipo',
+    id: 'creditOrdinario',
     name: 'PRÉSTAMO ORDINARIO',
     icon: `${assetPrefix}/assets/icon/credits/ordinario.png`,
     description: 'Crédito personal de Caja Popular San Pablo, para que tú decidas en qué usarlo.',
     simulatorUrl: '/inicio/simulador/ordinario',
     sections: [
       {
-        id: 'OrdinarioHipoOne',
+        id: 'OrdinarioOne',
         title: 'Montos y plazos',
         content: ['Desde $5,000 hasta $300,000 | Hasta 72 meses']
       },
       {
-        id: 'OrdinarioHipoTwo',
+        id: 'OrdinarioTwo',
         title: 'Tasa Ordinaria',
         content: [
           'Mensual 1.8%',
@@ -368,7 +368,7 @@ const consumoCredits: CreditData[] = [
         ]
       },
       {
-        id: 'OrdinarioHipoThree',
+        id: 'OrdinarioThree',
         title: 'Tasa Moratoria',
         content: [
           'Mensual 4%',
@@ -376,7 +376,7 @@ const consumoCredits: CreditData[] = [
         ]
       },
       {
-        id: 'OrdinarioHipoFour',
+        id: 'OrdinarioFour',
         title: 'CAT promedio (sin IVA)',
         content: [
           '18.5%',
@@ -384,17 +384,17 @@ const consumoCredits: CreditData[] = [
         ]
       },
       {
-        id: 'OrdinarioHipoFive',
+        id: 'OrdinarioFive',
         title: 'Comisiones',
         content: ['Este producto no genera ninguna Comisión.']
       },
       {
-        id: 'OrdinarioHipoFive',
+        id: 'OrdinarioFive',
         title: 'Pagos',
         content: ['Mensuales, sobre saldo insoluto']
       },
       {
-        id: 'OrdinarioHipoSix',
+        id: 'OrdinarioSix',
         title: 'Requisitos',
         content: [
           '18 años en adelante',
@@ -409,7 +409,7 @@ const consumoCredits: CreditData[] = [
         ]
       },
       {
-        id: 'OrdinarioHipoTen',
+        id: 'OrdinarioTen',
         title: 'Beneficios',
         content: [
           'Se podrá exentar el requisito de aval.',
@@ -417,7 +417,7 @@ const consumoCredits: CreditData[] = [
         ]
       },
       {
-        id: 'OrdinarioHipoSeven',
+        id: 'OrdinarioSeven',
         title: 'Nota',
         content: [
           'Incumplir tus obligaciones te puede generar comisiones e intereses moratorios',
@@ -428,62 +428,88 @@ const consumoCredits: CreditData[] = [
     ]
   },
   {
-    id: 'creditConstruccion',
-    name: 'Crédito Construcción',
-    icon: `${assetPrefix}/assets/icon/credits/vivienda.png`,
-    description: 'Crédito diseñado para desarrollar proyectos de construcción de vivienda, comercio o servicios.',
-    simulatorUrl: '/inicio/simulador/construccion',
+    id: 'creditLeal',
+    name: 'PRÉSTAMO CREDILEAL',
+    icon: `${assetPrefix}/assets/icon/credits/credileal.png`,
+    description: 'Crédito de consumo exclusivo para Socios con una sólida trayectoria en la cooperativa.',
+    simulatorUrl: '/inicio/simulador/credileal',
     sections: [
       {
-        id: 'ConstruccionOne',
+        id: 'CreditLealOne',
         title: 'Montos y plazos',
-        content: ['Desde $10,000 hasta $1,000,000 | Hasta 120 meses']
+        content: [
+          'Desde $5,000 hasta $100,000 | Hasta 72 meses',
+          'De $100,001 hasta $200,000| Hasta 60 meses'
+        ]
       },
       {
-        id: 'ConstruccionTwo',
+        id: 'CreditLealTwo',
         title: 'Tasa Ordinaria',
         content: [
-          'Mensual 1.00%',
-          'Anual 12.00%'
+          'Mensual 1.5%',
+          'Anual 18%'
         ]
       },
       {
-        id: 'ConstruccionThree',
+        id: 'CreditLealThree',
         title: 'Tasa Moratoria',
         content: [
-          'Mensual 3%',
-          'Anual 36%'
+          'Mensual 4%',
+          'Anual 48%'
         ]
       },
       {
-        id: 'ConstruccionFour',
+        id: 'CreditLealFour',
         title: 'CAT promedio (sin IVA)',
-        content: ['13.5%']
+        content: [
+          '13.9%',
+          'CAT promedio para fines informativos y de comparación.'
+        ]
       },
       {
-        id: 'ConstruccionFive',
+        id: 'CreditLealFive',
         title: 'Comisiones',
-        content: ['Sin comisión por apertura']
+        content: ['Este producto no genera ninguna Comisión.']
       },
       {
-        id: 'ConstruccionSix',
+        id: 'CreditLealNine',
+        title: 'Pagos',
+        content: ['Mensuales, sobre saldo insoluto']
+      },
+      {
+        id: 'CreditLealSix',
         title: 'Requisitos',
         content: [
-          'Llenar y firmar solicitud',
-          'Comprobante de ingresos',
+          '18 años en adelante',
+          'Ser Socio con parte social completa y expediente actualizado',
           'Identificación oficial vigente',
-          'Comprobante de domicilio no mayor a 3 meses',
-          'Constancia de situación fiscal actualizada',
-          'Estados de cuenta bancarios',
-          'Documentos de la obra a construir'
+          '10% de garantía financiera en tu cuenta de ahorro.',
+          'Comprobante de domicilio (no mayor a 60 días)',
+          'Comprobante de ingresos (no mayor a 30 días)',
+          'Antigüedad mínima de 3 años como Socio',
+          'Ahorro mensual mínimo de 10 meses',
+          'Historial crediticio dentro de Caja San Pablo mínimo de 12 meses.',
+          'autorización para consulta de buró de crédito (SIC) del solicitante.',
+          'Aval con buen historial crediticio.',
+          'Autorización para consulta de buró de crédito (SIC) del aval.'
         ]
       },
       {
-        id: 'ConstruccionSeven',
+        id: 'CreditLealTen',
+        title: 'Beneficios',
+        content: [
+          'Reconocimiento a tu trayectoria como socio en Caja San Pablo.',
+          'Se podrá exentar el requisito de aval.',
+          'Si pagas de manera puntual capital e interés, puedes acceder a un descuento en la tasa de interés ordinaria.'
+        ]
+      },
+      {
+        id: 'CreditLealSeven',
         title: 'Nota',
         content: [
           'Incumplir tus obligaciones te puede generar comisiones e intereses moratorios',
-          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio'
+          'Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio',
+          'El avalista, obligado solidario o coacreditado responderá como obligado principal por el total del pago frente a la Institución Financiera'
         ]
       }
     ]
