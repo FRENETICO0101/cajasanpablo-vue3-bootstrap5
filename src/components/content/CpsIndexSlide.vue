@@ -13,7 +13,7 @@ const slides = [
     src: image8,
     alt: "Competencias 2025",
     href: "/assets/pdf/competencias-2025.pdf",
-    target: "",
+    target: "_blank",
     style: "background-color: black; bottom: 10%; color: white; right: 8%",
     caption: "Descargar información",
     interval: 5000
