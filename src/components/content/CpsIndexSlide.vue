@@ -14,8 +14,8 @@ const slides = [
     alt: "Competencias 2025",
     href: "/assets/pdf/competencias-2025.pdf",
     target: "_blank",
-    style: "background-color: black; bottom: 10%; color: white; right: 8%",
-    caption: "Descargar información",
+    style: "background-color: black; bottom: 1%; color: white; right: 1%",
+    caption: "Información",
     interval: 5000
   },
   {
@@ -94,7 +94,7 @@ const slides = [
           <div v-for="(slide, index) in slides" :key="index" class="carousel-item" :class="{ active: index === 0 }"
             :data-bs-interval="slide.interval || 5000">
             <img :src="slide.src" class="d-block w-100" :alt="slide.alt" style="object-fit: cover;">
-            <div v-if="slide.caption" class="carousel-caption d-none d-md-block">
+            <div v-if="slide.caption" class="carousel-caption d-block">
               <a v-if="slide.href" :target="slide.target" class="btnGallery" :href="slide.href" :style="slide.style">{{
                 slide.caption }}
               </a>
@@ -150,5 +150,19 @@ a {
   padding: 10px;
   position: absolute;
   transition: all 1s ease;
+ }
+
+@media (max-width: 768px) {
+  .btnGallery {
+    /* width: 70vw; */
+    left: auto !important;
+    right: auto !important;
+    /* transform: translateX(-50%); */
+    bottom: 5% !important;
+    font-size: 1.1rem;
+    min-width: 140px;
+    /* max-width: 90vw; */
+    /* padding: 12px 8px; */
+  }
 }
 </style>
