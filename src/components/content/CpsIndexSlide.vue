@@ -6,8 +6,18 @@ import image4 from "@/assets/SPEI.webp"
 import image5 from "@/assets/datos-biometricos-1.webp"
 import image6 from "@/assets/inscribeteahoraesmásfacil.webp"
 import image7 from "@/assets/alianzasgal-2.webp"
+import image8 from "@/assets/competencias-2025.webp"
 
 const slides = [
+  {
+    src: image8,
+    alt: "Competencias 2025",
+    href: "/assets/pdf/Competencias2025.pdf",
+    target: "",
+    style: "background-color: black; bottom: 10%; color: white; right: 8%",
+    caption: "Descargar información",
+    interval: 5000
+  },
   {
     src: image1,
     alt: "Imagen Gracias por Anticipar tus Pagos",
