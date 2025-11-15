@@ -28,7 +28,8 @@
           </p>
 
           <!-- Simulator Link (if available) -->
-          <div v-if="credit.simulatorUrl" class="text-center mb-4">
+           <!-- FIX when simulator will ready -->
+          <div v-if="!credit.simulatorUrl" class="text-center mb-4">
             <a
               class="btn btn-primary credit-simulator-btn"
               :href="credit.simulatorUrl"
@@ -77,9 +78,9 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button 
-            type="button" 
-            class="btn btn-secondary" 
+          <button
+            type="button"
+            class="btn btn-secondary"
             data-bs-dismiss="modal"
             :aria-label="`Cerrar modal de ${credit.name}`"
           >
@@ -127,7 +128,7 @@ onMounted(() => {
     modalRef.value.addEventListener('show.bs.modal', () => {
       isModalHidden.value = false
     })
-    
+
     modalRef.value.addEventListener('hidden.bs.modal', () => {
       isModalHidden.value = true
     })
