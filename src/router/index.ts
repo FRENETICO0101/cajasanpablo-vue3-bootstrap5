@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Index from '@/components/content/CpsIndex.vue'
+import AppMovil from '@/components/financial/services/CpsAppMovil.vue'
 import Socio from '@/components/financial/services/CpsSocio.vue'
 import Creditos from '@/components/financial/services/CpsCreditos.vue'
 import Sucursales from '@/components/financial/services/CpsSucursales.vue'
@@ -29,6 +30,11 @@ const router = createRouter({
       path: '/',
       name: 'inicio',
       component: Index,
+    },
+    {
+      path: '/servicio/app-movil',
+      name: 'app-movil',
+      component: AppMovil,
     },
     {
       path: '/servicio/socio',
