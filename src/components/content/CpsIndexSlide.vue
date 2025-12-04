@@ -7,8 +7,18 @@ import image5 from "@/assets/datos-biometricos-1.webp"
 import image6 from "@/assets/inscribeteahoraesmásfacil.webp"
 import image7 from "@/assets/alianzasgal-2.webp"
 import image8 from "@/assets/competencias-2025.webp"
+import image9 from "@/assets/calendario_despensas.webp"
 
 const slides = [
+  {
+    src: image9,
+    alt: "Despensas 2025",
+    href: "/assets/pdf/calendario_de_despensas_2025.pdf",
+    target: "_blank",
+    style: "background-color: black; bottom: 1%; color: white; right: 1%",
+    caption: "Información",
+    interval: 7000
+  },
   {
     src: image8,
     alt: "Competencias 2025",
