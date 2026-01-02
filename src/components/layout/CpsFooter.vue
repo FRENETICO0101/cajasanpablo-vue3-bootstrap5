@@ -35,7 +35,7 @@
                   aria-label="Abrir PDF Derechos Arco" target="_blank">Derechos Arco</a>
               </li>
               <li >
-                <a href="/assets/pdf/cat_y_gat_15_dic_2025.pdf"
+                <a :href="catGatPdf"
                   aria-label="Abrir PDF Costos y Comisiones" target="_blank">Costos y Comisiones</a>
               </li>
             </ul>
@@ -54,6 +54,7 @@
 </template>
 <script setup lang="ts">
 import CpsSocialMediaBlock from '@/components/media/CpsSocialMediaBlock.vue'
+import catGatPdf from '@/assets/pdf/cat_y_gat_15_dic_2025.pdf'
 
 // Get asset prefix from environment
 const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''

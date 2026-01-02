@@ -23,3 +23,9 @@ declare global {
 }
 
 export {}
+
+// Support importing PDF files as URLs in TypeScript
+declare module '*.pdf' {
+  const src: string
+  export default src
+}
