@@ -328,11 +328,6 @@
   resolved "https://registry.npmjs.org/@csstools/css-tokenizer/-/css-tokenizer-3.0.4.tgz"
   integrity sha512-Vd/9EVDiu6PPJt9yAh6roZP6El1xHrdvIVGjyBsHR0RYwNHgL7FJPyIIW4fANJNG6FtyZfvlRPpFI4ZM/lubvw==
 
-"@esbuild/darwin-x64@0.25.10":
-  version "0.25.10"
-  resolved "https://registry.npmjs.org/@esbuild/darwin-x64/-/darwin-x64-0.25.10.tgz"
-  integrity sha512-tguWg1olF6DGqzws97pKZ8G2L7Ig1vjDmGTwcTuYHbuU6TTjJe5FXbgs5C1BBzHbJ2bo1m3WkQDbWO2PvamRcg==
-
 "@eslint-community/eslint-utils@^4.4.0", "@eslint-community/eslint-utils@^4.7.0", "@eslint-community/eslint-utils@^4.8.0":
   version "4.9.0"
   resolved "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.9.0.tgz"
@@ -524,10 +519,15 @@
   resolved "https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.0-beta.29.tgz"
   integrity sha512-NIJgOsMjbxAXvoGq/X0gD7VPMQ8j9g0BiDaNjVNVjvl+iKXxL3Jre0v31RmBYeLEmkbj2s02v8vFTbUXi5XS2Q==
 
-"@rollup/rollup-darwin-x64@4.52.3":
-  version "4.52.3"
-  resolved "https://registry.npmjs.org/@rollup/rollup-darwin-x64/-/rollup-darwin-x64-4.52.3.tgz"
-  integrity sha512-+Dyo7O1KUmIsbzx1l+4V4tvEVnVQqMOIYtrxK7ncLSknl1xnMHLgn7gddJVrYPNZfEB8CIi3hK8gq8bDhb3h5A==
+"@rollup/rollup-win32-x64-gnu@4.52.5":
+  version "4.52.5"
+  resolved "https://registry.npmjs.org/@rollup/rollup-win32-x64-gnu/-/rollup-win32-x64-gnu-4.52.5.tgz"
+  integrity sha512-UGBUGPFp1vkj6p8wCRraqNhqwX/4kNQPS57BCFc8wYh0g94iVIW33wJtQAx3G7vrjjNtRaxiMUylM0ktp/TRSQ==
+
+"@rollup/rollup-win32-x64-msvc@4.52.5":
+  version "4.52.5"
+  resolved "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.52.5.tgz"
+  integrity sha512-TAcgQh2sSkykPRWLrdyy2AiceMckNf5loITqXxFI5VuQjS5tSuw3WlwdN8qv8vzjLAUTvYaH/mVjSFpbkFbpTg==
 
 "@sec-ant/readable-stream@^0.4.1":
   version "0.4.1"
@@ -1830,11 +1830,6 @@ foreground-child@^3.1.0:
     cross-spawn "^7.0.6"
     signal-exit "^4.0.1"
 
-fsevents@~2.3.2, fsevents@~2.3.3:
-  version "2.3.3"
-  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
-  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
-
 function-bind@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz"
@@ -2821,35 +2816,35 @@ rfdc@^1.4.1:
   resolved "https://registry.npmjs.org/rfdc/-/rfdc-1.4.1.tgz"
   integrity sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==
 
-rollup@^4.43.0:
-  version "4.52.3"
-  resolved "https://registry.npmjs.org/rollup/-/rollup-4.52.3.tgz"
-  integrity sha512-RIDh866U8agLgiIcdpB+COKnlCreHJLfIhWC3LVflku5YHfpnsIKigRZeFfMfCc4dVcqNVfQQ5gO/afOck064A==
+rollup@^4.43.0, rollup@^4.52.5:
+  version "4.52.5"
+  resolved "https://registry.npmjs.org/rollup/-/rollup-4.52.5.tgz"
+  integrity sha512-3GuObel8h7Kqdjt0gxkEzaifHTqLVW56Y/bjN7PSQtkKr0w3V/QYSdt6QWYtd7A1xUtYQigtdUfgj1RvWVtorw==
   dependencies:
     "@types/estree" "1.0.8"
   optionalDependencies:
-    "@rollup/rollup-android-arm-eabi" "4.52.3"
-    "@rollup/rollup-android-arm64" "4.52.3"
-    "@rollup/rollup-darwin-arm64" "4.52.3"
-    "@rollup/rollup-darwin-x64" "4.52.3"
-    "@rollup/rollup-freebsd-arm64" "4.52.3"
-    "@rollup/rollup-freebsd-x64" "4.52.3"
-    "@rollup/rollup-linux-arm-gnueabihf" "4.52.3"
-    "@rollup/rollup-linux-arm-musleabihf" "4.52.3"
-    "@rollup/rollup-linux-arm64-gnu" "4.52.3"
-    "@rollup/rollup-linux-arm64-musl" "4.52.3"
-    "@rollup/rollup-linux-loong64-gnu" "4.52.3"
-    "@rollup/rollup-linux-ppc64-gnu" "4.52.3"
-    "@rollup/rollup-linux-riscv64-gnu" "4.52.3"
-    "@rollup/rollup-linux-riscv64-musl" "4.52.3"
-    "@rollup/rollup-linux-s390x-gnu" "4.52.3"
-    "@rollup/rollup-linux-x64-gnu" "4.52.3"
-    "@rollup/rollup-linux-x64-musl" "4.52.3"
-    "@rollup/rollup-openharmony-arm64" "4.52.3"
-    "@rollup/rollup-win32-arm64-msvc" "4.52.3"
-    "@rollup/rollup-win32-ia32-msvc" "4.52.3"
-    "@rollup/rollup-win32-x64-gnu" "4.52.3"
-    "@rollup/rollup-win32-x64-msvc" "4.52.3"
+    "@rollup/rollup-android-arm-eabi" "4.52.5"
+    "@rollup/rollup-android-arm64" "4.52.5"
+    "@rollup/rollup-darwin-arm64" "4.52.5"
+    "@rollup/rollup-darwin-x64" "4.52.5"
+    "@rollup/rollup-freebsd-arm64" "4.52.5"
+    "@rollup/rollup-freebsd-x64" "4.52.5"
+    "@rollup/rollup-linux-arm-gnueabihf" "4.52.5"
+    "@rollup/rollup-linux-arm-musleabihf" "4.52.5"
+    "@rollup/rollup-linux-arm64-gnu" "4.52.5"
+    "@rollup/rollup-linux-arm64-musl" "4.52.5"
+    "@rollup/rollup-linux-loong64-gnu" "4.52.5"
+    "@rollup/rollup-linux-ppc64-gnu" "4.52.5"
+    "@rollup/rollup-linux-riscv64-gnu" "4.52.5"
+    "@rollup/rollup-linux-riscv64-musl" "4.52.5"
+    "@rollup/rollup-linux-s390x-gnu" "4.52.5"
+    "@rollup/rollup-linux-x64-gnu" "4.52.5"
+    "@rollup/rollup-linux-x64-musl" "4.52.5"
+    "@rollup/rollup-openharmony-arm64" "4.52.5"
+    "@rollup/rollup-win32-arm64-msvc" "4.52.5"
+    "@rollup/rollup-win32-ia32-msvc" "4.52.5"
+    "@rollup/rollup-win32-x64-gnu" "4.52.5"
+    "@rollup/rollup-win32-x64-msvc" "4.52.5"
     fsevents "~2.3.2"
 
 run-applescript@^7.0.0:

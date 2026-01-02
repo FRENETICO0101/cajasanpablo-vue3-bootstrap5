@@ -24,6 +24,7 @@
     "@popperjs/core": "^2.11.8",
     "accordion": "^3.0.2",
     "bootstrap": "^5.3.8",
+    "rollup": "^4.52.5",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },

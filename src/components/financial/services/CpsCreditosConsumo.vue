@@ -73,7 +73,7 @@ const consumoCredits: CreditData[] = [
       {
         id: 'AutomaticFour',
         title: 'CAT promedio (sin IVA)',
-        content: ['195.3%', 'CAT promedio para fines informativos y de comparación.']
+        content: ['193.3%', 'CAT promedio para fines informativos y de comparación.']
       },
       {
         id: 'AutomaticFive',
@@ -148,7 +148,7 @@ const consumoCredits: CreditData[] = [
       {
         id: 'LomioFour',
         title: 'CAT promedio (sin IVA)',
-        content: ['201.5%', 'CAT promedio para fines informativos y de comparación.']
+        content: ['201.6%', 'CAT promedio para fines informativos y de comparación.']
       },
       {
         id: 'LomioFive',
@@ -372,14 +372,14 @@ const consumoCredits: CreditData[] = [
         title: 'Tasa Moratoria',
         content: [
           'Mensual 4%',
-          'Anual 46%'
+          'Anual 48%'
         ]
       },
       {
         id: 'OrdinarioFour',
         title: 'CAT promedio (sin IVA)',
         content: [
-          '18.5%',
+          '18.6%',
           'CAT promedio para fines informativos y de comparación.'
         ]
       },
@@ -462,7 +462,7 @@ const consumoCredits: CreditData[] = [
         id: 'CreditLealFour',
         title: 'CAT promedio (sin IVA)',
         content: [
-          '13.9%',
+          '14%',
           'CAT promedio para fines informativos y de comparación.'
         ]
       },
@@ -549,7 +549,7 @@ const consumoCredits: CreditData[] = [
         id: 'CreditAutomovilFour',
         title: 'CAT promedio (sin IVA)',
         content: [
-          '15.8%',
+          '15.3%',
           'CAT promedio para fines informativos y de comparación.'
         ]
       },
@@ -634,7 +634,7 @@ const consumoCredits: CreditData[] = [
         id: 'CreditOrdinarioHipoFour',
         title: 'CAT promedio (sin IVA)',
         content: [
-          '13.5%',
+          '13.2%',
           'CAT promedio para fines informativos y de comparación.'
         ]
       },

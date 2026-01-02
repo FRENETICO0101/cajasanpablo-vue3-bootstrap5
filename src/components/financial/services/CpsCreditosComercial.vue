@@ -71,7 +71,7 @@ const commercialCredits: CreditData[] = [
         id: 'cat',
         title: 'CAT promedio (sin IVA)',
         content: [
-          '13.6%',
+          '14%',
           'CAT promedio para fines informativos y de comparación.'
         ]
       },
@@ -239,7 +239,7 @@ const commercialCredits: CreditData[] = [
         id: 'cat',
         title: 'CAT promedio (sin IVA)',
         content: [
-          '12.7%',
+          '15.3%',
           'CAT promedio para fines informativos y de comparación.'
         ]
       },
@@ -311,8 +311,8 @@ const commercialCredits: CreditData[] = [
         id: 'tasa-ordinaria',
         title: 'Tasa Ordinaria',
         content: [
-          'Mensual 1.80%',
-          'Anual 21.60%'
+          'Mensual 1%',
+          'Anual 12%'
         ]
       },
       {

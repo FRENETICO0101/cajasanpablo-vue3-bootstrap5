@@ -69,7 +69,7 @@ const viviendaCredits: CreditData[] = [
         id: 'cat',
         title: 'CAT promedio (sin IVA)',
         content: [
-          '11.1%',
+          '10.9%',
           'CAT promedio para fines informativos y de comparación.'
         ]
       },
