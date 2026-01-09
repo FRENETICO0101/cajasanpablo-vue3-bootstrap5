@@ -165,15 +165,15 @@ const ahorroAdultoData = {
       type: 'text' as const,
       content: [
         { text: '(Ganancia Anual Total Neta) GAT Real', bold: true, break: true },
-        { text: '-2.20%', break: true },
+        { text: '-2.24%', break: true },
         { text: 'Antes de impuestos', bold: true, break: true },
         { text: '"La GAT Real es el rendimiento que obtendría después de descontar la inflación estimada". "Para fines informativos y de comparación" Monto mínimo requerido para obtener la tasa de interés anual es de $100.00 (Cien Pesos 00/100 M/N).', break: true },
         { text: 'Tasa de interés ordinaria anual fija', bold: true, break: true },
         { text: '1.50% Tasas de interés expresadas antes de impuestos.', break: true },
         { text: 'GAT Nominal', bold: true, break: true },
         { text: '1.51% "Antes de impuestos" "Para fines informativos y de comparación" GAT: Ganancia Anual Total Neta. Monto mínimo requerido para obtener la tasa de interés anual es de $100.00 (Cien Pesos 00/100 M/N).', break: true },
-        { text: 'Fecha de cálculo: 02 de Junio de 2025', bold: true, break: true },
-        { text: 'Vigencia: Julio – Diciembre 2025', bold: true }
+        { text: 'Fecha de cálculo: 15 de Diciembre de 2025', bold: true, break: true },
+        { text: 'Vigencia: Enero – Junio 2026', bold: true }
       ]
     },
     {
@@ -243,15 +243,15 @@ const ahorroMenoresData = {
       type: 'text' as const,
       content: [
         { text: '(Ganancia Anual Total Neta) GAT Real', bold: true, break: true },
-        { text: '-2.20%', break: true },
+        { text: '-2.24%', break: true },
         { text: 'Antes de impuestos', bold: true, break: true },
         { text: '"La GAT Real es el rendimiento que obtendría después de descontar la inflación estimada". "Para fines informativos y de comparación" Monto mínimo requerido para obtener la tasa de interés anual es de $100.00 (Cien Pesos 00/100 M/N).', break: true },
         { text: 'Tasa de interés ordinaria anual fija', bold: true, break: true },
         { text: '1.50% Tasas de interés expresadas antes de impuestos.', break: true },
         { text: 'GAT Nominal', bold: true, break: true },
         { text: '1.51% "Antes de impuestos" "Para fines informativos y de comparación" GAT: Ganancia Anual Total Neta. Monto mínimo requerido para obtener la tasa de interés anual es de $100.00 (Cien Pesos 00/100 M/N).', break: true },
-        { text: 'Fecha de cálculo: 02 de Junio de 2025', bold: true, break: true },
-        { text: 'Vigencia: Julio – Diciembre 2025', bold: true }
+        { text: 'Fecha de cálculo: 15 de Diciembre de 2025', bold: true, break: true },
+        { text: 'Vigencia: Enero – Junio 2026', bold: true }
       ]
     },
     {
@@ -312,15 +312,15 @@ const cuentaCorrienteData = {
       type: 'text' as const,
       content: [
         { text: '(Ganancia Anual Total Neta) GAT Real', bold: true, break: true },
-        { text: '-3.67%', break: true },
+        { text: '-3.70%', break: true },
         { text: 'Antes de impuestos', bold: true, break: true },
         { text: '"La GAT Real es el rendimiento que obtendría después de descontar la inflación estimada". "Para fines informativos y de comparación" Monto mínimo requerido para obtener la tasa de interés anual es de $100.00 (Cien Pesos 00/100 M/N).', break: true },
         { text: 'Tasa de interés ordinaria anual fija', bold: true, break: true },
         { text: '0.00% Tasas de interés expresadas antes de impuestos.', break: true },
         { text: 'GAT Nominal', bold: true, break: true },
         { text: '0.00% "Antes de impuestos" "Para fines informativos y de comparación" GAT: Ganancia Anual Total Neta.', break: true },
-        { text: 'Fecha de cálculo: 02 de Junio de 2025', bold: true, break: true },
-        { text: 'Vigencia: Julio – Diciembre 2025', bold: true }
+        { text: 'Fecha de cálculo: 15 de Diciembre de 2025', bold: true, break: true },
+        { text: 'Vigencia: Enero – Junio 2026', bold: true }
       ]
     },
     {
@@ -401,8 +401,8 @@ const plazoFijoData = {
         { text: '"La GAT Real es el rendimiento que obtendría después de descontar la inflación estimada".', bold: true, break: true },
         { text: '"Para fines informativos y de comparación".', bold: true, break: true },
         { text: 'GAT REAL Calculado sobre un monto de inversión de $5,000.00 (Cinco mil pesos 00/100 M/N).', bold: true, break: true },
-        { text: 'Fecha de cálculo: 02 de Junio de 2025', bold: true, break: true },
-        { text: 'Vigencia: Julio – Diciembre 2025', bold: true }
+        { text: 'Fecha de cálculo: 15 de Diciembre de 2025', bold: true, break: true },
+        { text: 'Vigencia: Enero – Junio 2026', bold: true }
       ],
       headers: ['RANGOS', 'PLAZO', 'TASA DE INTERES FIJA', 'GAT NOMINAL', 'GAT REAL'],
       rows: [
@@ -411,28 +411,28 @@ const plazoFijoData = {
           { text: '28 Días' },
           { text: '3.75%' },
           { text: '3.82%', bold: true },
-          { text: '0.01%', bold: true }
+          { text: '0.02%', bold: true }
         ],
         [
           { text: 'De $11,000 a $30,999.99' },
           { text: '28 Días' },
           { text: '3.95%' },
           { text: '4.02%', bold: true },
-          { text: '0.21%', bold: true }
+          { text: '0.18%', bold: true }
         ],
         [
           { text: 'De $31,000 a $99,999.99' },
           { text: '28 Días' },
           { text: '4.25%' },
           { text: '4.33%', bold: true },
-          { text: '0.51%', bold: true }
+          { text: '0.48%', bold: true }
         ],
         [
           { text: 'De $100,000 o más' },
           { text: '28 Días' },
           { text: '4.75%' },
           { text: '4.86%', bold: true },
-          { text: '1.01%', bold: true }
+          { text: '0.98%', bold: true }
         ]
       ]
     },
@@ -602,12 +602,12 @@ const plazoFijoData = {
   .container {
     padding: 0 15px;
   }
-  
+
   .card-deposito {
     margin-bottom: 25px;
     padding: 0 5px;
   }
-  
+
   .card-deposito .card-img-top {
     height: 200px;
     margin: 15px 0 10px 0;
@@ -626,7 +626,7 @@ const plazoFijoData = {
     line-height: 1.5;
     padding: 0 5px;
   }
-  
+
   .btn-cards {
     padding: 12px 24px;
     font-size: 0.9rem;
@@ -640,12 +640,12 @@ const plazoFijoData = {
     height: 220px;
     margin: 18px 0 12px 0;
   }
-  
+
   .text-cards-description {
     font-size: 0.95rem;
     line-height: 1.55;
   }
-  
+
   .btn-cards {
     padding: 13px 27px;
     font-size: 0.95rem;
@@ -659,12 +659,12 @@ const plazoFijoData = {
     height: 260px;
     margin: 25px 0 20px 0;
   }
-  
+
   .text-cards-description {
     font-size: 1.05rem;
     line-height: 1.65;
   }
-  
+
   .btn-cards {
     padding: 16px 35px;
     font-size: 1.05rem;
@@ -679,7 +679,7 @@ const plazoFijoData = {
   .btn-cards {
     transition: none;
   }
-  
+
   .card-deposito .card:hover {
     transform: none;
   }
@@ -701,7 +701,7 @@ const plazoFijoData = {
     box-shadow: none;
     border: 1px solid #ddd;
   }
-  
+
   .btn-cards {
     background: var(--color-primario) !important;
     color: white !important;
