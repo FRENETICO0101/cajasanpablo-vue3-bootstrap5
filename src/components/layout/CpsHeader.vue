@@ -19,8 +19,8 @@ const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
       <div class="row">
         <div class="col-6 d-flex align-items-center justify-content-center gap-2">
           CONOCE LOS
-          <a :href="`${assetPrefix}/assets/pdf/dias inhabiles.pdf`" target="_blank">DÍAS INHÁBILES
-            2025</a>
+          <a :href="`${assetPrefix}/assets/pdf/dias_inhabiles_2026.pdf`" target="_blank">DÍAS INHÁBILES
+            2026</a>
         </div>
         <div class="col-6 d-flex align-items-center justify-content-center gap-2">
           CONTÁCTANOS EN NUESTRAS REDES SOCIALES:

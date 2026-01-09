@@ -19,6 +19,12 @@
       <!-- Tab Headers -->
       <ul class="nav nav-tabs custom-nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
+          <button class="nav-link" id="magazine-2026-tab" data-bs-toggle="tab" data-bs-target="#magazine-2026" type="button"
+            role="tab" aria-controls="magazine-2026" aria-selected="false">
+            <i class="mdi mdi-calendar tab-icon"></i> 2026
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
           <button class="nav-link active" id="magazine-2025-tab" data-bs-toggle="tab" data-bs-target="#magazine-2025" type="button"
             role="tab" aria-controls="magazine-2025" aria-selected="true">
             <i class="mdi mdi-calendar tab-icon"></i> 2025
@@ -52,6 +58,11 @@
 
       <!-- Tab Content -->
       <div class="tab-content" id="myTabContent">
+        <!-- 2026 Tab -->
+        <div class="tab-pane fade mt-5" id="magazine-2026" role="tabpanel" aria-labelledby="magazine-2026-tab">
+          <Revistas2026 />
+        </div>
+
         <!-- 20225 Tab -->
         <div class="tab-pane fade show active mt-5" id="magazine-2025" role="tabpanel" aria-labelledby="magazine-2025-tab">
           <Revistas2025 />
@@ -83,6 +94,7 @@
 </template>
 <script setup lang="ts">
 import CpsPageHeader from '@/components/layout/CpsPageHeader.vue'
+import Revistas2026 from './CpsRevistas2026.vue'
 import Revistas2025 from './CpsRevistas2025.vue'
 import Revistas2024 from './CpsRevistas2024.vue'
 import Revistas2023 from './CpsRevistas2023.vue'

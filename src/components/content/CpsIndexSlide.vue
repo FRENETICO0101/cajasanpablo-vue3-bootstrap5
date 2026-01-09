@@ -1,33 +1,14 @@
 <script setup lang="ts">
 import image1 from "@/assets/anticipar_pagos.webp"
 import image2 from "@/assets/norma_ifrs9.webp"
-import image3 from "@/assets/promocion.webp"
+import image3 from "@/assets/promocion_2026.webp"
 import image4 from "@/assets/SPEI.webp"
 import image5 from "@/assets/datos-biometricos-1.webp"
 import image6 from "@/assets/inscribeteahoraesmásfacil.webp"
 import image7 from "@/assets/alianzasgal-2.webp"
 import image8 from "@/assets/competencias-2025.webp"
-import image9 from "@/assets/calendario_despensas.webp"
 
 const slides = [
-  {
-    src: image9,
-    alt: "Despensas 2025",
-    href: "/assets/pdf/calendario_de_despensas_2025.pdf",
-    target: "_blank",
-    style: "background-color: black; bottom: 1%; color: white; right: 1%",
-    caption: "Información",
-    interval: 7000
-  },
-  {
-    src: image8,
-    alt: "Competencias 2025",
-    href: "/assets/pdf/competencias-2025.pdf",
-    target: "_blank",
-    style: "background-color: black; bottom: 1%; color: white; right: 1%",
-    caption: "Información",
-    interval: 5000
-  },
   {
     src: image1,
     alt: "Imagen Gracias por Anticipar tus Pagos",
@@ -49,7 +30,7 @@ const slides = [
   {
     src: image3,
     alt: "Imagen promocion 2025 - 2026",
-    href: "/assets/pdf/promociones.pdf",
+    href: "/assets/pdf/bases_promociones_2026.pdf",
     target: "_blank",
     style: "background-color: rgb(244, 163, 26); bottom: 10%; color: black; right: 8%",
     caption: "Conoce las bases",
@@ -90,6 +71,15 @@ const slides = [
     style: "background-color: white; bottom: 5%; color: rgb(63, 126, 189); right: 31%",
     caption: "VER",
     interval: 5000,
+  },
+  {
+    src: image8,
+    alt: "Competencias 2025",
+    href: "/assets/pdf/competencias-2025.pdf",
+    target: "_blank",
+    style: "background-color: black; bottom: 1%; color: white; right: 1%",
+    caption: "Información",
+    interval: 5000
   }
 ]
 </script>
