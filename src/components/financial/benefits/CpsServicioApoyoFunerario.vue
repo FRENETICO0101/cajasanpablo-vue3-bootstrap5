@@ -8,59 +8,49 @@
     />
       <section class="profun">
         <div class="container py-5">
-          <strong>¿Sabías que contamos con Apoyo funerario?</strong>
+          <strong>Estimados Socios</strong>
           <br />
           <br />
-          <span>
-            Hay momentos que son inevitables, y en Caja Popular San Pablo, queremos acompañar a
-            nuestros Socios con apoyo cálido y respetuoso en los momentos más difíciles.
-          </span>
+          <p>
+            Con el compromiso de brindarles siempre mejores beneficios y mayor tranquilidad, les informamos que hemos
+            realizado un cambio en la agencia de asistencia funeraria que forma parte de sus servicios como Socios.
+          </p>
+          <p>
+            Este cambio nos permite ofrecerles mayores protecciones y mejores condiciones de cobertura en caso de
+            defunción, reforzando así el apoyo para ustedes y sus familias en momentos difíciles.
+          </p>
+          <p>
+            A partir del mes de enero de 2026, marcando al número 55 5480 3816.
+          </p>
+          <p>
+            Opción 1, MAWDY les brindará todo el
+            servicio de información, asistencia funeraria y acompañamiento a los familiares de los titulares, teniendo
+            una cobertura a nivel nacional.
+          </p>
+          <p>
+            Para mayor información en los próximos días podrán consultar los detalles específicos de las nuevas
+            coberturas, así como los procedimientos de atención, en nuestras sucursales o a través de nuestros canales
+            oficiales.
+          </p>
+          <p>
+            Agradecemos su confianza y reiteramos nuestro compromiso de seguir trabajando en beneficio de su bienestar
+            y el de sus seres queridos.
+          </p>
+          <p>
+            Atentamente,
+          </p>
+          <p>
+            Caja Popular San Pablo
+          </p>
+          <br />
+          <strong>¿Qué es MAWDY?</strong>
           <br />
           <br />
-          <span>A través de ANEMEX, ponemos a tu disposición los servicios funerarios con cobertura en
-            más de 40 agencias funerarias del Estado de Jalisco.</span>
-          <br />
-          <br />
-          <strong>¿Quién es ANEMEX?</strong>
-          <br />
-          <br />
-          <span>
-            Es una empresa mexicana de asistencia funeraria que ofrece una membresía diseñada para
-            brindarte tranquilidad en una de las etapas más complicadas de la vida.
-          </span>
-          <br />
-          <br />
-          <strong>¿Cómo puedo acceder al apoyo funerario?</strong>
-          <br />
-          <br />
-          <span> Es muy fácil acceder a este beneficio siguiendo estos simples pasos: </span>
-          <br />
-          <br />
-          <ol>
-            <li>Llama al call center al 800 504 6455.</li>
-            <li>Identifica al Socio (número de Socio) y recibe la confirmación.</li>
-            <li>
-              Detalla el servicio que necesitas: ¿información, cremación, velación en sala,
-              funeraria o domicilio, traslado?
-            </li>
-            <li>Te proporcionaremos opciones de funerarias disponibles.</li>
-            <li>El servicio se brindará de acuerdo con la funeraria correspondiente.</li>
-            <li>Más información: anemex.com.mx</li>
-          </ol>
-
-          <strong>¿Este apoyo está disponible para todos los Socios de Caja Popular San Pablo?</strong>
-          <br />
-          <br />
-          <span>
-            Socios activos con una antigüedad mínima de 12 meses, con registro vigente de ahorro sistemático
-            y al corriente en el pago de sus préstamos.
-          </span>
-          <br />
-          <br />
-          <br />
-          <em>
-            Este apoyo estará disponible exclusivamente por medio ANEMEX y las funerarias afiliadas.
-          </em>
+          <p>
+            MAWDY es la unidad de asistencia del Grupo MAPFRE, una empresa que ofrece soluciones de protección y
+            asistencia más allá de los seguros tradicionales, que cuenta con una notable trayectoria de más de 34 años
+            en Asistencia y Protección que la respalda.
+          </p>
         </div>
       </section>
   </main>

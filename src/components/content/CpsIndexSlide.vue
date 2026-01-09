@@ -6,7 +6,6 @@ import image4 from "@/assets/SPEI.webp"
 import image5 from "@/assets/datos-biometricos-1.webp"
 import image6 from "@/assets/inscribeteahoraesmásfacil.webp"
 import image7 from "@/assets/alianzasgal-2.webp"
-import image8 from "@/assets/competencias-2025.webp"
 
 const slides = [
   {
@@ -71,15 +70,6 @@ const slides = [
     style: "background-color: white; bottom: 5%; color: rgb(63, 126, 189); right: 31%",
     caption: "VER",
     interval: 5000,
-  },
-  {
-    src: image8,
-    alt: "Competencias 2025",
-    href: "/assets/pdf/competencias-2025.pdf",
-    target: "_blank",
-    style: "background-color: black; bottom: 1%; color: white; right: 1%",
-    caption: "Información",
-    interval: 5000
   }
 ]
 </script>
