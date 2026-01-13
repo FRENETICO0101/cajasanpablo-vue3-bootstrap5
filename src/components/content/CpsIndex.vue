@@ -2,7 +2,7 @@
 import backgroundImageWeAre from '@/assets/historia.webp'
 import PreguntasBuzon from '@/components/forms/CpsPreguntasBuzon.vue'
 import IndexSlide from './CpsIndexSlide.vue'
-import YouTubeChannel from '@/components/media/CpsYouTubeChannel.vue'
+// import YouTubeChannel from '@/components/media/CpsYouTubeChannel.vue'
 import NovedadesEventos from './CpsNovedadesEventos.vue'
 
 // Get asset prefix from environment
@@ -134,8 +134,8 @@ function loadUrl(urlString: string) {
           </div>
         </a>
       </div>
-       <div class="col promo-card d-flex flex-column align-items-center">
-        <!-- Promo 2026 desactivada
+       <!--<div class="col promo-card d-flex flex-column align-items-center">
+         Promo 2026 desactivada
         <a target="_blank" class="text-decoration-none animate__animated animate__fadeIn animate__slow"
           href="/assets/pdf/bases_promociones_2026.pdf">
           <div class="image-wrapper position-relative">
@@ -143,10 +143,10 @@ function loadUrl(urlString: string) {
             <img loading="lazy" width="250px" height="250px"
               style="border-radius: 7%; box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75)"
               :src="`${assetPrefix}/assets/Promociones_2026.webp`" alt="Promociones 2026" />
-          </div> 
+          </div>
         </a>
-        -->
       </div>
+      -->
       <div class="col promo-card d-flex flex-column align-items-center">
         <a class="text-decoration-none animate__animated animate__fadeIn animate__slow" href="/btns/alianzas">
           <div class="image-wrapper position-relative">
@@ -198,7 +198,7 @@ function loadUrl(urlString: string) {
     </div>
   </section>
   <NovedadesEventos />
-  <YouTubeChannel />
+  <!-- <YouTubeChannel /> -->
   <hr />
   <PreguntasBuzon />
 </template>
