@@ -3,8 +3,10 @@
     <div class="mantenimiento">
         <div class="container">
           <div class="row text-center">
-            <div class="col-12 text-center"><img
-                :src="`${assetPrefix}/assets/puerco_educoof.webp`">
+            <div class="col-12 text-center">
+              <!-- Imagen puerco_educoof desactivada
+              <img :src="`${assetPrefix}/assets/puerco_educoof.webp`">
+              -->
               <h1 class="my-2">Estamos en Mantenimiento</h1>
               <p >Para mejorar tu experiencia en Educación Cooperativa y Financiera. <br
                   > Volveremos pronto. <br ><span

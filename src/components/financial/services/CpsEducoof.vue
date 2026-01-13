@@ -8,10 +8,12 @@
     />
     <div class="container py-5">
       <div class="row">
+        <!-- Icono puerco_educoof desactivado
         <div class="col d-flex justify-content-center"><a
             href="/servicio/mantenimiento" class="card text-center"><img
               :src="`${assetPrefix}/assets/icon/puerco_educoof.webp`" loading="lazy" alt="educoof.com"
               style="object-fit: contain; background-color: var(--color-primario);"></a></div>
+        -->
         <div class="col d-flex justify-content-center"><a
             routerlink="/servicio/blog" class="card text-center" href="/servicio/blog"><img
               :src="`${assetPrefix}/assets/icon/blog_educoof.gif`" loading="lazy" alt="Blog educación cooperativa y financiera"

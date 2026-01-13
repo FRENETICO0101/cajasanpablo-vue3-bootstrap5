@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import image1 from "@/assets/anticipar_pagos.webp"
 import image2 from "@/assets/norma_ifrs9.webp"
-import image3 from "@/assets/promocion_2026.webp"
+// import image3 from "@/assets/promocion_2026.webp"
 import image4 from "@/assets/SPEI.webp"
 import image5 from "@/assets/datos-biometricos-1.webp"
 import image6 from "@/assets/inscribeteahoraesmásfacil.webp"
@@ -26,7 +26,7 @@ const slides = [
     caption: "Normativa IFRS9",
     interval: 5000
   },
-  {
+  /* {
     src: image3,
     alt: "Imagen promocion 2025 - 2026",
     href: "/assets/pdf/bases_promociones_2026.pdf",
@@ -34,7 +34,7 @@ const slides = [
     style: "background-color: rgb(244, 163, 26); bottom: 10%; color: black; right: 8%",
     caption: "Conoce las bases",
     interval: 5000,
-  },
+  }, */
   {
     src: image4,
     alt: "App Móvil banca electrónica guía de usuario",
