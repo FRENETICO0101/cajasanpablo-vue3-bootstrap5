@@ -6,6 +6,7 @@ import image4 from "@/assets/SPEI.webp"
 import image5 from "@/assets/datos-biometricos-1.webp"
 import image6 from "@/assets/inscribeteahoraesmásfacil.webp"
 import image7 from "@/assets/alianzasgal-2.webp"
+import image8 from "@/assets/comunicado_vale_de_despensa_2026.webp"
 
 const slides = [
   {
@@ -69,6 +70,15 @@ const slides = [
     target: "_self",
     style: "background-color: white; bottom: 5%; color: rgb(63, 126, 189); right: 31%",
     caption: "VER",
+    interval: 5000,
+  },
+  {
+    src: image8,
+    alt: "Comunicado vale de despensa 2026",
+    href: "/assets/pdf/Comunicado_Despensa_2026.pdf",
+    target: "_blank",
+    style: "background-color: white; bottom: 5%; color: rgb(63, 126, 189); right: 31%",
+    caption: "Leer comunicado",
     interval: 5000,
   }
 ]
