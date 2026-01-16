@@ -439,7 +439,7 @@ const consumoCredits: CreditData[] = [
         title: 'Montos y plazos',
         content: [
           'Desde $5,000 hasta $100,000 | Hasta 72 meses',
-          'De $100,001 hasta $200,000| Hasta 60 meses'
+          'De $100,001 hasta $200,000| Hasta 72 meses'
         ]
       },
       {
@@ -526,7 +526,7 @@ const consumoCredits: CreditData[] = [
         title: 'Montos y plazos',
         content: [
           'AUTO NUEVO: desde $50,000 hasta $700,000 | Hasta 72 meses',
-          'AUTO SEMINUEVO: desde $50,000 hasta $300,000 | Hasta 60 meses'
+          'AUTO SEMINUEVO: desde $50,000 hasta $300,000 | Hasta 72 meses'
         ]
       },
       {

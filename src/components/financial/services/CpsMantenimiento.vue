@@ -20,7 +20,6 @@
 
 <script setup lang="ts">
 // Get asset prefix from environment
-const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
 </script>
 <style lang="css" scoped>
 .mantenimiento {

@@ -48,6 +48,7 @@ const commercialCredits: CreditData[] = [
         content: [
           'AVÍO COMERCIAL con giro y/o actividad menor a un año de antigüedad: desde $5,000 hasta $50,000 | Hasta 24 meses',
           'AVÍO COMERCIAL con giro y/o actividad mayor a un año de antigüedad: desde $5,000 hasta $300,000 | Hasta 60 meses',
+          'AVÍO AGRO/GANADERO (sector primario) con giro y/o actividad menor a un año de antigüedad: desde $5,000 hasta $50,000 | Hasta 12 meses',
           'AVÍO AGRO/GANADERO (sector primario) con giro y/o actividad mayor a un año de antigüedad: desde $5,000 hasta $300,000 | Hasta 12 meses'
         ]
       },
@@ -239,7 +240,7 @@ const commercialCredits: CreditData[] = [
         id: 'cat',
         title: 'CAT promedio (sin IVA)',
         content: [
-          '15.3%',
+          '13.6%',
           'CAT promedio para fines informativos y de comparación.'
         ]
       },
@@ -327,7 +328,7 @@ const commercialCredits: CreditData[] = [
         id: 'cat',
         title: 'CAT promedio (sin IVA)',
         content: [
-          '13.4',
+          '13.4%',
           'CAT promedio para fines informativos y de comparación.'
         ]
       },
