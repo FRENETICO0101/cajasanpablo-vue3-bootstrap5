@@ -7,8 +7,18 @@ import image5 from "@/assets/datos-biometricos-1.webp"
 import image6 from "@/assets/inscribeteahoraesmásfacil.webp"
 import image7 from "@/assets/alianzasgal-2.webp"
 import image8 from "@/assets/comunicado_vale_de_despensa_2026.webp"
+import image9 from "@/assets/img_0.webp"
 
 const slides = [
+  {
+    src: image9,
+    alt: "Comuinucado Condolencias",
+    href: "",
+    target: "",
+    style: "",
+    caption: "",
+    interval: 5000
+  },
   {
     src: image1,
     alt: "Imagen Gracias por Anticipar tus Pagos",
