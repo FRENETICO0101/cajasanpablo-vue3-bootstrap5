@@ -9,30 +9,20 @@ import image7 from "@/assets/alianzasgal-2.webp"
 import image8 from "@/assets/comunicado_vale_de_despensa_2026.webp"
 import image9 from "@/assets/img_0.webp"
 import image10 from "@/assets/aniversario_2026.webp"
-import image11 from "@/assets/inscribete.webp"
-import image12 from "@/assets/aviso_interes_ahorro_2026.webp"
-import image13 from "@/assets/convocatorias_asamblea_2026.webp"
+import image11 from "@/assets/aviso_interes_ahorro_2026.webp"
+import image12 from "@/assets/convocatorias_asamblea_2026.webp"
 
 const slides = [
   {
     src: image9,
-    alt: "Comuinucado Condolencias",
+    alt: "Comunicado Condolencias",
     href: "",
     target: "",
     style: "",
     caption: "",
     interval: 5000
   },
-  {
-    src: image11,
-    alt: "Imagen Inscríbete",
-    href: "",
-    target: "",
-    style: "",
-    caption: "",
-    interval: 5000
-  },
-  {
+ {
     src: image10,
     alt: "Imagen Aniversario 2026",
     href: "/assets/pdf/aniversario_2026.pdf",
@@ -42,7 +32,7 @@ const slides = [
     interval: 5000,
   },
   {
-    src: image12,
+    src: image11,
     alt: "Imagen Aviso de interés ahorro 2026",
     href: "/assets/pdf/aviso_ahorro_ adulto2026.pdf",
     target: "_blank",
@@ -51,7 +41,7 @@ const slides = [
     interval: 5000,
   },
   {
-    src: image13,
+    src: image12,
     alt: "Imagen Convocatoria Asamblea 2026",
     href: "/assets/pdf/asamblea_web_2026.pdf",
     target: "_blank",
@@ -153,6 +143,15 @@ const slides = [
           </div>
         </div>
 
+        <button type="button" class="carousel-control-prev" data-bs-target="#carouselStart" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button type="button" class="carousel-control-next" data-bs-target="#carouselStart" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
       </div>
     </div>
   </div>
@@ -184,6 +183,27 @@ a {
   transition: all 1s ease;
  }
 
+.carousel-control-prev,
+.carousel-control-next {
+  width: 12%;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 999px;
+  background-size: 1.5rem 1.5rem;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(2);
+}
+
 @media (max-width: 768px) {
   .btnGallery {
     /* width: 70vw; */
@@ -195,6 +215,13 @@ a {
     min-width: 140px;
     /* max-width: 90vw; */
     /* padding: 12px 8px; */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: 1.2rem 1.2rem;
   }
 }
 </style>
