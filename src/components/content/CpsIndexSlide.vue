@@ -22,7 +22,7 @@ const slides = [
     caption: "",
     interval: 5000
   },
- {
+  {
     src: image10,
     alt: "Imagen Aniversario 2026",
     href: "/assets/pdf/aniversario_2026.pdf",
