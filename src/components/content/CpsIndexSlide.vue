@@ -8,6 +8,10 @@ import image6 from "@/assets/inscribeteahoraesmásfacil.webp"
 import image7 from "@/assets/alianzasgal-2.webp"
 import image8 from "@/assets/comunicado_vale_de_despensa_2026.webp"
 import image9 from "@/assets/img_0.webp"
+import image10 from "@/assets/aniversario_2026.webp"
+import image11 from "@/assets/inscribete.webp"
+import image12 from "@/assets/aviso_interes_ahorro_2026.webp"
+import image13 from "@/assets/convocatorias_asamblea_2026.webp"
 
 const slides = [
   {
@@ -18,6 +22,42 @@ const slides = [
     style: "",
     caption: "",
     interval: 5000
+  },
+  {
+    src: image11,
+    alt: "Imagen Inscríbete",
+    href: "",
+    target: "",
+    style: "",
+    caption: "",
+    interval: 5000
+  },
+  {
+    src: image10,
+    alt: "Imagen Aniversario 2026",
+    href: "/assets/pdf/aniversario_2026.pdf",
+    target: "_blank",
+    style: "background-color: white; bottom: 5%; color: rgb(63, 126, 189); right: 31%",
+    caption: "Ver",
+    interval: 5000,
+  },
+  {
+    src: image12,
+    alt: "Imagen Aviso de interés ahorro 2026",
+    href: "/assets/pdf/aviso_ahorro_ adulto2026.pdf",
+    target: "_blank",
+    style: "background-color: white; bottom: 5%; color: rgb(63, 126, 189); right: 31%",
+    caption: "Leer aviso",
+    interval: 5000,
+  },
+  {
+    src: image13,
+    alt: "Imagen Convocatoria Asamblea 2026",
+    href: "/assets/pdf/asamblea_web_2026.pdf",
+    target: "_blank",
+    style: "background-color: white; bottom: 5%; color: rgb(63, 126, 189); right: 31%",
+    caption: "Ver conviocatoria",
+    interval: 5000,
   },
   {
     src: image1,
@@ -92,6 +132,7 @@ const slides = [
     interval: 5000,
   }
 ]
+
 </script>
 <template>
   <div class="container mb-3">
@@ -112,15 +153,6 @@ const slides = [
           </div>
         </div>
 
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselStart" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselStart" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
   </div>
@@ -140,16 +172,6 @@ a {
   border-radius: 0 0 25px 25px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 15px;
-}
 
 .btnGallery {
   min-width: fit-content;
