@@ -115,7 +115,7 @@ const assetPrefix = import.meta.env.VITE_ASSET_PREFIX || ''
 
 // Data for Ahorro Adulto modal
 const ahorroAdultoData = {
-  title: 'AHORRO ADULTO',
+  title: 'Cuenta de Ahorro Adulto',
   description: 'Cuenta dónde se realizan depósitos en moneda nacional cuyo saldo recibe un interés anual fijo.',
   accordionSections: [
     {
@@ -503,11 +503,11 @@ const plazoFijoData = {
 
 /* ===== IMAGE BACKGROUNDS ===== */
 .ahorro-adulto-bg {
-  background-image: url('/src/assets/media/ahorro_ adulto_300x.webp');
+  background-image: url('/src/assets/media/ahorro_adulto_2026.webp');
 }
 
 .ahorro-menores-bg {
-  background-image: url('/src/assets/media/ahorro_menores_2026.webp');
+  background-image: url('/src/assets/media/ahorro_menores_20261.webp');
 }
 
 .cuenta-corriente-bg {
