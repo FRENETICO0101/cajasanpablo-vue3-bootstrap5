@@ -13,33 +13,6 @@ import image12 from "@/assets/convocatorias_asamblea_2026.webp"
 
 const slides = [
   {
-    src: image10,
-    alt: "Imagen Aniversario 2026",
-    href: "/assets/pdf/aniversario_2026.pdf",
-    target: "_blank",
-    style: "background-color: white; bottom: 5%; color: rgb(63, 126, 189); right: 31%",
-    caption: "Ver",
-    interval: 5000,
-  },
-  {
-    src: image11,
-    alt: "Imagen Aviso de interés ahorro 2026",
-    href: "/assets/pdf/aviso_ahorro_ adulto2026.pdf",
-    target: "_blank",
-    style: "background-color: rgb(22, 34, 59); bottom: 5%; color: white; right: 31%",
-    caption: "Leer aviso",
-    interval: 5000,
-  },
-  {
-    src: image12,
-    alt: "Imagen Convocatoria Asamblea 2026",
-    href: "/assets/pdf/asamblea_web_2026.pdf",
-    target: "_blank",
-    style: "background-color: rgb(22, 34, 59); bottom: 5%; color: white; right: 31%",
-    caption: "Ver conviocatoria",
-    interval: 5000,
-  },
-  {
     src: image1,
     alt: "Imagen Gracias por Anticipar tus Pagos",
     href: "",
@@ -109,6 +82,34 @@ const slides = [
     target: "_blank",
     style: "background-color: white; bottom: 5%; color: rgb(63, 126, 189); right: 31%",
     caption: "Leer comunicado",
+    interval: 5000,
+  }
+  ,
+  {
+    src: image10,
+    alt: "Imagen Aniversario 2026",
+    href: "/assets/pdf/aniversario_2026.pdf",
+    target: "_blank",
+    style: "background-color: white; bottom: 5%; color: rgb(63, 126, 189); right: 31%",
+    caption: "Ver",
+    interval: 5000,
+  },
+  {
+    src: image11,
+    alt: "Imagen Aviso de interés ahorro 2026",
+    href: "/assets/pdf/aviso_ahorro_ adulto2026.pdf",
+    target: "_blank",
+    style: "background-color: rgb(22, 34, 59); bottom: 5%; color: white; right: 31%",
+    caption: "Leer aviso",
+    interval: 5000,
+  },
+  {
+    src: image12,
+    alt: "Imagen Convocatoria Asamblea 2026",
+    href: "/assets/pdf/asamblea_web_2026.pdf",
+    target: "_blank",
+    style: "background-color: rgb(22, 34, 59); bottom: 5%; color: white; right: 31%",
+    caption: "Ver conviocatoria",
     interval: 5000,
   }
 ]
