@@ -7,21 +7,11 @@ import image5 from "@/assets/datos-biometricos-1.webp"
 import image6 from "@/assets/inscribeteahoraesmásfacil.webp"
 import image7 from "@/assets/alianzasgal-2.webp"
 import image8 from "@/assets/comunicado_vale_de_despensa_2026.webp"
-import image9 from "@/assets/img_0.webp"
 import image10 from "@/assets/aniversario_2026.webp"
 import image11 from "@/assets/aviso_interes_ahorro_2026.webp"
 import image12 from "@/assets/convocatorias_asamblea_2026.webp"
 
 const slides = [
-  {
-    src: image9,
-    alt: "Comunicado Condolencias",
-    href: "",
-    target: "",
-    style: "",
-    caption: "",
-    interval: 5000
-  },
   {
     src: image10,
     alt: "Imagen Aniversario 2026",

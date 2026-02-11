@@ -14,8 +14,8 @@
             </h3>
             <ul class="enlaces-web">
               <li >
-                <a routerlink="info/aviso" href="/info/aviso"
-                  aria-label="Aviso de Privacidad">Aviso de Privacidad</a>
+                <a href="/assets/pdf/aviso_privacidad_2026.pdf" target="_blank"
+                  aria-label="Abrir PDF Aviso de Privacidad">Aviso de Privacidad</a>
               </li>
               <li >
                 <a href="https://www.gob.mx/condusef"

@@ -26,7 +26,7 @@
         </div>
         <div class="col card-deposito">
           <div class="card h-100 shadow-lg">
-            <div class="card-img-top ahorro-menores-bg" role="img" aria-label="Ahorro Menores"></div>
+            <div class="card-img-top ahorro-menores-bg" role="img" aria-label="Cuenta de Ahorro de Menores de Edad"></div>
             <div class="card-body">
               <p class="card-text text-center text-cards-description">
                 Cuenta dónde se realizan depósitos en moneda nacional, cuyo propósito es inculcar el hábito del ahorro
@@ -196,7 +196,7 @@ const ahorroAdultoData = {
 
 // Data for other modals (abbreviated for brevity - you can add the full data)
 const ahorroMenoresData = {
-  title: 'AHORRO MENORES',
+  title: 'Cuenta de Ahorro de Menores de Edad',
   description: 'Cuenta dónde se realizan depósitos en moneda nacional, cuyo propósito es inculcar el hábito del ahorro a los menores de edad de 1 a 17 años.',
   accordionSections: [
     {
