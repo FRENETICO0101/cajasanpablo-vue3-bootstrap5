@@ -507,7 +507,7 @@ const plazoFijoData = {
 }
 
 .ahorro-menores-bg {
-  background-image: url('/src/assets/media/ahorro_menores_1_300x.webp');
+  background-image: url('/src/assets/media/ahorro_menores_2026.webp');
 }
 
 .cuenta-corriente-bg {
