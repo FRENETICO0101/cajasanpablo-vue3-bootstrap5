@@ -243,13 +243,13 @@ const ahorroMenoresData = {
       type: 'text' as const,
       content: [
         { text: '(Ganancia Anual Total Neta) GAT Real', bold: true, break: true },
-        { text: '-2.2%', break: true },
+        { text: '-2.24%', break: true },
         { text: 'Antes de impuestos', bold: true, break: true },
         { text: '"La GAT Real es el rendimiento que obtendría después de descontar la inflación estimada". "Para fines informativos y de comparación" Monto mínimo requerido para obtener la tasa de interés anual es de $100.00 (Cien Pesos 00/100 M/N).', break: true },
         { text: 'Tasa de interés ordinaria anual fija', bold: true, break: true },
         { text: '1.50% Tasas de interés expresadas antes de impuestos.', break: true },
         { text: 'GAT Nominal', bold: true, break: true },
-        { text: '1.5% "Antes de impuestos" "Para fines informativos y de comparación" GAT: Ganancia Anual Total Neta. Monto mínimo requerido para obtener la tasa de interés anual es de $100.00 (Cien Pesos 00/100 M/N).', break: true },
+        { text: '1.51% "Antes de impuestos" "Para fines informativos y de comparación" GAT: Ganancia Anual Total Neta. Monto mínimo requerido para obtener la tasa de interés anual es de $100.00 (Cien Pesos 00/100 M/N).', break: true },
         { text: 'Fecha de cálculo: 15 de Diciembre de 2025', bold: true, break: true },
         { text: 'Vigencia: Enero – Junio 2026', bold: true }
       ]
