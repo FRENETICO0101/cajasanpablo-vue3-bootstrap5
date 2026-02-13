@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import image0 from "@/assets/condolencias_sra_josefina.webp"
 import image1 from "@/assets/anticipar_pagos.webp"
 import image2 from "@/assets/norma_ifrs9.webp"
 // import image3 from "@/assets/promocion_2026.webp"
@@ -12,6 +13,15 @@ import image11 from "@/assets/aviso_interes_ahorro_2026.webp"
 import image12 from "@/assets/convocatorias_asamblea_2026.webp"
 
 const slides = [
+  {
+    src: image0,
+    alt: "Imagen Condolencias",
+    href: "",
+    target: "",
+    style: "",
+    caption: "",
+    interval: 5000
+  },
   {
     src: image1,
     alt: "Imagen Gracias por Anticipar tus Pagos",
