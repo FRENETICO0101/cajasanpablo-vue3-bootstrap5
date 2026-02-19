@@ -130,7 +130,7 @@ function loadUrl(urlString: string) {
             <div class="overlay position-absolute"></div>
             <img loading="lazy" width="250px" height="250px"
               style="border-radius: 7%; box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75)"
-              :src="`${assetPrefix}/assets/img-revistas/revista_ene_2026.webp`" alt="Revista Libertador Cooperativo" />
+              :src="`${assetPrefix}/assets/img-revistas/revista_feb_2026.webp`" alt="Revista Libertador Cooperativo" />
           </div>
         </a>
       </div>
