@@ -19,14 +19,14 @@
       <!-- Tab Headers -->
       <ul class="nav nav-tabs custom-nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="magazine-2026-tab" data-bs-toggle="tab" data-bs-target="#magazine-2026" type="button"
-            role="tab" aria-controls="magazine-2026" aria-selected="false">
+          <button class="nav-link active" id="magazine-2026-tab" data-bs-toggle="tab" data-bs-target="#magazine-2026" type="button"
+            role="tab" aria-controls="magazine-2026" aria-selected="true">
             <i class="mdi mdi-calendar tab-icon"></i> 2026
           </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="magazine-2025-tab" data-bs-toggle="tab" data-bs-target="#magazine-2025" type="button"
-            role="tab" aria-controls="magazine-2025" aria-selected="true">
+          <button class="nav-link" id="magazine-2025-tab" data-bs-toggle="tab" data-bs-target="#magazine-2025" type="button"
+            role="tab" aria-controls="magazine-2025" aria-selected="false">
             <i class="mdi mdi-calendar tab-icon"></i> 2025
           </button>
         </li>
@@ -59,12 +59,12 @@
       <!-- Tab Content -->
       <div class="tab-content" id="myTabContent">
         <!-- 2026 Tab -->
-        <div class="tab-pane fade mt-5" id="magazine-2026" role="tabpanel" aria-labelledby="magazine-2026-tab">
+        <div class="tab-pane fade show active mt-5" id="magazine-2026" role="tabpanel" aria-labelledby="magazine-2026-tab">
           <Revistas2026 />
         </div>
 
         <!-- 20225 Tab -->
-        <div class="tab-pane fade show active mt-5" id="magazine-2025" role="tabpanel" aria-labelledby="magazine-2025-tab">
+        <div class="tab-pane fade mt-5" id="magazine-2025" role="tabpanel" aria-labelledby="magazine-2025-tab">
           <Revistas2025 />
         </div>
 
