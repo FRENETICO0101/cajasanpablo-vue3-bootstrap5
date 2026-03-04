@@ -1,28 +1,14 @@
 <script setup lang="ts">
-import image0 from "@/assets/comunicado_seguridad_2026.webp"
 import image1 from "@/assets/anticipar_pagos.webp"
 import image2 from "@/assets/norma_ifrs9.webp"
-// import image3 from "@/assets/promocion_2026.webp"
 import image4 from "@/assets/SPEI.webp"
 import image5 from "@/assets/datos-biometricos-1.webp"
 import image6 from "@/assets/inscribeteahoraesmásfacil.webp"
 import image7 from "@/assets/alianzasgal-2.webp"
-import image8 from "@/assets/comunicado_vale_de_despensa_2026.webp"
-import image10 from "@/assets/aniversario_cerrado_2026.webp"
 import image11 from "@/assets/aviso_interes_ahorro_2026.webp"
 import image12 from "@/assets/convocatorias_asamblea_2026.webp"
-import image13 from "@/assets/aniversario_misa_2026.webp"
 
 const slides = [
-  {
-    src: image0,
-    alt: "Imagen Comunicado de Seguridad 2026",
-    href: "",
-    target: "",
-    style: "",
-    caption: "",
-    interval: 5000
-  },
   {
     src: image1,
     alt: "Imagen Gracias por Anticipar tus Pagos",
@@ -41,15 +27,6 @@ const slides = [
     caption: "Normativa IFRS9",
     interval: 5000
   },
-  /* {
-    src: image3,
-    alt: "Imagen promocion 2025 - 2026",
-    href: "/assets/pdf/bases_promociones_2026.pdf",
-    target: "_blank",
-    style: "background-color: rgb(244, 163, 26); bottom: 10%; color: black; right: 8%",
-    caption: "Conoce las bases",
-    interval: 5000,
-  }, */
   {
     src: image4,
     alt: "App Móvil banca electrónica guía de usuario",
@@ -84,34 +61,6 @@ const slides = [
     target: "_self",
     style: "background-color: white; bottom: 5%; color: rgb(63, 126, 189); right: 31%",
     caption: "VER",
-    interval: 5000,
-  },
-  {
-    src: image8,
-    alt: "Comunicado vale de despensa 2026",
-    href: "/assets/pdf/Comunicado_Despensa_2026.pdf",
-    target: "_blank",
-    style: "background-color: white; bottom: 5%; color: rgb(63, 126, 189); right: 31%",
-    caption: "Leer comunicado",
-    interval: 5000,
-  }
-  ,
-  {
-    src: image10,
-    alt: "Imagen Aniversario 2026",
-    href: "",
-    target: "_blank",
-    style: "background-color: white; bottom: 5%; color: rgb(63, 126, 189); right: 31%",
-    caption: "Ver",
-    interval: 5000,
-  },
-  {
-    src: image13,
-    alt: "Imagen Misa Aniversario 2026",
-    href: "/assets/pdf/misa_aniversario_2026.pdf",
-    target: "_blank",
-    style: "background-color: rgb(22, 34, 59); bottom: 5%; color: white; right: 31%",
-    caption: "Leer aviso",
     interval: 5000,
   },
   {
