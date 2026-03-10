@@ -35,7 +35,7 @@
                   aria-label="Abrir PDF Derechos Arco" target="_blank">Derechos Arco</a>
               </li>
               <li >
-                <a href="/assets/pdf/cat_y_gat_15_dic_2025.pdf"
+                <a href="/assets/pdf/cat_y_gat_marzo_2026.pdf"
                   aria-label="Abrir PDF Costos y Comisiones" target="_blank">Costos y Comisiones</a>
               </li>
             </ul>
@@ -46,7 +46,7 @@
     </div>
     <div class="derechos text-center p-2">
       <div class="derechos-texto">
-        © 2015 - 2024 Caja Popular San Pablo S.C. de A.P. de R.L. de C.V.
+        © 2015 - 2026 Caja Popular San Pablo S.C. de A.P. de R.L. de C.V.
         Reservados todos los derechos.
       </div>
     </div>

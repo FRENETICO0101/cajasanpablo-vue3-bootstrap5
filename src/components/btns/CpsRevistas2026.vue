@@ -69,6 +69,14 @@ const revistas = ref<RevistaData[]>([
     pdfUrl: '/assets/pdf/REV_Febrero_2026.pdf',
     date: new Date(2026, 2, 1),
     isNew: true
+  },
+  {
+    id: 'mar-2026',
+    title: 'Marzo 2026',
+    imageSrc: `${assetPrefix}/assets/img-revistas/revista_mar_2026.webp`,
+    pdfUrl: '/assets/pdf/REV_Marzo_2026.pdf',
+    date: new Date(2026, 3, 1),
+    isNew: true
   }
 ])
 
